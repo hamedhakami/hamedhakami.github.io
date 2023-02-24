@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* Global Styles */
 
+        @font-face {font-family: "IRANSansWeb Bold";
+		src: url("../../../fonts/IRANSansWeb_Bold.ttf")}
+		@font-face {font-family:'IRANSansWeb Medium';
+		src: url("../../../fonts/IRANSansWeb_Medium.ttf")}
+		@font-face {font-family:"IRANSansWeb";
+		src: url( "../../../fonts/IRANSansWeb.ttf")}
+
 body {
 	margin-left: auto;
 	margin-right: auto;
@@ -23,7 +30,7 @@ header .profileLogo .logoPlaceholder {
 header .logoPlaceholder span {
 	width: 80px;
 	height: 22px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'IRANSansWeb Bold'sans-serif;
 	color: rgba(255,255,255,1.00);
 	font-size: 30px;
 	font-weight: 700;
@@ -37,14 +44,14 @@ header .profilePhoto {
 	clear: both;
 }
 header .profileHeader h1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'IRANSansWeb', sans-serif;
 	color: rgba(146,146,146,1.00);
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 24px;
 }
 header .profileHeader h3 {
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 	color: rgba(146,146,146,1.00);
 	font-size: 16px;
 	font-weight: 700;
@@ -55,7 +62,7 @@ hr {
 	height: 1px;
 }
 header .profileHeader p {
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 	color: rgba(146,146,146,1.00);
 	font-size: 14px;
 	font-weight: 400;
@@ -80,7 +87,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	display: block;
 }
 .section1 .sectionTitle, .section2 .sectionTitle {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'IRANSansWeb', "IRANSansWeb";
 	color: rgba(146,146,146,1.00);
 	font-size: 18px;
 	font-weight: 700;
@@ -104,22 +111,22 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .mainContent .section1 .section1Content span {
 	color: rgba(146,146,146,1.00);
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 .section2 .sectionContentTitle {
-	font-family: sans-serif;
+	font-family:"IRANSansWeb";
 	color: rgba(146,146,146,1.00);
 	font-size: 18px;
 	font-weight: 700;
 }
 .section2 .sectionContentSubTitle {
-	font-family: sans-serif;
+	font-family:"IRANSansWeb";
 	color: rgba(108,108,108,1.00);
 	font-size: 14px;
 	font-weight: 400;
 }
 .section2 .sectionContent {
-	font-family: sans-serif;
+	font-family:"IRANSansWeb";
 	color: rgba(146,146,146,1.00);
 	font-size: 14px;
 	font-weight: 400;
@@ -140,7 +147,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	background-color: rgba(153,153,153,1.00);
 }
 .externalResourcesNav .externalResources a {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'IRANSansWeb', "IRANSansWeb";
 	color: rgba(255,255,255,1.00);
 	font-size: 14px;
 	font-weight: 400;
@@ -155,7 +162,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 /* Footer */
 footer .footerDisclaimer {
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(104,103,103,1.00);
@@ -166,7 +173,7 @@ footer .footerDisclaimer span {
 	font-weight: 400;
 }
 footer .footerNote {
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(104,103,103,1.00);
@@ -227,7 +234,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 .mainContent .section1 .section1Content {
 	display: inline-block;
 	text-align: left;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 	text-align: justify;
 }
 .mainContent .section2 {
@@ -250,7 +257,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 footer {
 	display: block;
 	text-align: center;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 }
 
@@ -263,7 +270,7 @@ header {
 }
 header .profileLogo .logoPlaceholder {
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'IRANSansWeb', "IRANSansWeb";
 }
 header .profilePhoto {
 	float: left;
@@ -294,7 +301,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 .mainContent .section1 .section1Content {
 	display: block;
 	margin: 0% 0% 0% 20%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
@@ -304,7 +311,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 .section2 .section2Content {
 	padding: 0px;
 	margin-left: 20%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
@@ -325,12 +332,12 @@ header .socialNetworkNavBar .socialNetworkNav {
 footer .footerDisclaimer {
 	float: left;
 	margin-left: 3%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 footer .footerNote {
 	float: right;
 	margin-right: 3%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 }
 
@@ -367,7 +374,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 	margin-right: 0%;
 	margin-left: 26%;
 	margin-bottom: 0%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 .mainContent .section2 {
 	clear: both;
@@ -375,7 +382,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 .section2 .section2Content {
 	padding: 0px;
 	margin-left: 26%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 .mainContent .externalResourcesNav {
 	margin-top: 40px;
@@ -392,11 +399,11 @@ header .socialNetworkNavBar .socialNetworkNav {
 footer .footerDisclaimer {
 	float: left;
 	margin-left: 3%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 footer .footerNote {
 	float: right;
 	margin-right: 3%;
-	font-family: sans-serif;
+	font-family: "IRANSansWeb";
 }
 }
