@@ -260,6 +260,7 @@
 
 .single_80h {border: 0px; padding: 0px; height: 80%; display: block; margin: auto;}
 .single_70w {border: 0px; padding: 0px; width: 70%; margin-bottom: auto; margin-top: auto}
+.single_60h {border: 0px; padding: 0px; height: 60%; margin-bottom: auto; margin-top: auto;}
 		
 		@media only screen and (max-width: 178vh) {
 		.prime_div {
@@ -535,11 +536,49 @@
 	.single_80h {border: 0px; padding: 0px; width: 90%; display: block; margin: auto;}
 	
 	.single_70w {border: 0px; padding: 0px; width: 90%; display: block; margin: auto;}
+	.single_60h {border: 0px; padding: 0px; width: 90%; display: block; margin:auto;}
 	
 	#slider1_div {display: none;}
 	
+	.horizental_scroll_container { 
+		display: flex;
+		flex-direction: row;
+			padding: 0px;
+			border: 0px;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: auto;
+            margin-right: auto;
+			width: 90%;
+		    
+		    overflow:auto;
+		}
+	
+	.horizental_scroll_contents {
+			padding: 0px;
+			border: 0px;
+			margin-left: 1%;
+			margin-right: 1%;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			width: 75vw;
+			scroll-snap-align: start;
+			
+	}
 	
 	
+	
+	
+	.horizental_scroll_contents_2 {
+			padding: 0px;
+			border: 0px;
+			margin-left: 1%;
+			margin-right: 1%;
+			margin-top: 0px;
+			margin-bottom: 1%;
+			width: 60vw;
+			scroll-snap-align: start;
+		}
 	
 	
 	
