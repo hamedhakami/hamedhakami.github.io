@@ -256,6 +256,10 @@
 			scroll-snap-align: start;
 	}
 .only_phone {display: none;}
+
+
+.single_80h {border: 0px; padding: 0px; height: 80%; display: block; margin: auto;}
+.single_70w {border: 0px; padding: 0px; width: 70%; margin-bottom: auto; margin-top: auto}
 		
 		@media only screen and (max-width: 178vh) {
 		.prime_div {
@@ -505,7 +509,7 @@
             margin-right: 1%;
 			margin-bottom: auto;
 			margin-top: auto;
-			width: 140vw;}
+			width: 150vw;}
 		
 			.slider_center_photos {
 			padding: 0px;
@@ -515,7 +519,7 @@
             margin-right: auto;
 			margin-bottom: auto;
 			margin-top: auto;
-			width: 140vw;}
+			width: 150vw;}
 		
 			.slider_right_photos {
 			padding: 0px;
@@ -525,10 +529,12 @@
             margin-right: 0px;
 			margin-bottom: auto;
 			margin-top: auto;
-			width: 140vw;}
+			width: 150vw;}
 		
 	
+	.single_80h {border: 0px; padding: 0px; width: 90%; display: block; margin: auto;}
 	
+	.single_70w {border: 0px; padding: 0px; width: 90%; display: block; margin: auto;}
 	
 	
 	
