@@ -261,6 +261,13 @@
 .single_80h {border: 0px; padding: 0px; height: 80%; display: block; margin: auto;}
 .single_70w {border: 0px; padding: 0px; width: 70%; margin-bottom: auto; margin-top: auto}
 .single_60h {border: 0px; padding: 0px; height: 60%; margin-bottom: auto; margin-top: auto;}
+.button {border: 0px; border-radius: 1px; margin-top: 1%; margin-bottom: 5%; display: block; margin-left: auto; margin-right: auto;}
+.iframe {margin-bottom: 1%; margin-top: auto;
+	padding: 0px;
+			border: 0px;
+			display: block;
+            margin-left: auto;
+            margin-right: auto;}
 		
 		@media only screen and (max-width: 178vh) {
 		.prime_div {
@@ -320,6 +327,35 @@
 		}
 			
 		}
+
+
+.only_desktop {
+		display: none;
+	display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0px;
+			border: 0px;
+			margin-right: auto;
+			margin-left: auto;
+			width: 177vh;
+			height: 100vh;
+			scroll-snap-align: start;
+	}
+.only_phone {display: none;}
+
+
+.single_80h {border: 0px; padding: 0px; height: 80%; display: block; margin: auto;}
+.single_70w {border: 0px; padding: 0px; width: 70%; margin-bottom: auto; margin-top: auto}
+.single_60h {border: 0px; padding: 0px; height: 60%; margin-bottom: auto; margin-top: auto;}
+.button {border: 0px; border-radius: 1px; margin-top: 1%; margin-bottom: 5%; display: block; margin-left: auto; margin-right: auto;}
+.iframe {margin-bottom: 1%; margin-top: auto;
+	padding: 0px;
+			border: 0px;
+			display: block;
+            margin-left: auto;
+            margin-right: auto;}
+		
 
 
 
@@ -581,7 +617,14 @@
 		}
 	
 	
+	.button {border: 0px; border-radius: 1px; margin-top: 1%; margin-bottom: 10vh; display: block; margin-left: auto; margin-right: auto;}
 	
+	.iframe {margin-bottom: 1%; margin-top: 8vh;
+	padding: 0px;
+			border: 0px;
+			display: block;
+            margin-left: auto;
+            margin-right: auto;}
 	
 	
 	
