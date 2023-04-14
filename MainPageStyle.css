@@ -628,32 +628,41 @@ div.social_leyout_div_6pics {
 
 @media only screen and (max-width: 80vh) {
 	
+	/*
 		div.container::-webkit-scrollbar{
     display: none;
 			
   }
 	
-	/* width */
+	/* width 
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
   background:  #3A4046;
 	border-radius: 10px;
 }
  
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #f1f1f1; 
   border-radius: 10px;
 }
 
-/* Handle on hover */
+/* Handle on hover 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+*/	
+	
+	.social_leyout_div::-webkit-scrollbar-thumb {
+  background-image: white;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+	
 	
 	div.regular_flex_container {
 			display: block;
