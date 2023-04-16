@@ -103,6 +103,14 @@ button:-webkit-details-marker {
  display: none;
 }
 
+.rotate90 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
 
 .empty_div_before_logo {height: 25%
 }
@@ -436,6 +444,20 @@ width: 300px; height: 250px; margin-bottom: 1%; margin-top: auto;}
 
 width: 300px; height: 250px; margin-bottom: 1%; margin-top: auto;
 }
+
+	.swipe {
+			font-family: 'IRANSansWeb';
+			width: 90%;
+			font-size: 45px;
+			color: #AAAAAA;
+			display: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3vh;
+			margin-top: 3vw;
+			text-align: left;
+		}
+	
 		
 		@media only screen and (max-width: 178vh) {
 		.prime_div {
@@ -620,6 +642,19 @@ div.social_leyout_div_6pics {
 			border: 0px;
 			padding: 0px;
 		}
+
+.swipe {
+			font-family: 'IRANSansWeb';
+			width: 90%;
+			font-size: 45px;
+			color: #AAAAAA;
+			display: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3vh;
+			margin-top: 3vw;
+			text-align: left;
+		}
 		
 
 
@@ -784,6 +819,19 @@ div.social_leyout_div_6pics {
 			width: 90%;
 			font-size: 45px;
 			color: #AAAAAA;
+			display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3vh;
+			margin-top: 3vw;
+			text-align: left;
+		}
+	
+	.swipe {
+			font-family: 'IRANSansWeb';
+			width: 90%;
+			font-size: 30px;
+			color: #FFFFFF;
 			display: block;
             margin-left: auto;
             margin-right: auto;
