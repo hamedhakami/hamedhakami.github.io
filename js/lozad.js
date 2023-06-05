@@ -139,7 +139,7 @@
   };
 
   function lozad () {
-    var selector = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '.horizental_scroll_contents .social_left_photos .social_right_photos .social_center_photos .slider_right_photos .slider_center_photos .slider_left_photos .horizental_scroll_contents .horizental_scroll_contents_2 .single_70h .single_60h .single_70w .single_80h .iframe .iframe_2';
+    var selector = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '.horizental_scroll_contents';
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
     var _Object$assign = Object.assign({}, defaultConfig, options),
