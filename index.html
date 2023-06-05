@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8" >
 <title>Hamed Hakami Portfolio</title>
-
+    <link rel="preload" href="fonts/IRANSansWeb_Medium.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/IRANSansWeb.ttf" as="font" type="font/woff2" crossorigin>
+	
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	
+	<script type="text/javascript" src="js/lozad.js"></script>
 	
 <script>
 	function refreshIframe() {
@@ -20,14 +24,18 @@
     var ifr = document.getElementsByName('sibche_html_ads2')[0];
     ifr.src = ifr.src;
 }
+	
+	
+	const observer = lozad(); 
+observer.observe();
 
 
-	const imgs = document.querySelectorAll("img");
+	/* const imgs = document.querySelectorAll("img");
 	console.log(imgs);
 imgs.forEach(LazLoading);	
 	function LazLoading(){
 	img.setAttribute("loading", "lazy");		
-}
+} */
 	</script>
 
 	<link href="MainPageStyle.css" rel="stylesheet" type="text/css">
