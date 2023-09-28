@@ -92,7 +92,7 @@ $(document).on("scroll", function() {
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    if (($(tag).position().top < pageBottom) && ($(tag).position().bottom > pageTop) && ($( "#getyourmoneyback" ).hasClass( "invisible" ) === true) ) {
+    if (($(tag).position().top < pageBottom) && ($(tag).position().bottom > pageTop) && ($( "#getyourmoneyback" ).hasClass( "invisible" ) == true) ) {
       refreshIframe1();
 	  $(tag).removeClass("invisible");
     } else {
@@ -111,7 +111,7 @@ $(document).on("scroll", function() {
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    if ((($(tag).position().top > pageBottom) || ($(tag).position().bottom < pageTop)) && ($( "#getyourmoneyback" ).hasClass( "invisible" ) === false) ) {
+    if ((($(tag).position().top > pageBottom) || ($(tag).position().bottom < pageTop)) && ($( "#getyourmoneyback" ).hasClass( "invisible" ) == false) ) {
 	  $(tag).addClass("invisible");
     } else {
       
