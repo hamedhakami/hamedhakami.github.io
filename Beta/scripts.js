@@ -82,9 +82,6 @@ function refreshIframe1() {
     ifr.src = ifr.src;
 }
 	
-var aa = 0;	
-	
-	
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
   var pageBottom = pageTop + $(window).height();
@@ -92,13 +89,10 @@ $(document).on("scroll", function() {
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    if (($(tag).position().top < pageBottom) && ($( "#getyourmoneyback" ).hasClass( ".invisible" ) = true )) {
-		refreshIframe1();
-      $(tag).removeClass("invisible");
-		console.log("visible")
+    if ($(tag).position().top < pageBottom) {
+      refreshIframe1();
     } else {
-      $(tag).addClass("invisible");
-		console.log("invisible")
+      
     }
   }
 });
