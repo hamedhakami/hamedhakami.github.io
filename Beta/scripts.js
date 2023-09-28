@@ -109,8 +109,8 @@ $(document).on("scroll", function() {
   var pageBottom = pageTop + $(window).height();
   var tags = $(".tag");
 
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
+  for (var j = 0; i < tags.length; j++) {
+    var tag = tags[j];
     if (($(tag).position().top > pageBottom) || ($(tag).position().bottom < pageTop) ) {
 	  var aa = 0;
     } else {
