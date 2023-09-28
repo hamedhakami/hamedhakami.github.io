@@ -92,13 +92,13 @@ $(document).on("scroll", function() {
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    if (($(tag).position().top < pageBottom) && ($(tag).position().bottom > pageTop) && (aa == 0) ) {
-      refreshIframe1();
-		console.log ("visible");
-	  var aa = 1;	
+    if (($(tag).position().top < pageBottom) && ($(tag).position().bottom > pageTop) && ($( "#getyourmoneyback" ).hasClass( "invisible" ) = true; )) {
+		refreshIframe1();
+      $(tag).removeClass("invisible");
+		console.log("visible")
     } else {
-		var aa = 0;
-		console.log ("invisible");
+      $(tag).addClass("invisible");
+		console.log("invisible")
     }
   }
 });
