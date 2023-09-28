@@ -96,14 +96,14 @@ $(document).on("scroll", function() {
       refreshIframe1();
 	  var aa = 1;	
     } else {
-		
+		var aa = 0;
     }
   }
 });
 	
 	
 	
-	
+	/*
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
   var pageBottom = pageTop + $(window).height();
@@ -119,7 +119,7 @@ $(document).on("scroll", function() {
   }
 });
 
-	
+	*/
 	
 	
 	
