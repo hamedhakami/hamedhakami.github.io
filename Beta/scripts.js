@@ -74,7 +74,7 @@ const slider = document.querySelector('.items');
 	
 
 	
-let visibility = 0;
+
 
 
 function refreshIframe1() {
@@ -82,7 +82,7 @@ function refreshIframe1() {
     ifr.src = ifr.src;
 }
 	
-
+	let visibility = 0;
 	
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
@@ -91,38 +91,15 @@ $(document).on("scroll", function() {
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    if (($(tag).position().top <= pageBottom) && (visibility < 1)) {
+    if (($(tag).position().top < pageBottom) && (visibility < 1)) {
       refreshIframe1();
 	  visibility = 1;
 	  console.log("visible")
     } else {
-      
-	  console.log("invisible")
-    }
-	  if ((($(tag).position().top > pageBottom) || ($(tag).position().bottom < pageTop)) && (visibility == 1)) {
-      
-	  visibility = 0;
-		  console.log("invisible2")
-	  
-    } else {
-      console.log("visible2")
-	  
+      visibility = 0;
+		console.log("invisible")
     }
   }
-	
-	
-	
-    
-  
-	
-	
-	
-	
-	
-	
-	
-	
-	
 });
 	
 	
