@@ -82,7 +82,7 @@ function refreshIframe1() {
     ifr.src = ifr.src;
 }
 	
-	let visibility = 0;
+
 	
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
