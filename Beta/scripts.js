@@ -78,8 +78,7 @@ const slider = document.querySelector('.items');
 
 
 function refreshIframe1() {
-    var ifr = document.getElementsByName('getyourmoneyback')[0];
-    ifr.src = ifr.src;
+    window.frames['getyourmoneyback'].location.reload();
 }
 	
 	
