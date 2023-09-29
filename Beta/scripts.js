@@ -107,7 +107,8 @@ $(document).on("scroll", function() {
 	  visibility = 0;
 	  console.log("invisible2")
     } else {
-      
+      visibility = 1;
+		console.log("visible2")
     }
 	  
 	  
