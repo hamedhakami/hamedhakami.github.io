@@ -102,7 +102,7 @@ $(document).on("scroll", function() {
 	  
 	 
 	  
-	  if (($(tag).position().top >= pageBottom) || ($(tag).position().bottom =< pageTop) ) {
+	  if (($(tag).position().top >= pageBottom) || ($(tag).position().bottom <= pageTop) ) {
       
 	  visibility = 0;
 	  console.log("iframe is not in viewport")
