@@ -113,11 +113,7 @@ $(document).on("scroll", function() {
 	  
 	  
 	  
-	  
-	  
-	  
-	  
-	  
+	    
   }
 });
 	
