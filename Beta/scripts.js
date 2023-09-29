@@ -91,7 +91,7 @@ $(document).on("scroll", function() {
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    if (($(tag).position().top < pageBottom) && (visibility < 1)) {
+    if (($(tag).position().top <= pageBottom) && ($(tag).position().bottom >= pageTop) && (visibility < 1)) {
       refreshIframe1();
 	  visibility = 1;
 	  console.log("visible")
@@ -100,6 +100,28 @@ $(document).on("scroll", function() {
 	  console.log("invisible")
     }
   }
+	
+	
+	for (var j = 0; i < tags.length; j++) {
+    var tag = tags[j];
+    if ((($(tag).position().top > pageBottom) || ($(tag).position().bottom < pageTop)) && (visibility == 1)) {
+      
+	  visibility = 0;
+	  
+    } else {
+      
+	  
+    }
+  }
+	
+	
+	
+	
+	
+	
+	
+	
+	
 });
 	
 	
