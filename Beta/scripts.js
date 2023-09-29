@@ -74,7 +74,7 @@ const slider = document.querySelector('.items');
 	
 
 	
-
+let visibility = 0;
 
 
 function refreshIframe1() {
