@@ -169,6 +169,7 @@ body {
 .row {
   display: -webkit-flex;
   display: flex;
+  margin-top: 20vw;
 }
 
 /* Create three unequal columns that sits next to each other */
