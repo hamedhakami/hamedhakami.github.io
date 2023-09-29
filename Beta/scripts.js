@@ -94,10 +94,10 @@ $(document).on("scroll", function() {
     if (($(tag).position().top < pageBottom) && (visibility < 1)) {
       refreshIframe1();
 	  visibility = 1;
-	  console.log("visible")
+	  console.log("----------------------reload-iframe---------------------------------------")
     } else {
       visibility = 0;
-		console.log("invisible")
+		console.log("iframe is not in viewport")
     }
 	  
 	 
@@ -105,10 +105,10 @@ $(document).on("scroll", function() {
 	  if ($(tag).position().top >= pageBottom ) {
       
 	  visibility = 0;
-	  console.log("invisible2")
+	  console.log("iframe is not in viewport")
     } else {
       visibility = 1;
-		console.log("visible2")
+		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
     }
 	  
 	  
