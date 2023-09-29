@@ -99,6 +99,24 @@ $(document).on("scroll", function() {
       visibility = 0;
 		console.log("invisible")
     }
+	  
+	 
+	  
+	  if ($(tag).position().top >= pageBottom ) {
+      
+	  visibility = 0;
+	  console.log("visible")
+    } else {
+      
+    }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
   }
 });
 	
