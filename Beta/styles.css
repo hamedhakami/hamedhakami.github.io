@@ -199,7 +199,24 @@ font-family: Roobert-Regular;
 font-weight: 400;
 word-wrap: break-word;
 	text-indent:0;
+	color: #f2f2f2;
+	
 }
+
+.introduction-text-title{
+	margin-left: 15vw;
+	margin-right: 5vw;
+	font-size: 46px;
+font-family: Roobert-Regular;
+font-weight: 400;
+word-wrap: break-word;
+	text-indent:0;
+	color: rgba(255,255,255,0.60)
+}
+
+
+
+
 
 .resume-contents {
 	
