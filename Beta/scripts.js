@@ -96,7 +96,7 @@ $(document).on("scroll", function() {
 	  visibility = 1;
 	  console.log("visible")
     } else {
-      visibility = 0;
+      
 	  console.log("invisible")
     }
   }
