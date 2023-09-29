@@ -70,7 +70,7 @@ const slider = document.querySelector('.items');
 	
 	
 	
-	
+	});
 	
 
 	
@@ -147,7 +147,7 @@ $(document).on("scroll", function() {
 	
 	
 	
-	});
+	
 	
 	
 	
