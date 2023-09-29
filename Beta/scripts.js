@@ -75,7 +75,7 @@ const slider = document.querySelector('.items');
 
 	
 
-/*
+
 
 function refreshIframe1() {
     var ifr = document.getElementsByName('getyourmoneyback')[0];
@@ -123,24 +123,7 @@ $(document).on("scroll", function() {
 	
 	
 	
-	
-$(document).on("scroll", function() {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tags = $(".tag");
 
-  for (var j = 0; j < tags.length; j++) {
-    var tag = tags[j];
-    if (($(tag).position().top > pageBottom) || ($(tag).position().bottom < pageTop) ) {
-	  var aa = 0;
-    } else {
-      
-    }
-  }
-});
-
-	*/
-	
 	
 	
 	
