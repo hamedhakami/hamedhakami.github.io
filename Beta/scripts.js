@@ -75,10 +75,11 @@ const slider = document.querySelector('.items');
 
 	
 
-
+/*
 
 function refreshIframe1() {
-    window.frames['getyourmoneyback'].location.reload();
+    var ifr = document.getElementsByName('getyourmoneyback')[0];
+    ifr.src = ifr.src;
 }
 	
 	
@@ -122,7 +123,7 @@ $(document).on("scroll", function() {
 	
 	
 	
-	/*
+	
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
   var pageBottom = pageTop + $(window).height();
