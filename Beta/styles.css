@@ -198,6 +198,7 @@ body {
 font-family: Roobert-Regular;
 font-weight: 400;
 word-wrap: break-word;
+	text-indent:0;
 }
 
 .resume-contents {
