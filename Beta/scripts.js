@@ -105,7 +105,7 @@ $(document).on("scroll", function() {
 	  if ($(tag).position().top >= pageBottom ) {
       
 	  visibility = 0;
-	  console.log("visible")
+	  console.log("invisible2")
     } else {
       
     }
