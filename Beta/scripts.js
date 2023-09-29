@@ -91,7 +91,7 @@ $(document).on("scroll", function() {
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    if (($(tag).position().top < pageBottom) && (visibility < 1)) {
+    if (($(tag).position().top < pageBottom) && ($(tag).position().bottom > pageTop) && (visibility < 1)) {
       refreshIframe1();
 	  visibility = 1;
 	  console.log("----------------------reload-iframe---------------------------------------")
@@ -102,7 +102,7 @@ $(document).on("scroll", function() {
 	  
 	 
 	  
-	  if ($(tag).position().top >= pageBottom ) {
+	  if (($(tag).position().top >= pageBottom) || ($(tag).position().bottom =< pageTop) ) {
       
 	  visibility = 0;
 	  console.log("iframe is not in viewport")
