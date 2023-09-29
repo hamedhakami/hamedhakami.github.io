@@ -6,6 +6,15 @@
   border: 0;
 	font-family: Roobert;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
       body,
       html {
         background-color: #000000;
@@ -22,6 +31,7 @@
 
       @supports (display: grid) {
         .grid-container {
+			overflow: 
 			background-color: #000000;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
