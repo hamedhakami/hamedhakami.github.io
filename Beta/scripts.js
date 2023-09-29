@@ -94,8 +94,10 @@ $(document).on("scroll", function() {
     if (($(tag).position().top < pageBottom) && (visibility < 1)) {
       refreshIframe1();
 	  visibility = 1;
+	  console.log("visible")
     } else {
       visibility = 0;
+	  console.log("invisible")
     }
   }
 });
