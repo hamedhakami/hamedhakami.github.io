@@ -97,7 +97,7 @@ $(document).on("scroll", function() {
 	  console.log("----------------------reload-iframe---------------------------------------")
     } else {
       visibility = 0;
-		console.log("iframe is not in viewport")
+		
     }
 	  
 	 
