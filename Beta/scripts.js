@@ -81,6 +81,7 @@ const slider = document.querySelector('.items');
   const visibilityCheckers = new Array(tags.length);
 	
 	
+
 	
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
