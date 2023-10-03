@@ -1,13 +1,13 @@
 
 
-Scrollbar.init(document.querySelector("#main-scrollbar"))
+
 
 
 
 $(document).ready(function(){
  
 
-
+Scrollbar.init(document.querySelector("#main-scrollbar"))
 
 
 
