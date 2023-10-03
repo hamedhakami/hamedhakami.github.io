@@ -77,8 +77,8 @@ const slider = document.querySelector('.items');
 
 
 
-  var tags = $(".tag");
-  const visibilityCheckers = new Array(tags.length);
+  var tileContainers = $(".tile-container");
+  const visibilityCheckers = new Array(tileContainers.length);
 	
 	
 
@@ -87,24 +87,24 @@ const slider = document.querySelector('.items');
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
   var pageBottom = pageTop + $(window).height();
-  var tags = $(".tag");
-  
+  var tileContainers = $(".tile-container");
+  var tileEffects = $(".tile-effect");
 
-  for (var i = 0; i < tags.length; i++) {
+  for (var i = 0; i < tileContainers.length; i++) {
 	  
-	  var tag = tags[i];
-	  
+	  var tileContainer = tileContainers[i];
+	  var tileEffectObject = tileEffects[i];
 	  
 	  function refreshIframe() {
-   tag.src = tag.src;
+   tileEffectObject.src = tileEffectObject.src;
 }
 	  
 	  
     
-    if (($(tag).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
+    if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
       refreshIframe();
 	  visibilityCheckers[i] = 1;
-	  console.log("----------------------reload-iframe---------------------------------------")
+	  console.log("----------------------reload-iframe " i "---------------------------------------")
     } else {
       visibilityCheckers[i] = 0;
 		
@@ -112,13 +112,13 @@ $(document).on("scroll", function() {
 	  
 	 
 	  
-	  if ($(tag).position().top >= pageBottom) {
+	  if ($(tileContainer).position().top >= pageBottom) {
       
 	  visibilityCheckers[i] = 0;
-	  console.log("iframe is not in viewport")
+	  console.log("iframe " i " is not in viewport")
     } else {
       visibilityCheckers[i] = 1;
-		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
+		console.log("iframe " i " is in viewport, but has not to reload; because it was reloaded once.")
     }
 	  
 	  
