@@ -98,10 +98,10 @@ $(document).on("scroll", function() {
 	  function refreshIframe() {
    tileEffectObject.src = tileEffectObject.src;
 }
-	  x = $(tileContainer).position().bottom
-	  console.log (pageTop);
-      console.log (x);
-    if (($(tileContainer).position().top < pageBottom) && ($(tileContainer).position().bottom > pageTop) && (visibilityCheckers[i] < 1)) {
+	  
+	  
+    
+    if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
       refreshIframe();
 	  visibilityCheckers[i] = 1;
 	  console.log("----------------------reload-iframe---------------------------------------")
@@ -112,8 +112,7 @@ $(document).on("scroll", function() {
 	  
 	 
 	  
-	 
-	  if (($(tileContainer).position().top >= pageBottom) || ($(tileContainer).position().bottom <= pageTop) ) {
+	  if ($(tileContainer).position().top >= pageBottom) {
       
 	  visibilityCheckers[i] = 0;
 	  console.log("iframe is not in viewport")
