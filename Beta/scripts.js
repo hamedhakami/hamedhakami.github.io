@@ -3,7 +3,7 @@
 $(document).ready(function(){
  
 
-Scrollbar.init(document.querySelector("#main-scrollbar"))
+//Scrollbar.init(document.querySelector("#main-scrollbar"))
 
 
 
