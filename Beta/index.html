@@ -14,9 +14,10 @@
 	<link rel="preload" href="fonts/Roobert-RegularItalic.otf" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Roobert-MediumItalic.otf" as="font" type="font/woff2" crossorigin>
 	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-color: black; overflow-x: hidden; width: 100vw;" id="main-scrollbar">
+<body style="background-color: black; overflow-x: hidden; width: 100vw;" id="main-scrollbar" data-scrollbar>
 	
 	<div style="height: 120vh;"></div> <!-- temp-->
 	
@@ -59,6 +60,12 @@
 	
 
 	
-	
+	<script src="dist/smooth-scrollbar.js"></script>
+
+<script>
+  var Scrollbar = window.Scrollbar;
+
+  Scrollbar.init(document.querySelector('#main-scrollbar'));
+</script>
 </body>
 </html>
