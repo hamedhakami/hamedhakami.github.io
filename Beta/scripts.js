@@ -82,6 +82,7 @@ const slider = document.querySelector('.items');
 	
 	
 
+
 	
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
