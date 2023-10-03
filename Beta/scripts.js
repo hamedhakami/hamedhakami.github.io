@@ -98,8 +98,8 @@ $(document).on("scroll", function() {
 	  function refreshIframe() {
    tileEffectObject.src = tileEffectObject.src;
 }
-	  
-	  console.log (pageTop $(tileContainer).position().bottom);
+	  x = $(tileContainer).position().bottom
+	  console.log (pageTop, x);
     
     if (($(tileContainer).position().top < pageBottom) && ($(tileContainer).position().bottom > pageTop) && (visibilityCheckers[i] < 1)) {
       refreshIframe();
