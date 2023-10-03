@@ -90,7 +90,7 @@ $(document).on("scroll", function() {
   for (var i = 0; i < tags.length; i++) {
 	  
 	  var tag = tags[i];
-	  let visibilityChecker = visibilityCheckers[i];
+	  
 	  
 	  function refreshIframe() {
    tag.src = tag.src;
@@ -98,12 +98,12 @@ $(document).on("scroll", function() {
 	  
 	  
     
-    if (($(tag).position().top < pageBottom) && (visibilityChecker < 1)) {
+    if (($(tag).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
       refreshIframe();
-	  visibilityChecker = 1;
+	  visibilityCheckers[i] = 1;
 	  console.log("----------------------reload-iframe---------------------------------------")
     } else {
-      visibilityChecker = 0;
+      visibilityCheckers[i] = 0;
 		
     }
 	  
@@ -111,10 +111,10 @@ $(document).on("scroll", function() {
 	  
 	  if ($(tag).position().top >= pageBottom) {
       
-	  visibilityChecker = 0;
+	  visibilityCheckers[i] = 0;
 	  console.log("iframe is not in viewport")
     } else {
-      visibilityChecker = 1;
+      visibilityCheckers[i] = 1;
 		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
     }
 	  
