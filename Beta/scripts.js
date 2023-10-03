@@ -112,6 +112,7 @@ $(document).on("scroll", function() {
 	  
 	 
 	  
+	  
 	  if (($(tileContainer).position().top >= pageBottom) || ($(tileContainer).position().bottom <= pageTop) ) {
       
 	  visibilityCheckers[i] = 0;
