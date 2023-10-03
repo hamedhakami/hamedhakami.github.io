@@ -77,7 +77,7 @@ const slider = document.querySelector('.items');
 
 
 
-const visibilityCheckers = new Array(tags.length);
+
 	
 	
 	
@@ -85,6 +85,7 @@ $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
   var pageBottom = pageTop + $(window).height();
   var tags = $(".tag");
+  const visibilityCheckers = new Array(tags.length);
 
   for (var i = 0; i < tags.length; i++) {
 	  
