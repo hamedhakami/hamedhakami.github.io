@@ -1,3 +1,9 @@
+import Scrollbar from "smooth-scrollbar";
+
+Scrollbar.init(document.querySelector("#main-scrollbar"))
+
+
+
 $(document).ready(function(){
  
 
@@ -67,6 +73,7 @@ const slider = document.querySelector('.items');
   }
 	
 	
+
 	
 	
 	
