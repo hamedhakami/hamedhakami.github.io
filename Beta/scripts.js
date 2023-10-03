@@ -104,7 +104,7 @@ $(document).on("scroll", function() {
     if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
       refreshIframe();
 	  visibilityCheckers[i] = 1;
-	  console.log("----------------------reload-iframe " i "---------------------------------------")
+	  console.log("----------------------reload-iframe---------------------------------------")
     } else {
       visibilityCheckers[i] = 0;
 		
@@ -115,10 +115,10 @@ $(document).on("scroll", function() {
 	  if ($(tileContainer).position().top >= pageBottom) {
       
 	  visibilityCheckers[i] = 0;
-	  console.log("iframe " i " is not in viewport")
+	  console.log("iframe is not in viewport")
     } else {
       visibilityCheckers[i] = 1;
-		console.log("iframe " i " is in viewport, but has not to reload; because it was reloaded once.")
+		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
     }
 	  
 	  
