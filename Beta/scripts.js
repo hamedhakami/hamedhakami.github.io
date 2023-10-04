@@ -2,9 +2,9 @@
 
 $(document).ready(function(){
  
- var Scrollbar = window.Scrollbar;
+ //var Scrollbar = window.Scrollbar;
 
-  Scrollbar.init(document.querySelector('#main-scrollbar'));
+  //Scrollbar.init(document.querySelector('#main-scrollbar'));
 //Scrollbar.init(document.querySelector("#main-scrollbar"))
 
 
