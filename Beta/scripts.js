@@ -75,9 +75,9 @@ const slider = document.querySelector('.items');
 	
 	
 	
-	let Scrollbar = window.Scrollbar;
+	//let Scrollbar = window.Scrollbar;
 	
-Scrollbar.init(document.querySelector('body'));	
+//Scrollbar.init(document.querySelector('body'));	
 	
 	
 	
