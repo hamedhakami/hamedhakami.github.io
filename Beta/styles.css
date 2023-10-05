@@ -24,6 +24,10 @@
         margin: 0;
       }
 
+html{
+    scroll-behavior:smooth;
+}
+
       .tile-container {
         background-color: #000000;
         font-family: 'Rubik', sans-serif;
