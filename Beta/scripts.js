@@ -2,16 +2,9 @@
 
 $(document).ready(function(){
  
- //var Scrollbar = window.Scrollbar;
 
-  //Scrollbar.init(document.querySelector('#main-scrollbar'));
-//Scrollbar.init(document.querySelector("#main-scrollbar"))
 
-	
-	const locoScroll = new locomotiveScroll({
-  el: document.querySelector('body'),
-  smooth: true
-});
+
 
 
 const slider = document.querySelector('.items');
