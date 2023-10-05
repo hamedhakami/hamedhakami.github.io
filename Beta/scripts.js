@@ -75,14 +75,12 @@ const slider = document.querySelector('.items');
 	
 	
 	
-	let Scrollbar = window.Scrollbar;
-	
-Scrollbar.init(document.querySelector('body'));	
 	
 	
 	
 	
-	});
+	
+	
 	
 
 	
@@ -145,7 +143,7 @@ $(document).on("scroll", function() {
 
 	
 	
-	
+	});
 	
 	
 	
