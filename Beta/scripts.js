@@ -81,7 +81,13 @@ Scrollbar.init(document.querySelector('body'));
 	
 	
 	
-	
+	const scrollArea = document.querySelector('.scroll-area')
+
+const Scroll = Scrollbar.init(scrollArea)
+
+Scroll.addListener((s) => {
+    console.log(s.offset.y) // returns “scrollTop” equivalent
+})
 
 	
 
@@ -99,7 +105,6 @@ $(document).on("scroll", function() {
   var pageBottom = pageTop + $(window).height();
   var tileContainers = $(".tile-container");
   var tileEffects = $(".tile-effect");
-
   for (var i = 0; i < tileContainers.length; i++) {
 	  
 	  var tileContainer = tileContainers[i];
