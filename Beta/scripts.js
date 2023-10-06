@@ -86,7 +86,7 @@ const scrollArea = document.querySelector('body')
 const Scroll = Scrollbar.init(scrollArea)
 
 Scroll.addListener((s) => {
-    console.log(s.offset.y) // returns “scrollTop” equivalent
+    console.log("page top:" + s.offset.y) // returns “scrollTop” equivalent
 })
 
 	
@@ -112,21 +112,33 @@ Scroll.addListener((s) => {
   var pageBottom = pageTop + $(window).height();
   var tileContainers = $(".tile-container");
   var tileEffects = $(".tile-effect");
+		
+		console.log("Page bottom:" + pageBottom)
+		var windowHeight = $(window).height();
+		console.log("Viewpoert height:" + windowHeight);
+		
+		
+		
   for (var i = 0; i < tileContainers.length; i++) {
 	  
 	  var tileContainer = tileContainers[i];
 	  var tileEffectObject = tileEffects[i];
+	  var scrollContainers = $(".scroll-container");
+	  var mainScrollContainer = scrollContainers[0];
+	  const mainScrollBar = Scrollbar.init(mainScrollContainer);
+	  var isVisibleChecker = mainScrollBar.isVisible(tileEffectObject);
+	  console.log ("Iframe " + i + " visibility: " + isVisibleChecker);
 	  
 	  function refreshIframe() {
    tileEffectObject.src = tileEffectObject.src;
 }
 	  
-	  
+	  console.log("Iframe" + i + " top position:" + $(tileContainer).position().top)
     
     if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
       refreshIframe();
 	  visibilityCheckers[i] = 1;
-	  console.log("----------------------reload-iframe---------------------------------------")
+	  console.log("-------------------------------------------------------- Iframe " + i + " has been reloaded ---------------------------------------------------")
     } else {
       visibilityCheckers[i] = 0;
 		
@@ -137,10 +149,10 @@ Scroll.addListener((s) => {
 	  if ($(tileContainer).position().top >= pageBottom) {
       
 	  visibilityCheckers[i] = 0;
-	  console.log("iframe is not in viewport")
+	  console.log("iframe " + i +" is not in viewport")
     } else {
       visibilityCheckers[i] = 1;
-		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
+		console.log("iframe " + i +" is in viewport, but has not to be reloaded; because it was reloaded once.")
     }
 	  
 	  
