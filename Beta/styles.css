@@ -27,6 +27,16 @@
 html{
     scroll-behavior:smooth;
 }
+.tag {
+  opacity: 0;
+  transition: all 2.5s;
+}
+
+.tag.visible {
+  opacity: 1;
+}
+
+
 
       .tile-container {
         background-color: #000000;
@@ -183,7 +193,7 @@ body {
 .row {
   display: -webkit-flex;
   display: flex;
-  margin-top: 20vw;
+  margin-top: 10vw;
 }
 
 /* Create three unequal columns that sits next to each other */

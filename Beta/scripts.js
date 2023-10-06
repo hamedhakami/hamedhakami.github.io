@@ -117,7 +117,7 @@ Scroll.addListener((s) => {
 		var windowHeight = $(window).height();
 		console.log("Viewpoert height:" + windowHeight);
 		
-		
+		var tags = $(".tag");
 		
   for (var i = 0; i < tileContainers.length; i++) {
 	  
@@ -157,8 +157,48 @@ Scroll.addListener((s) => {
 	  
 	  
 	  
-	    
+	
+	}  
+	  
+	  
+	  
+	  var tags = $(".tag");
+	  
+	  for (var j = 0; j < tags.length; j++) {
+		  
+		  var tag = tags[j];
+		  
+		  //var scrollContainers = $(".scroll-container");
+	  //var mainScrollContainer = scrollContainers[0];
+	  //const mainScrollBar = Scrollbar.init(mainScrollContainer);
+		  var scrollContainers = $(".scroll-container");
+	  var mainScrollContainer = scrollContainers[0];
+	  const mainScrollBar = Scrollbar.init(mainScrollContainer);
+	  var isVisibleCheckerForTags = mainScrollBar.isVisible(tag);
+	  console.log ("Tag " + j + " visibility: " + isVisibleCheckerForTags);
+		  
+		  
+		  
+		
+		  
+		  
+		  
+		  
+    
+    if (isVisibleCheckerForTags == true) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
   }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+  
 });
 	
 	
