@@ -81,7 +81,7 @@ Scrollbar.init(document.querySelector('body'));
 	
 	
 	
-	const scrollArea = document.querySelector('.scroll-area')
+const scrollArea = document.querySelector('body')
 
 const Scroll = Scrollbar.init(scrollArea)
 
@@ -99,6 +99,103 @@ Scroll.addListener((s) => {
 	
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	Scroll.addListener((s) => {
+  var pageTop = s.offset.y;
+  var pageBottom = pageTop + $(window).height();
+  var tileContainers = $(".tile-container");
+  var tileEffects = $(".tile-effect");
+  for (var i = 0; i < tileContainers.length; i++) {
+	  
+	  var tileContainer = tileContainers[i];
+	  var tileEffectObject = tileEffects[i];
+	  
+	  function refreshIframe() {
+   tileEffectObject.src = tileEffectObject.src;
+}
+	  
+	  
+    
+    if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
+      refreshIframe();
+	  visibilityCheckers[i] = 1;
+	  console.log("----------------------reload-iframe---------------------------------------")
+    } else {
+      visibilityCheckers[i] = 0;
+		
+    }
+	  
+	 
+	  
+	  if ($(tileContainer).position().top >= pageBottom) {
+      
+	  visibilityCheckers[i] = 0;
+	  console.log("iframe is not in viewport")
+    } else {
+      visibilityCheckers[i] = 1;
+		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
+    }
+	  
+	  
+	  
+	    
+  }
+});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	
+	
 	
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
@@ -146,6 +243,30 @@ $(document).on("scroll", function() {
 
 	
 
+	
+	
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	});
