@@ -135,7 +135,7 @@ Scroll.addListener((s) => {
 	  
 	  console.log("Iframe" + i + " top position:" + $(tileContainer).position().top)
     
-    if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
+    if ((isVisibleChecker == true) && (visibilityCheckers[i] < 1)) {
       refreshIframe();
 	  visibilityCheckers[i] = 1;
 	  console.log("-------------------------------------------------------- Iframe " + i + " has been reloaded ---------------------------------------------------")
@@ -146,7 +146,7 @@ Scroll.addListener((s) => {
 	  
 	 
 	  
-	  if ($(tileContainer).position().top >= pageBottom) {
+	  if (isVisibleChecker == false) {
       
 	  visibilityCheckers[i] = 0;
 	  console.log("iframe " + i +" is not in viewport")
