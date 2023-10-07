@@ -1,11 +1,19 @@
  @import url(https://fonts.googleapis.com/css?family=Rubik);
 
+
+@font-face {
+  font-family: Roobert-Regular;
+  src: url( "fonts/Roobert-Regular.otf");
+}
+
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
 	font-family: Roobert;
 }
+
 
 *::-webkit-scrollbar {
     display: none;
