@@ -25,38 +25,38 @@ lib.ssMetadata = [];
 
 
 
-(lib._1402promotion_01min = function() {
-	this.initialize(img._1402promotion_01min);
+(lib.a1402promotion_01min = function() {
+	this.initialize(img.a1402promotion_01min);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1080,1080);
 
 
-(lib._1402promotion_03min = function() {
-	this.initialize(img._1402promotion_03min);
+(lib.a1402promotion_03min = function() {
+	this.initialize(img.a1402promotion_03min);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1080,1080);
 
 
-(lib._1402promotion_05min = function() {
-	this.initialize(img._1402promotion_05min);
+(lib.a1402promotion_05min = function() {
+	this.initialize(img.a1402promotion_05min);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1080,1080);
 
 
-(lib._1402promotion_11min = function() {
-	this.initialize(img._1402promotion_11min);
+(lib.a1402promotion_11min = function() {
+	this.initialize(img.a1402promotion_11min);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1080,1080);
 
 
-(lib._1402promotion_13min = function() {
-	this.initialize(img._1402promotion_13min);
+(lib.a1402promotion_13min = function() {
+	this.initialize(img.a1402promotion_13min);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1080,1080);
 
 
-(lib._1402promotion_15min = function() {
-	this.initialize(img._1402promotion_15min);
+(lib.a1402promotion_15min = function() {
+	this.initialize(img.a1402promotion_15min);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1080,1080);
 
@@ -73,23 +73,23 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib._1402promotion_15min();
-	this.instance.setTransform(925.3,462.65,0.4249,0.4248);
+	this.instance = new lib.a1402promotion_15min();
+	this.instance.setTransform(925.3,462.6,0.4248,0.4248);
 
-	this.instance_1 = new lib._1402promotion_13min();
-	this.instance_1.setTransform(462.65,462.65,0.4249,0.4248);
+	this.instance_1 = new lib.a1402promotion_13min();
+	this.instance_1.setTransform(462.65,462.6,0.4248,0.4248);
 
-	this.instance_2 = new lib._1402promotion_11min();
-	this.instance_2.setTransform(0,462.65,0.4249,0.4248);
+	this.instance_2 = new lib.a1402promotion_11min();
+	this.instance_2.setTransform(0,462.6,0.4248,0.4248);
 
-	this.instance_3 = new lib._1402promotion_05min();
-	this.instance_3.setTransform(925.3,0,0.4249,0.4248);
+	this.instance_3 = new lib.a1402promotion_05min();
+	this.instance_3.setTransform(925.3,0,0.4248,0.4248);
 
-	this.instance_4 = new lib._1402promotion_03min();
-	this.instance_4.setTransform(462.65,0,0.4249,0.4248);
+	this.instance_4 = new lib.a1402promotion_03min();
+	this.instance_4.setTransform(462.65,0,0.4248,0.4248);
 
-	this.instance_5 = new lib._1402promotion_01min();
-	this.instance_5.setTransform(0,0,0.4249,0.4248);
+	this.instance_5 = new lib.a1402promotion_01min();
+	this.instance_5.setTransform(0,0,0.4248,0.4248);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
@@ -252,12 +252,12 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_1402promotion_01min.jpg", id:"_1402promotion_01min"},
-		{src:"images/_1402promotion_03min.jpg", id:"_1402promotion_03min"},
-		{src:"images/_1402promotion_05min.jpg", id:"_1402promotion_05min"},
-		{src:"images/_1402promotion_11min.jpg", id:"_1402promotion_11min"},
-		{src:"images/_1402promotion_13min.jpg", id:"_1402promotion_13min"},
-		{src:"images/_1402promotion_15min.jpg", id:"_1402promotion_15min"}
+		{src:"images/a1402promotion_01min.jpg", id:"a1402promotion_01min"},
+		{src:"images/a1402promotion_03min.jpg", id:"a1402promotion_03min"},
+		{src:"images/a1402promotion_05min.jpg", id:"a1402promotion_05min"},
+		{src:"images/a1402promotion_11min.jpg", id:"a1402promotion_11min"},
+		{src:"images/a1402promotion_13min.jpg", id:"a1402promotion_13min"},
+		{src:"images/a1402promotion_15min.jpg", id:"a1402promotion_15min"}
 	],
 	preloads: []
 };
