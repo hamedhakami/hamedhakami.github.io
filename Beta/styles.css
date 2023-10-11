@@ -257,7 +257,14 @@ word-wrap: break-word;
 }
 
 
-
+.Text-iframe {
+	
+	width: 100%;
+	pointer-events: none;
+	margin-top: 200px;
+	
+	
+}
 
 
 .resume-contents {
