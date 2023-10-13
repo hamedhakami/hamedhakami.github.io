@@ -74,13 +74,13 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.a1402promotion_15min();
-	this.instance.setTransform(925.3,462.55,0.4248,0.4248);
+	this.instance.setTransform(925.3,462.45,0.4248,0.4248);
 
 	this.instance_1 = new lib.a1402promotion_13min();
-	this.instance_1.setTransform(462.65,462.55,0.4248,0.4248);
+	this.instance_1.setTransform(462.65,462.45,0.4248,0.4248);
 
 	this.instance_2 = new lib.a1402promotion_11min();
-	this.instance_2.setTransform(0,462.55,0.4248,0.4248);
+	this.instance_2.setTransform(0,462.45,0.4248,0.4248);
 
 	this.instance_3 = new lib.a1402promotion_05min();
 	this.instance_3.setTransform(925.3,0,0.4248,0.4248);
@@ -96,7 +96,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1384.1,921.4);
+p.nominalBounds = new cjs.Rectangle(0,0,1384.1,921.3);
 
 
 (lib.MovingImages = function(mode,startPosition,loop,reversed) {
@@ -120,7 +120,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1698.4,921.4);
+p.nominalBounds = new cjs.Rectangle(0,0,1698.4,921.3);
 
 
 // stage content:
@@ -242,13 +242,13 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1854.9,921.4);
+p.nominalBounds = new cjs.Rectangle(0,0,1854.9,921.3);
 // library properties:
 lib.properties = {
 	id: 'F4B9FF46F9F8BF45AF45F2A472091E15',
 	width: 1890,
 	height: 922,
-	fps: 30,
+	fps: 35,
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [

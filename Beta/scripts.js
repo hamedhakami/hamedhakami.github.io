@@ -5,9 +5,16 @@ $(document).ready(function(){
 
 
 
+var items = $(".items");
+	for (var x = 0; x < items.length; x++) {
+		
+		
+		
+		
+		
+	
 
-
-const slider = document.querySelector('.items');
+const slider = items[x];
   let isDown = false;
   let startX;
   let scrollLeft;
@@ -69,7 +76,7 @@ const slider = document.querySelector('.items');
   }
 	
 	
-
+}
 	
 	
 	

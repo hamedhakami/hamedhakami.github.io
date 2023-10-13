@@ -66,6 +66,12 @@ html{
 			  width: 218vw;
 			  height: 48vw;
 		  }
+		   .iframe2 {
+			  background-color: #000000;
+			  pointer-events: none;
+			  width: 363vw;
+			  height: 48vw;
+		  }
         @media screen and (max-width: 500px) {
           .tile-container {
 			  background-color: #000000;
