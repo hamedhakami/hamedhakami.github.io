@@ -144,7 +144,7 @@ Scroll.addListener((s) => {
    tileEffectObject.src = tileEffectObject.src;
 }
 	  function clearIframe() {
-    tileEffectObject.location = "";
+    tileEffectObject.attr('src','about:blank');
 }
 	  
 	  
