@@ -108,12 +108,8 @@ Scroll.addListener((s) => {
 
 	
 	
-	var tileEffects = $(".tile-effect");
-	var k;
-
-    for (k = 0; k < tileEffects.length; k++) {
-        tileEffects[k].attr('src','about:blank');
-    };
+	
+	
 	
 	
 	
@@ -143,13 +139,6 @@ Scroll.addListener((s) => {
 	  function refreshIframe() {
    tileEffectObject.src = tileEffectObject.src;
 }
-	  function clearIframe() {
-    tileEffectObject.attr('src','about:blank');
-}
-	  
-	  
-	  
-	  
 	  
 	  console.log("Iframe" + i + " top position:" + $(tileContainer).position().top)
     
@@ -167,8 +156,7 @@ Scroll.addListener((s) => {
 	  if (isVisibleChecker == false) {
       
 	  visibilityCheckers[i] = 0;
-	  console.log("iframe " + i +" is not in viewport");
-		  clearIframe();
+	  console.log("iframe " + i +" is not in viewport")
     } else {
       visibilityCheckers[i] = 1;
 		console.log("iframe " + i +" is in viewport, but has not to be reloaded; because it was reloaded once.")
