@@ -112,7 +112,7 @@ Scroll.addListener((s) => {
 	var k;
 
     for (k = 0; k < tileEffects.length; k++) {
-        tileEffects[k].location = "";
+        tileEffects[k].attr('src','about:blank');
     };
 	
 	
