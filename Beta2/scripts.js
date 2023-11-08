@@ -239,7 +239,7 @@ Scroll.addListener((s) => {
 	  
 	 
 	  
-	  if (isVisibleChecker == false) && (visibilityCheckers[i] = 1) {
+	  if (isVisibleChecker == false) {
       
 	  visibilityCheckers[i] = 0;
 		  clearIframe ();
