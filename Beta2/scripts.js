@@ -239,14 +239,14 @@ Scroll.addListener((s) => {
 	  
 	 
 	  
-	  if (isVisibleChecker == false) {
+	  if (isVisibleChecker == false) && (visibilityCheckers[i] = 1) {
       
 	  visibilityCheckers[i] = 0;
 		  clearIframe ();
 	  console.log("iframe " + i +" is not in viewport")
     } else {
       visibilityCheckers[i] = 1;
-		loadIframe();
+		
 		console.log("iframe " + i +" is in viewport, but has not to be reloaded; because it was reloaded once.")
     }
 	  
