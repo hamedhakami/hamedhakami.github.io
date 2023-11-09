@@ -232,18 +232,18 @@ Scroll.addListener((s) => {
 	  visibilityCheckers[i] = 1;
 	  console.log("-------------------------------------------------------- Iframe " + i + " has been reloaded ---------------------------------------------------")
     } else {
-      visibilityCheckers[i] = 0;
+     
 		
 		
     }
 	  
 	 
 	  
-	  if (isVisibleChecker == false) {
+	  if ((isVisibleChecker == false) && (visibilityCheckers[i] == 1)) {
       
 	  visibilityCheckers[i] = 0;
-		  clearIframe ();
-	  console.log("iframe " + i +" is not in viewport")
+	  clearIframe ();
+	  console.log("iframe " + i +" has gone out from the viewport and therefore has been cleared")
     } else {
       visibilityCheckers[i] = 1;
 		
@@ -252,10 +252,15 @@ Scroll.addListener((s) => {
 	  
 	  
 	  
-	
-	}  
 	  
+	  if (isVisibleChecker == false) {
+      
+	  visibilityCheckers[i] = 0;
 	  
+    } else {
+     };  
+	  
+  };
 	  
 	  var tags = $(".tag");
 	  
@@ -290,7 +295,7 @@ Scroll.addListener((s) => {
 	  
 	  
 	  
-	  
+  
 	  
 	  
   
