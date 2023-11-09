@@ -14,13 +14,13 @@
 <title>1</title>
 <!-- write your code here -->
 <style>
-  #animation_container {
+  #animation_container, #_preload_div_ {
 	position:absolute;
 	margin:auto;
 	top:0;bottom:0;
   }
 </style>
-<script src="../../../createjs.min.js"></script>
+<script src="libs/1.0.0/createjs.min.js"></script>
 <script src="1.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -49,6 +49,9 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
+	var preloaderDiv = document.getElementById("_preload_div_");
+	preloaderDiv.style.display = 'none';
+	canvas.style.display = 'block';
 	exportRoot = new lib._1();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
@@ -58,7 +61,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'width',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(true,'width',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -67,9 +70,10 @@ function handleComplete(evt,comp) {
 </head>
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:2726px; height:656px">
-		<canvas id="canvas" width="2726" height="656" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:2726px; height:656px; position: absolute; left: 0px; top: 0px; display: block;">
+		<canvas id="canvas" width="2726" height="656" style="position: absolute; display: none; background-color:rgba(0, 0, 0, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:2726px; height:656px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:656px; width: 2726px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>

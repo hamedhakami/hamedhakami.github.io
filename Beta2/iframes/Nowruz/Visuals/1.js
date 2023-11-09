@@ -96,7 +96,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1384.1,921.3);
+p.nominalBounds = new cjs.Rectangle(0,0,1384.1,921.2);
 
 
 (lib.MovingImages = function(mode,startPosition,loop,reversed) {
@@ -120,7 +120,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1698.4,921.3);
+p.nominalBounds = new cjs.Rectangle(0,0,1698.4,921.2);
 
 
 // stage content:
@@ -242,7 +242,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1854.9,921.3);
+p.nominalBounds = new cjs.Rectangle(0,0,1854.9,921.2);
 // library properties:
 lib.properties = {
 	id: 'F4B9FF46F9F8BF45AF45F2A472091E15',
