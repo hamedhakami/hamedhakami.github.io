@@ -192,7 +192,15 @@ Scroll.addListener((s) => {
 		   function() {
                 tileEffectObject.src = "iframes/Charity/Visuals/1.html";
             },
-			 
+			 function() {
+                tileEffectObject.src = "iframes/The Trace of Brightness/Describtions/1.html";
+            },
+		    function() {
+                tileEffectObject.src = "iframes/The Trace of Brightness/Visuals/1.html";
+            },
+		    function() {
+                tileEffectObject.src = "iframes/The Trace of Brightness/Visuals2/1.html";
+            },
 			 
 			 
 			 ]
