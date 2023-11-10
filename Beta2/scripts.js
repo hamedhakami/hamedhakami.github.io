@@ -229,6 +229,21 @@ Scroll.addListener((s) => {
 		    function() {
                 tileEffectObject.src = "iframes/Marhaba/Visuals/1.html";
             },
+		    function() {
+                tileEffectObject.src = "iframes/Taaghche/Describtions/1.html";
+            },
+		    function() {
+                tileEffectObject.src = "iframes/Taaghche/Visuals/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Live Wallpapers 4K/Describtion/1.html";
+            },
+		    function() {
+                tileEffectObject.src = "iframes/Live Wallpapers 4K/Visual/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Live Wallpapers 4K/Visual2/1.html";
+            },
 			 ]
 	  
 	  
