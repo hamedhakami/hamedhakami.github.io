@@ -2,10 +2,9 @@
 
 $(document).ready(function(){
  
-var options = {
-	
-	'alwaysShowTracks': true
-}
+
+
+
 
 
 var items = $(".items");
@@ -85,8 +84,19 @@ const slider = items[x];
 	
 	let Scrollbar = window.Scrollbar;
 	
-Scrollbar.init(document.querySelector('body'));	
+	var options = {
+	'damping': 0.08,
+	'alwaysShowTracks': true,
+		
+}
 	
+Scrollbar.init(document.querySelector('body'), options);
+	
+	
+	
+	
+
+  
 	
 	
 	
@@ -203,6 +213,12 @@ Scroll.addListener((s) => {
             },
 		    function() {
                 tileEffectObject.src = "iframes/The Trace of Brightness/Visuals2/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Derby/Describtions/1.html";
+            },
+		    function() {
+                tileEffectObject.src = "iframes/Derby/Visuals/1.html";
             },
 			 
 			 
