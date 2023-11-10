@@ -2,7 +2,10 @@
 
 $(document).ready(function(){
  
-
+var options = {
+	
+	'alwaysShowTracks': true
+}
 
 
 var items = $(".items");

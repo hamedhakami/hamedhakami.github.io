@@ -254,8 +254,8 @@ word-wrap: break-word;
 	text-indent:0;
 	color: #f2f2f2;
 	
-	text-align:justify;
-  text-justify:inherit;
+	/*text-align:justify;
+  text-justify:inherit;*/
 	
 }
 
