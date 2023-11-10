@@ -220,8 +220,15 @@ Scroll.addListener((s) => {
 		    function() {
                 tileEffectObject.src = "iframes/Derby/Visuals/1.html";
             },
-			 
-			 
+		    function() {
+                tileEffectObject.src = "iframes/Chess/Visuals/1.html";
+            },
+			 function() {
+                tileEffectObject.src = "iframes/Marhaba/Describtions/1.html";
+            },
+		    function() {
+                tileEffectObject.src = "iframes/Marhaba/Visuals/1.html";
+            },
 			 ]
 	  
 	  
