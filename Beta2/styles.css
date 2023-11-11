@@ -110,7 +110,7 @@ html{
 
         .main {
           color: #000000;
-          background-color: white;
+          background-color: black;
           grid-area: main;
           padding: 0;
           overflow-x: scroll;
@@ -148,8 +148,7 @@ html{
 			background-color: #000000;
           display: inline-block;
           background: skyblue;
-          min-height: 48vw;
-          min-width: 218vw;
+          
           margin: 2em 1em;
         }
         @media screen and (max-width: 500px) {
@@ -247,7 +246,7 @@ body {
 .introduction-text {
 	margin-left: 15vw;
 	margin-right: 5vw;
-	font-size: 46px;
+	font-size: 4.5vh;
 font-family: Roobert-Regular;
 font-weight: 400;
 word-wrap: break-word;
@@ -262,7 +261,7 @@ word-wrap: break-word;
 .introduction-text-title{
 	margin-left: 15vw;
 	margin-right: 5vw;
-	font-size: 46px;
+	font-size: 4.5vh;
 font-family: Roobert-Regular;
 font-weight: 400;
 word-wrap: break-word;
@@ -291,7 +290,7 @@ word-wrap: break-word;
 .resume-contents {
 	
 	margin-right: 15vw;
-	font-size: 19px;
+	font-size: 1.9vh;
 font-family: Roobert-Regular;
 font-weight: 400;
 word-wrap: break-word;

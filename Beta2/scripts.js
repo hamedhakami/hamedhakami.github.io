@@ -244,6 +244,12 @@ Scroll.addListener((s) => {
 		   function() {
                 tileEffectObject.src = "iframes/Live Wallpapers 4K/Visual2/1.html";
             },
+		   function() {
+                tileEffectObject.src = "iframes/Yalda99/Describtion/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Yalda99/Visual/slider.html";
+            },
 			 ]
 	  
 	  
