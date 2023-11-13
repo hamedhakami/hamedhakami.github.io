@@ -151,12 +151,7 @@ html{
           
           margin: 2em 1em;
         }
-        @media screen and (max-width: 500px) {
-          .item {
-            min-height: 200px;
-            min-width: 200px;
-          }
-        }
+     
       
       a {
         display: block;
@@ -306,13 +301,7 @@ word-wrap: break-word;
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
+
 
 
 
