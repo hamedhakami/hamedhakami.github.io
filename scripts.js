@@ -253,6 +253,18 @@ Scroll.addListener((s) => {
 		   function() {
                 tileEffectObject.src = "iframes/Puzzle/Visuals/1.html";
             },
+		   function() {
+                tileEffectObject.src = "iframes/Sibche Design System/Describtion/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Sibche Design System/Visuals/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Sibche Social Media Contents/Describtion/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Sibche Social Media Contents/Visual/1.html";
+            },
 			 ]
 	  
 	  
