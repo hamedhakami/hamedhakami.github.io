@@ -5,8 +5,6 @@ $(document).ready(function(){
 
 
 
-
-
 var items = $(".items");
 	for (var x = 0; x < items.length; x++) {
 		
@@ -92,6 +90,11 @@ const slider = items[x];
 	
 Scrollbar.init(document.querySelector('body'), options);
 	
+	function ScrollToAboutMe () {
+	Scrollbar.addMomentum(0, 100);
+		
+	};
+	
 	
 	
 	
@@ -130,9 +133,152 @@ Scroll.addListener((s) => {
 	Scroll.addListener((s) => {
 		
 		
+	  
+	  
+	  
+	  
+  
+	  
+	  
+  
+});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	
+	
+	
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tileContainers = $(".tile-container");
+  var tileEffects = $(".tile-effect");
+  for (var i = 0; i < tileContainers.length; i++) {
+	  
+	  var tileContainer = tileContainers[i];
+	  var tileEffectObject = tileEffects[i];
+	  
+	  function refreshIframe() {
+   tileEffectObject.src = tileEffectObject.src;
+}
+	  
+	  
+    
+    if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
+      refreshIframe();
+	  visibilityCheckers[i] = 1;
+	  console.log("----------------------reload-iframe---------------------------------------")
+    } else {
+      visibilityCheckers[i] = 0;
+		
+    }
+	  
+	 
+	  
+	  if ($(tileContainer).position().top >= pageBottom) {
+      
+	  visibilityCheckers[i] = 0;
+	  console.log("iframe is not in viewport")
+    } else {
+      visibilityCheckers[i] = 1;
+		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
+    }
+	  
+	  
+	  
+	    
+  }
+});
+
+
+
+	
+
+	
+	
+	*/
+	
+	
+	
+	
+	// Set up the throttler 
+const throttle = (fn, delay) => { 
+  // Capture the current time 
+  let time = Date.now(); 
+ 
+  // Here's our logic 
+  return () => { 
+    if((time + delay - Date.now()) <= 0) { 
+      // Run the function we've passed to our throttler, 
+      // and reset the `time` variable (so we can check again). 
+      fn(); 
+      time = Date.now(); 
+    } 
+  } 
+} 
+ 
+// Here's a dummy function that we want to throttle 
+function runOnScroll(){ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 			 
 			 
-  var pageTop = s.offset.y;
+  var pageTop = Scroll.offset.y;
   var pageBottom = pageTop + $(window).height();
   var tileContainers = $(".tile-container");
   var tileEffects = $(".tile-effect");
@@ -265,6 +411,15 @@ Scroll.addListener((s) => {
 		   function() {
                 tileEffectObject.src = "iframes/Sibche Social Media Contents/Visual/1.html";
             },
+		   function() {
+                tileEffectObject.src = "iframes/Sibche HTML Ads/Describtion/1.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Sibche HTML Ads/sibche1401/wheel.html";
+            },
+		   function() {
+                tileEffectObject.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
+            },
 			 ]
 	  
 	  
@@ -360,16 +515,7 @@ Scroll.addListener((s) => {
     } else {
       $(tag).removeClass("visible");
     }
-  }
-	  
-	  
-	  
-	  
-  
-	  
-	  
-  
-});
+  };
 	
 	
 	
@@ -388,100 +534,21 @@ Scroll.addListener((s) => {
 	
 	
 	
+  console.log('onscroll function fired.'); 
+} 
+ 
+// We can use this like so: 
+Scroll.addListener(throttle(runOnScroll, 250)); 
+// This will run `runOnScroll` at most once per second. 
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	
-	
-	
-$(document).on("scroll", function() {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tileContainers = $(".tile-container");
-  var tileEffects = $(".tile-effect");
-  for (var i = 0; i < tileContainers.length; i++) {
-	  
-	  var tileContainer = tileContainers[i];
-	  var tileEffectObject = tileEffects[i];
-	  
-	  function refreshIframe() {
-   tileEffectObject.src = tileEffectObject.src;
-}
-	  
-	  
-    
-    if (($(tileContainer).position().top < pageBottom) && (visibilityCheckers[i] < 1)) {
-      refreshIframe();
-	  visibilityCheckers[i] = 1;
-	  console.log("----------------------reload-iframe---------------------------------------")
-    } else {
-      visibilityCheckers[i] = 0;
-		
-    }
-	  
-	 
-	  
-	  if ($(tileContainer).position().top >= pageBottom) {
-      
-	  visibilityCheckers[i] = 0;
-	  console.log("iframe is not in viewport")
-    } else {
-      visibilityCheckers[i] = 1;
-		console.log("iframe is in viewport, but has not to reload; because it was reloaded once.")
-    }
-	  
-	  
-	  
-	    
-  }
-});
-
-
-
 	
 
 	
 	
-	*/
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	
@@ -492,6 +559,7 @@ $(document).on("scroll", function() {
 	
 	
 	});
+	
 	
 	
 	
