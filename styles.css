@@ -1,363 +1,473 @@
- @import url(https://fonts.googleapis.com/css?family=Rubik);
-
-
 @font-face {
-  font-family: Roobert-Regular;
-  src: url( "fonts/Roobert-Regular.otf");
+    font-family: Roobert-Regular;
+    src: url("fonts/Roobert-Regular.otf");
 }
-
-
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-	font-family: Roobert;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Roobert;
+    box-sizing: border-box;
 }
-
-
 *::-webkit-scrollbar {
     display: none;
 }
 * {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
-      body,
-      html {
-        background-color: #000000;
-        text-align: center;
-        background: #efefef;
-        font-family: Helvetica, sans-serif;
-        margin: 0;
-      }
-
-html{
-    scroll-behavior:smooth;
-}
-.tag {
-  opacity: 0;
-  transition: all 2.5s;
-}
-
-.tag.visible {
-  opacity: 1;
-}
-
-
-
-      .tile-container {
-        background-color: #000000;
-        font-family: 'Rubik', sans-serif;
-      }
-
-      @supports (display: grid) {
-        .tile-container {
-			overflow: 
-			background-color: #000000;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: auto 1fr auto;
-          grid-template-areas: "header header header" "title title footer" "main main main";
-        }
-		  .iframe1 {
-			  background-color: #000000;
-			  pointer-events: none;
-			  width: 100vw;
-			  height: 48vw;
-		  }
-		   .iframe2 {
-			  background-color: #000000;
-			  pointer-events: none;
-			  width: 363vw;
-			  height: 48vw;
-		  }
-		   .iframe3 {
-			  background-color: #000000;
-			  pointer-events: none;
-			  width: 143vw;
-			  height: 48vw;
-		  }
-		  .iframe4 {
-			  background-color: #000000;
-			  pointer-events: none;
-			  width: 290vw;
-			  height: 38vw;
-		  }
-        @media screen and (max-width: 500px) {
-          .tile-container {
-			  background-color: #000000;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.3fr 1fr auto 1fr;
-            grid-template-areas: "header" "title" "main" "footer";
-          }
-        }
-
-        .grid-item {
-          background-color: #000000;
-          padding: 3.5em 1em;
-          font-size: 1em;
-          font-weight: 700;
-        }
-
-        .header {
-          background-color: #000000;
-          grid-area: header;
-          padding: 1em;
-        }
-
-       
-
-        .main {
-          color: #000000;
-          background-color: black;
-          grid-area: main;
-          padding: 0;
-          overflow-x: scroll;
-          overflow-y: hidden;
-        }
-
-        .footer {
-          background-color: #000000;
-          grid-area: footer;
-          padding: 0.6em;
-        }
-
-        .items {
-			background-color: #000000;
-          position: relative;
-          width: 100%;
-          overflow-x:hidden;
-          overflow-y: hidden;
-          white-space: nowrap;
-          transition: all 0.2s;
-          transform: scale(1);
-          will-change: transform;
-          user-select: none;
-          cursor: pointer;
-        }
-
-        .items.active {
-          background-color: #000000;
-          cursor: grabbing;
-          cursor: -webkit-grabbing;
-          transform: scale(1.02);
-        }
-
-        .item {
-			background-color: #000000;
-          display: inline-block;
-          background: skyblue;
-          
-          margin: 2em 1em;
-        }
-     
-		  .regular_flex_container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-right: auto;
-			margin-left: auto;
-			width: 99vw;
-			height: 60vh;
-		}
-		
-      
-      a {
-        display: block;
-        color: #000000;
-        text-decoration: underline;
-        margin: 1em auto;
-      }
-      a:hover {
-        cursor: pointer;
-      }
-
-      p {
-        text-align: left;
-        text-indent: 20px;
-        font-weight: 100;
-      }
-
-      i {
-        background-color: #000000;
-      }
-      
-      .credit, .credit a {
-        color:#000000;
-        line-height: 100%;
-        display: inline-block;
-        font-size:12px;
-      }
-
-.intro-text {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 0;
-	margin-right: 0;
-	padding: 0;
-	border: 0;
-	width: 100vw;
-	height: 100vh;
-}
-
-.arrow {
-	
-	position: absolute;
-	bottom: 10vh; 
-	left: 70vw;
-	z-index: 1;
-	
-}
-
-* {
-  box-sizing: border-box;
+body, html {
+    background-color: #000000;
+    text-align: center;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
-  margin-top: 10vw;
-}
-
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-  height: auto; /* Should be removed. Only for demonstration */
-}
-
-/* Left and right column */
-.column.right {
-   -webkit-flex: 2;
-   -ms-flex: 2;
-   flex: 2;
-}
-
-/* Middle column */
-.column.left {
-	position: relative;
-	margin-left: 5vw;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.introduction-text {
-	margin-left: 15vw;
-	margin-right: 5vw;
-	font-size: 4vh;
-font-family: Roobert-Regular;
-font-weight: 400;
-word-wrap: break-word;
-	text-indent:0;
-	color: #f2f2f2;
-	
-	text-align:justify;
-  text-justify:inherit;
+	background-color: #000000;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100vw;
+	height: 100vh;
 	
 }
-
-.introduction-text-title{
-	margin-left: 15vw;
-	margin-right: 5vw;
-	font-size: 4.5vh;
-font-family: Roobert-Regular;
-font-weight: 400;
-word-wrap: break-word;
-	text-indent:0;
-	color: rgba(255,255,255,0.60)
+.tag {
+    opacity: 0;
+    transition: all 2.5s;
+}
+.tag.visible {
+    opacity: 1;
 }
 
 
-.social-media-icon {
-	
-	cursor: pointer;
-	
-}
-
-
-.Text-iframe {
-	
-	width: 99vw !important;
-	height: 50vh !important;
-	pointer-events: none;
-	margin-top: 200px;
+.intro-text {
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
 	overflow: hidden;
-	
+	position: relative;
+}
+
+
+
+
+
+.text-container {
+	display: block;
+	margin: 0 auto 0;
+}
+
+
+
+
+
+.iframe-intro {
+    background-color: #000000;
+    pointer-events: none;
+    height: 99vh;
+	width: 96%;
+	aspect-ratio: 1900 / 1026;
+	margin: 0 auto 0;
+}
+.Text-iframe {
+    height: 45vh;
+    aspect-ratio: 1920 / 455;
+    pointer-events: none;
+    margin: 0 auto 2vh;
+    overflow: hidden;
+}
+
+
+
+
+
+.Nowruz-iframe {
+
+    pointer-events: none;
+    height: 90vh;
+	aspect-ratio: 1384 / 922;
+}
+
+.Nowruz-slider-iframe {
+    pointer-events: none;
+    height: 65vh;
+	aspect-ratio: 3275 / 656;
+	margin-top: 25vh;
+}
+.Get-your-money-back-iframe {
+    pointer-events: none;
+    height: 85vh;
+	aspect-ratio: 4182 / 922;
+}
+.IranCard-minicampaigns-iframe {
+    pointer-events: none;
+    height: 85vh;
+	aspect-ratio: 6980 / 922;
+}
+.As-vast-as-Iran-iframe {
+    pointer-events: none;
+    height: 85vh;
+	aspect-ratio: 4182 / 922;
+}
+.IranCard-sliders-iframe {
+    pointer-events: none;
+    height: 70vh;
+	aspect-ratio: 5568 / 716;
+}
+
+.Charity-iframe {
+
+    pointer-events: none;
+    height: 90vh;
+	aspect-ratio: 1890 / 922;
+}
+
+.Yalda1401-iframe {
+
+    pointer-events: none;
+    height: 50vh;
+	aspect-ratio: 1655 / 540;
+}
+.Yalda-gifts-iframe {
+
+    pointer-events: none;
+    height: 80vh;
+	aspect-ratio: 1144 / 817;
+	margin-top: 20vh;
+}
+.Derby-iframe {
+
+    pointer-events: none;
+    height: 80vh;
+	aspect-ratio: 1464 / 817;
+}
+.Chess-iframe {
+
+    pointer-events: none;
+    height: 80vh;
+	aspect-ratio: 1405 / 817;
+	margin-top: 20vh;
+}
+.Marhaba-iframe {
+    pointer-events: none;
+    height: 70vh;
+	aspect-ratio: 3825 / 950;
+}
+.Taaghche-iframe {
+    pointer-events: none;
+    height: 80vh;
+	aspect-ratio: 1890 / 817;
+}
+.Live-wallpaper-iframe {
+    pointer-events: none;
+    height: 85vh;
+	aspect-ratio: 4182 / 800;
+}
+.Live-wallpaper-iframe2 {
+    pointer-events: none;
+    height: 90vh;
+	aspect-ratio: 1920 / 922;
+	margin-top: 20vh;
+}
+.Yalda99-iframe {
+
+    pointer-events: none;
+	width: 100%;
+    height: 80vh;
+}
+.Puzzle-iframe {
+
+    pointer-events: none;
+    height: 85vh;
+	aspect-ratio: 1405 / 817;
+	margin-top: 20vh;
+}
+.Sibche-design-system-iframe {
+
+    pointer-events: none;
+    height: 90vh;
+	aspect-ratio: 1640 / 892;
+}
+.Sibche-social-iframe {
+    pointer-events: none;
+    height: 90vh;
+	aspect-ratio: 3175 / 800;
+}
+
+
+
+
+
+.tile-container {
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #000000;
+}
+
+.items {
+    background-color: #000000;
+    position: relative;
+    margin-top: 2vh;
+	margin-bottom: 2vh;
+	overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(1);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+}
+.items.active {
+    background-color: #000000;
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1.02);
 	
 }
 
+
+
+
+
+
+
+
+
+
+.regular_flex_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 99vw;
+    height: 60vh;
+}
+p {
+    text-align: left;
+    text-indent: 20px;
+    font-weight: 100;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10vh;
+    left: 70vw;
+    z-index: 1;
+	height: 6vh;
+}
+/*
+* {
+  box-sizing: border-box;
+}*/
+.about-me-section {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 18vh;
+	margin-bottom: 30vh;
+}
+
+.column.left {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+.column.right {
+    position: relative;
+    margin-left: 5vw;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.introduction-text {
+    margin-left: 15vw;
+    margin-right: 5vw;
+    font-size: 4vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
+    color: #f2f2f2;
+    text-align: justify;
+    text-justify: inherit;
+}
+.introduction-text-title {
+    margin-left: 15vw;
+    margin-right: 5vw;
+    font-size: 4.5vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
+    color: rgba(255, 255, 255, 0.60)
+}
+.social-media-icon {
+    cursor: pointer;
+}
 
 .resume-contents {
-	
-	margin-right: 15vw;
-	font-size: 1.9vh;
-font-family: Roobert-Regular;
-font-weight: 400;
-word-wrap: break-word;
-	text-indent:0;
-	
+    margin-right: 15vw;
+    font-size: 1.9vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
 }
-
 .social-media-icons {
-	position: absolute;
-	left: 10px;
-		
+    position: absolute;
+    left: 10px;
+}
+.htmlads-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 130vh;
+    height: 30vh;
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+.htmlads-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+.html-ads-iframe {
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    height: 90%;
+    width: 100%;
+}
+.button {
+    width: 100%;
+    height: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 1vh;
+    border-radius: 2px;
 }
 
-		  
-		  .htmlads-section {
-			  
-			  display: flex;
-			  flex-direction: row;
-			  margin-top: 0;
-			  margin-bottom: 0;
-			  width: 130vh;
-			  height: 30vh;
-			  margin-right: 20vw;
-			  margin-left: 20vw;
-		  }
-		  
-		  .htmlads-container {
-			  
-			  display: flex;
-			  flex-direction: column;
-			  margin: auto;
-			  height: 100%;
-			  
-			  
-		  }
-		  
-		    .html-ads-iframe {
-			background-color: black;
-			display: block;
-            margin-left: auto;
-            margin-right: auto;
-            pointer-events: none;
-				height: 90%;
-				width: 100%;
-            
-		  }
-		  
-		  .button{
-			 
-			  
-			  width: 100%;
-			  height: 7%;
-			  margin-left: auto;
-			  margin-right: auto;
-			  margin-bottom: 0;
-			  margin-top: 1vh;
-			  border-radius: 2px;
-		  }
 
 
 
 
 
+
+@media only screen and (max-width: 198vh) {
+	
+
+    .Text-iframe {
+        height: 22.75vw;
+        margin: 0 auto 1.01vw;
+    }
+    .Nowruz-iframe {
+        height: 45.51vw;
+    }
+    .Nowruz-slider-iframe {
+        height: 32.87vw;
+        margin-top: 12.64vw;
+    }
+    .Get-your-money-back-iframe {
+        height: 42.98vw;
+    }
+    .IranCard-minicampaigns-iframe {
+        height: 42.98vw;
+    }
+    .As-vast-as-Iran-iframe {
+        height: 42.98vw;
+    }
+    .IranCard-sliders-iframe {
+        height: 35.4vw;
+    }
+    .Charity-iframe {
+        height: 45.51vw;
+    }
+    .Yalda1401-iframe {
+        height: 25.28vw;
+    }
+    .Yalda-gifts-iframe {
+        height: 40.45vw;
+        margin-top: 10.11vw;
+    }
+    .Derby-iframe {
+        height: 40.45vw;
+    }
+    .Chess-iframe {
+        height: 40.45vw;
+        margin-top: 10.11vw;
+    }
+    .Marhaba-iframe {
+        height: 35.4vw;
+    }
+    .Taaghche-iframe {
+        height: 40.45vw;
+    }
+    .Live-wallpaper-iframe {
+        height: 42.98vw;
+    }
+    .Live-wallpaper-iframe2 {
+        height: 45.51vw;
+        margin-top: 10.11vw;
+    }
+    .Yalda99-iframe {
+        height: 40.45vw;
+    }
+    .Puzzle-iframe {
+        height: 42.98vw;
+        margin-top: 10.11vw;
+    }
+    .Sibche-design-system-iframe {
+        height: 45.51vw;
+    }
+    .Sibche-social-iframe {
+        height: 45.51vw;
+    }
+    .items {
+        margin-top: 1.01vw;
+        margin-bottom: 1.01vw;
+    }
+    .regular_flex_container {
+        height: 30.34vw;
+    }
+    .arrow {
+        bottom: 5.057vw;
+        height: 3.03;
+    }
+    .about-me-section {
+        margin-top: 9.1vw;
+        margin-bottom: 15.17vw;
+    }
+    .introduction-text {
+        font-size: 2.02vw;
+    }
+    .introduction-text-title {
+        font-size: 2.27vw;
+    }
+    .resume-contents {
+        font-size: 0.96vw;
+    }
+    .htmlads-section {
+        width: 65.74vw;
+        height: 15.17vw;
+    }
+    .html-ads-iframe {
+        height: 90%;
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        height: 7%;
+        margin-top: 0.5057vw;
+    }
+}

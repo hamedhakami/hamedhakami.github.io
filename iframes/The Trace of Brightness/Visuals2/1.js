@@ -111,12 +111,12 @@ if (reversed == null) { reversed = false; }
 	// Mask_5 (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	mask.graphics.p("EBh8BUYMAAAiovMA+pAAAMAAACovg");
-	mask.setTransform(1027.725,540);
+	mask.graphics.p("EBEnBUYMAAAiovMA+pAAAMAAACovg");
+	mask.setTransform(839.975,540);
 
 	// Slider_5
 	this.instance = new lib.MovingImages("synched",0,false);
-	this.instance.setTransform(2018.9,460.8,1,1,0,0,0,1391,460.8);
+	this.instance.setTransform(1643.4,460.8,1,1,0,0,0,1391,460.8);
 	this.instance._off = true;
 
 	var maskedShapeInstanceList = [this.instance];
@@ -130,12 +130,12 @@ if (reversed == null) { reversed = false; }
 	// Mask_4 (mask)
 	var mask_1 = new cjs.Shape();
 	mask_1._off = true;
-	mask_1.graphics.p("EBPJBUYMAAAiovMAyUAAAMAAACovg");
-	mask_1.setTransform(828.5,540);
+	mask_1.graphics.p("EAxzBUYMAAAiovMAyVAAAMAAACovg");
+	mask_1.setTransform(640.75,540);
 
 	// Slider_4
 	this.instance_1 = new lib.MovingImages("synched",0,false);
-	this.instance_1.setTransform(2018.9,460.8,1,1,0,0,0,1391,460.8);
+	this.instance_1.setTransform(1643.4,460.8,1,1,0,0,0,1391,460.8);
 	this.instance_1._off = true;
 
 	var maskedShapeInstanceList = [this.instance_1];
@@ -149,12 +149,12 @@ if (reversed == null) { reversed = false; }
 	// Mask_3 (mask)
 	var mask_2 = new cjs.Shape();
 	mask_2._off = true;
-	mask_2.graphics.p("EA2JBUYMAAAiovMAyUAAAMAAACovg");
-	mask_2.setTransform(668.5,540);
+	mask_2.graphics.p("EAY0BUYMAAAiovMAyTAAAMAAACovg");
+	mask_2.setTransform(480.75,540);
 
 	// Slider_3
 	this.instance_2 = new lib.MovingImages("synched",0,false);
-	this.instance_2.setTransform(2018.9,460.8,1,1,0,0,0,1391,460.8);
+	this.instance_2.setTransform(1643.4,460.8,1,1,0,0,0,1391,460.8);
 	this.instance_2._off = true;
 
 	var maskedShapeInstanceList = [this.instance_2];
@@ -168,12 +168,12 @@ if (reversed == null) { reversed = false; }
 	// Mask_2 (mask)
 	var mask_3 = new cjs.Shape();
 	mask_3._off = true;
-	mask_3.graphics.p("EAdJBUYMAAAiovMAyUAAAMAAACovg");
-	mask_3.setTransform(508.5,540);
+	mask_3.graphics.p("EgAMBUYMAAAiovMAyUAAAMAAACovg");
+	mask_3.setTransform(320.75,540);
 
 	// Slider_2
 	this.instance_3 = new lib.MovingImages("synched",0,false);
-	this.instance_3.setTransform(2018.9,460.8,1,1,0,0,0,1391,460.8);
+	this.instance_3.setTransform(1643.4,460.8,1,1,0,0,0,1391,460.8);
 	this.instance_3._off = true;
 
 	var maskedShapeInstanceList = [this.instance_3];
@@ -187,12 +187,12 @@ if (reversed == null) { reversed = false; }
 	// Mask1 (mask)
 	var mask_4 = new cjs.Shape();
 	mask_4._off = true;
-	mask_4.graphics.p("EAEJBUYMAAAiovMAyUAAAMAAACovg");
-	mask_4.setTransform(348.5,540);
+	mask_4.graphics.p("EgZJBUYMAAAiovMAyTAAAMAAACovg");
+	mask_4.setTransform(160.5,540);
 
 	// Slider
 	this.instance_4 = new lib.MovingImages("synched",0,false);
-	this.instance_4.setTransform(2018.9,460.8,1,1,0,0,0,1391,460.8);
+	this.instance_4.setTransform(1643.4,460.8,1,1,0,0,0,1391,460.8);
 	this.instance_4._off = true;
 
 	var maskedShapeInstanceList = [this.instance_4];
@@ -206,11 +206,11 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1832.2,816.8);
+p.nominalBounds = new cjs.Rectangle(0,0,1456.7,816.8);
 // library properties:
 lib.properties = {
 	id: 'F4B9FF46F9F8BF45AF45F2A472091E15',
-	width: 1890,
+	width: 1144,
 	height: 817,
 	fps: 35,
 	color: "#000000",

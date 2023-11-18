@@ -538,7 +538,7 @@ function runOnScroll(){
 } 
  
 // We can use this like so: 
-Scroll.addListener(throttle(runOnScroll, 250)); 
+Scroll.addListener(throttle(runOnScroll, 100)); 
 // This will run `runOnScroll` at most once per second. 
 	
 	
@@ -561,7 +561,18 @@ Scroll.addListener(throttle(runOnScroll, 250));
 	});
 	
 	
-	
+	function refreshIframe1() {
+    var ifr = document.getElementsByName('Sibche_yalda_slider')[0];
+    ifr.src = ifr.src;
+}
+	function refreshIframe2() {
+    var ifr = document.getElementsByName('sibche_html_ads1')[0];
+    ifr.src = ifr.src;
+}
+	function refreshIframe3() {
+    var ifr = document.getElementsByName('sibche_html_ads2')[0];
+    ifr.src = ifr.src;
+}
 	
 	
 	
