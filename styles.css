@@ -100,17 +100,17 @@ body {
 }
 .Get-your-money-back-iframe {
     pointer-events: none;
-    height: 85vh;
+    height: 90vh;
 	aspect-ratio: 4182 / 922;
 }
 .IranCard-minicampaigns-iframe {
     pointer-events: none;
-    height: 85vh;
+    height: 90vh;
 	aspect-ratio: 6980 / 922;
 }
 .As-vast-as-Iran-iframe {
     pointer-events: none;
-    height: 85vh;
+    height: 90vh;
 	aspect-ratio: 4182 / 922;
 }
 .IranCard-sliders-iframe {
@@ -379,13 +379,13 @@ p {
         margin-top: 12.64vw;
     }
     .Get-your-money-back-iframe {
-        height: 42.98vw;
+        height: 45.5vw;
     }
     .IranCard-minicampaigns-iframe {
-        height: 42.98vw;
+        height: 45.5vw;
     }
     .As-vast-as-Iran-iframe {
-        height: 42.98vw;
+        height: 45.5vw;
     }
     .IranCard-sliders-iframe {
         height: 35.4vw;
