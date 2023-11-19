@@ -30,11 +30,11 @@ body {
 	height: 100vh;
 	
 }
-.tag {
+.opacity-effect {
     opacity: 0;
     transition: all 2.5s;
 }
-.tag.visible {
+.opacity-effect.visible {
     opacity: 1;
 }
 
@@ -209,7 +209,7 @@ body {
     background-color: #000000;
 }
 
-.items {
+.grabbing-effect-caousel {
     background-color: #000000;
     position: relative;
     margin-top: 2vh;
@@ -223,7 +223,7 @@ body {
     user-select: none;
     cursor: pointer;
 }
-.items.active {
+.grabbing-effect-caousel.active {
     background-color: #000000;
     cursor: grabbing;
     cursor: -webkit-grabbing;
@@ -433,7 +433,7 @@ p {
     .Sibche-social-iframe {
         height: 45.51vw;
     }
-    .items {
+    .grabbing-effect-caousel {
         margin-top: 1.01vw;
         margin-bottom: 1.01vw;
     }
