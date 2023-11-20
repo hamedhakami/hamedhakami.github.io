@@ -21,14 +21,12 @@ body, html {
     text-align: center;
     scroll-behavior: smooth;
 }
-
 body {
-	background-color: #000000;
-	overflow-x: hidden;
-	overflow-y: auto;
-	width: 100vw;
-	height: 100vh;
-	
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
 }
 .opacity-effect {
     opacity: 0;
@@ -37,8 +35,6 @@ body {
 .opacity-effect.visible {
     opacity: 1;
 }
-
-
 .intro-text {
     display: block;
     flex-wrap: wrap;
@@ -48,30 +44,20 @@ body {
     border: 0;
     width: 100vw;
     height: 100vh;
-	overflow: hidden;
-	position: relative;
+    overflow: hidden;
+    position: relative;
 }
-
-
-
-
-
 .text-container {
-	display: block;
-	margin: 0 auto 0;
+    display: block;
+    margin: 0 auto 0;
 }
-
-
-
-
-
 .iframe-intro {
     background-color: #000000;
     pointer-events: none;
     height: 99vh;
-	width: 96%;
-	aspect-ratio: 1900 / 1026;
-	margin: 0 auto 0;
+    width: 96%;
+    aspect-ratio: 1900 / 1026;
+    margin: 0 auto 0;
 }
 .Text-iframe {
     height: 45vh;
@@ -80,141 +66,118 @@ body {
     margin: 0 auto 2vh;
     overflow: hidden;
 }
-
-
-
-
-
 .Nowruz-iframe {
-
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 1384 / 922;
+    aspect-ratio: 1384 / 922;
 }
-
 .Nowruz-slider-iframe {
     pointer-events: none;
     height: 65vh;
-	aspect-ratio: 3275 / 656;
-	margin-top: 25vh;
+    aspect-ratio: 3275 / 656;
+    margin-top: 25vh;
 }
 .Get-your-money-back-iframe {
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 4182 / 922;
+    aspect-ratio: 4182 / 922;
 }
 .IranCard-minicampaigns-iframe {
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 6980 / 922;
+    aspect-ratio: 6980 / 922;
 }
 .As-vast-as-Iran-iframe {
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 4182 / 922;
+    aspect-ratio: 4182 / 922;
 }
 .IranCard-sliders-iframe {
     pointer-events: none;
     height: 70vh;
-	aspect-ratio: 5568 / 716;
+    aspect-ratio: 5568 / 716;
 }
-
 .Charity-iframe {
-
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 1890 / 922;
+    aspect-ratio: 1890 / 922;
 }
-
 .Yalda1401-iframe {
-
     pointer-events: none;
     height: 50vh;
-	aspect-ratio: 1655 / 540;
+    aspect-ratio: 1655 / 540;
 }
 .Yalda-gifts-iframe {
-
     pointer-events: none;
     height: 80vh;
-	aspect-ratio: 1144 / 817;
-	margin-top: 20vh;
+    aspect-ratio: 1144 / 817;
+    margin-top: 20vh;
 }
 .Derby-iframe {
-
     pointer-events: none;
     height: 80vh;
-	aspect-ratio: 1464 / 817;
+    aspect-ratio: 1464 / 817;
 }
 .Chess-iframe {
-
     pointer-events: none;
     height: 80vh;
-	aspect-ratio: 1405 / 817;
-	margin-top: 20vh;
+    aspect-ratio: 1405 / 817;
+    margin-top: 20vh;
 }
 .Marhaba-iframe {
     pointer-events: none;
     height: 70vh;
-	aspect-ratio: 3825 / 950;
+    aspect-ratio: 3825 / 950;
 }
 .Taaghche-iframe {
     pointer-events: none;
     height: 80vh;
-	aspect-ratio: 1890 / 817;
+    aspect-ratio: 1890 / 817;
 }
 .Live-wallpaper-iframe {
     pointer-events: none;
     height: 85vh;
-	aspect-ratio: 4182 / 800;
+    aspect-ratio: 4182 / 800;
 }
 .Live-wallpaper-iframe2 {
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 1920 / 922;
-	margin-top: 20vh;
+    aspect-ratio: 1920 / 922;
+    margin-top: 20vh;
 }
 .Yalda99-iframe {
-
     pointer-events: none;
-	width: 100%;
+    width: 100%;
     height: 80vh;
 }
 .Puzzle-iframe {
-
     pointer-events: none;
     height: 85vh;
-	aspect-ratio: 1405 / 817;
-	margin-top: 20vh;
+    aspect-ratio: 1405 / 817;
+    margin-top: 20vh;
 }
 .Sibche-design-system-iframe {
-
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 1640 / 892;
+    aspect-ratio: 1640 / 892;
 }
 .Sibche-social-iframe {
     pointer-events: none;
     height: 90vh;
-	aspect-ratio: 3175 / 800;
+    aspect-ratio: 3175 / 800;
 }
-
-
-
-
-
-.tile-container {
+.html-container {
     padding: 0;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #000000;
 }
-
 .grabbing-effect-caousel {
     background-color: #000000;
     position: relative;
     margin-top: 2vh;
-	margin-bottom: 2vh;
-	overflow-x: hidden;
+    margin-bottom: 2vh;
+    overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
     transition: all 0.2s;
@@ -228,18 +191,7 @@ body {
     cursor: grabbing;
     cursor: -webkit-grabbing;
     transform: scale(1.02);
-	
 }
-
-
-
-
-
-
-
-
-
-
 .regular_flex_container {
     display: flex;
     flex-direction: column;
@@ -254,13 +206,12 @@ p {
     text-indent: 20px;
     font-weight: 100;
 }
-
 .arrow {
     position: absolute;
     bottom: 10vh;
     left: 70vw;
     z-index: 1;
-	height: 6vh;
+    height: 6vh;
 }
 /*
 * {
@@ -270,9 +221,8 @@ p {
     display: -webkit-flex;
     display: flex;
     margin-top: 18vh;
-	margin-bottom: 30vh;
+    margin-bottom: 30vh;
 }
-
 .column.left {
     -webkit-flex: 2;
     -ms-flex: 2;
@@ -310,7 +260,6 @@ p {
 .social-media-icon {
     cursor: pointer;
 }
-
 .resume-contents {
     margin-right: 15vw;
     font-size: 1.9vh;
@@ -357,16 +306,7 @@ p {
     margin-top: 1vh;
     border-radius: 2px;
 }
-
-
-
-
-
-
-
 @media only screen and (max-width: 198vh) {
-	
-
     .Text-iframe {
         height: 22.75vw;
         margin: 0 auto 1.01vw;
