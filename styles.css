@@ -172,6 +172,11 @@ body {
     overflow-y: hidden;
     background-color: #000000;
 }
+.Logos-iframe {
+    pointer-events: none;
+    height: 70vh;
+    aspect-ratio: 4800 / 950;
+}
 .grabbing-effect-caousel {
     background-color: #000000;
     position: relative;
@@ -411,4 +416,7 @@ p {
         height: 7%;
         margin-top: 0.5057vw;
     }
+	.Logos-iframe {
+    height: 35.4vw;
+}
 }

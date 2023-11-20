@@ -261,6 +261,12 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
                 },
+				function () {
+                    iframeTarget.src = "iframes/Logos/Describtions/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Logos/Visuals/1.html";
+                },
             ]
 
 
