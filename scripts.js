@@ -216,6 +216,9 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Marhaba/Visuals/1.html";
                 },
+				function () {
+                    iframeTarget.src = "iframes/Abank KV/Visuals/1.html";
+                },
                 function () {
                     iframeTarget.src = "iframes/Taaghche/Describtions/1.html";
                 },
@@ -364,3 +367,5 @@ function refreshIframe3() {
     var ifr = document.getElementsByName('sibche_html_ads2')[0];
     ifr.src = ifr.src;
 }
+
+var parentWidth = window.innerWidth;

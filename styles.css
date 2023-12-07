@@ -129,6 +129,12 @@ body {
     height: 70vh;
     aspect-ratio: 3825 / 950;
 }
+.Abank-iframe {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 1405 / 817;
+    margin-top: 20vh;
+}
 .Taaghche-iframe {
     pointer-events: none;
     height: 80vh;
@@ -355,6 +361,10 @@ p {
     }
     .Marhaba-iframe {
         height: 35.4vw;
+    }
+	.Abank-iframe {
+        height: 42.98vw;
+        margin-top: 10.11vw;
     }
     .Taaghche-iframe {
         height: 40.45vw;

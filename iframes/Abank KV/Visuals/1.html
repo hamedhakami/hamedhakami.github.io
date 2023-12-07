@@ -12,6 +12,7 @@
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>1</title>
+<!-- write your code here -->
 <style>
 	*::-webkit-scrollbar {
     display: none;
@@ -20,7 +21,13 @@
   -ms-overflow-style: none;  
   scrollbar-width: none;  
 }
-	</style><script src="../../../createjs.min.js"></script>
+  #animation_container, #_preload_div_ {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+  }
+</style>
+<script src="../../../createjs.min.js"></script>
 <script src="1.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -61,7 +68,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'height',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(true,'both',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -69,15 +76,11 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:4182px; height:800px">
-		<canvas id="canvas" width="4182" height="800" style="position: absolute; display: none; background-color:rgba(0, 0, 0, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:4182px; height:800px; position: absolute; left: 0px; top: 0px; display: none;">
+	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:1204px; height:817px">
+		<canvas id="canvas" width="1204" height="817" style="position: absolute; display: none; background-color:rgba(0, 0, 0, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1204px; height:817px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:100vh; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
-	<script>
-			const { parentWidth } = top;
-	document.getElementById('_preload_div_').style.width = parentWidth+"px";
-	</script>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:100vh; width: 100vw; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
