@@ -1,0 +1,104 @@
+.main-wrapper{
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+     flex-direction: column;
+    gap: 200px;
+}
+.main-text{
+    color: white;
+    font-size: 30px;
+    font-family: Roobert;
+}
+.text-white{
+    color: white;
+}
+
+.logo-wrapper p{
+    font-size: 50px;
+    text-align: justify;
+}
+
+.logo-wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-section{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.active{
+    color: #F2F2F2;!important;
+    opacity: 60%;!important;
+}
+
+.about-section{
+    min-height: 1200px;
+}
+.about-detail{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about-detail-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.section{
+    /*min-height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.fade-in {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.gap-2{
+    gap: 2em;
+}
+
+.text-gray{
+    color: #F2F2F2;
+    opacity: 60%;
+}
+
+.text-dark{
+    color: #7B7B7B;
+}
