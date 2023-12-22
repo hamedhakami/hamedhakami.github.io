@@ -1,8 +1,6 @@
 .main-wrapper{
-    max-width: 700px;
+    width: 90%;
     margin: auto;
-<<<<<<< Updated upstream
-=======
     max-width: 700px;
     display: flex;
      flex-direction: column;
@@ -12,17 +10,11 @@
 	width: 90%;
     margin: auto;
     max-width: 600px;
->>>>>>> Stashed changes
     display: flex;
      flex-direction: column;
     gap: 200px;
 	
 	
-}
-.text-wrapper{
-    width: 90%;
-    margin: auto;
-
 }
 .main-text{
     color: white;
@@ -77,8 +69,8 @@
 }
 
 .swiper {
-    width: 100%;
-    height: auto;
+    width: 600px;
+    height: 300px;
 }
 
 .section{
