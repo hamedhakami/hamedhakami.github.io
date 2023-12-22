@@ -1,5 +1,5 @@
 .main-wrapper{
-    width: 90%;
+    width: 94%;
     margin: auto;
     max-width: 700px;
     display: flex;
@@ -50,9 +50,9 @@
 }
 
 .active{
-    color: #FFFFFF !important;
+    color: #F2F2F2 !important;
     opacity: 100% !important;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .about-section{
