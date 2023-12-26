@@ -188,7 +188,7 @@ body {
     position: relative;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    overflow-x: hidden;
+    overflow-x:scroll;
     overflow-y: hidden;
     white-space: nowrap;
     transition: all 0.2s;
