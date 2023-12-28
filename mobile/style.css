@@ -169,8 +169,8 @@ border: 0;
 			padding: 0px;
 			border: 0px;
 			width: 100vw;
-		    height: auto;
-			margin-bottom: 30vw;
+		   
+			margin-bottom: 5vw;
 			margin-left: 0px;
 			margin-right: 0px;
 	}
@@ -179,7 +179,7 @@ border: 0;
 			flex-direction: column;
 			align-items: center;
 			width: 100vw;
-			height: 100vh;
+			
 			scroll-snap-align: start;
 			margin-left: auto;
 			margin-right: auto;
@@ -234,14 +234,14 @@ border: 0;
 .swipe {
 			font-family: Roobert-Regular;
 			width: 90%;
-			font-size: 30px;
+			font-size: 4vw;
 			color: #F2F2F2;
 			display: block;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 3vh;
 			margin-top: 3vw;
-			text-align: left;
+			text-align: center;
 		}
 .rotate90 {
     -webkit-transform: rotate(270deg);
