@@ -153,8 +153,17 @@ border: 0;
     color: #7B7B7B;
 }
 
-
-
+.social-media-icon { 
+	width: 5vw;
+	margin-left: 3vw;
+   
+}
+.contact-container {
+	
+	display: flex;
+	flex-direction: row;
+	margin-top: 7vw;
+}
 
 
 
@@ -231,6 +240,9 @@ border: 0;
 			width: 100vw;
 	        border-radius: 0px 0px 0px 0px;
 	}
+.single_80h {border: 0px; padding: 0px; width: 100%; display: block; margin: auto; border-radius: 0px;}
+	
+	.single_70w {border: 0px; padding: 0px; width: 100%; display: block; margin: auto; border-radius: 0px;}
 .swipe {
 			font-family: Roobert-Regular;
 			width: 90%;
