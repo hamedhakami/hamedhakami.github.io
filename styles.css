@@ -270,6 +270,8 @@ p {
 }
 .social-media-icon {
     cursor: pointer;
+	 height: 30px;
+	margin-left: 1vw;
 }
 .resume-contents {
     margin-right: 15vw;
@@ -282,6 +284,8 @@ p {
 .social-media-icons {
     position: absolute;
     left: 10px;
+	display: flex;
+	flex-direction: row;
 }
 .htmlads-section {
     display: flex;
