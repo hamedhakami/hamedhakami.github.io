@@ -181,7 +181,7 @@ body {
 .Logos-iframe {
     pointer-events: none;
     height: 70vh;
-    aspect-ratio: 4800 / 950;
+    aspect-ratio: 5764 / 950;
 }
 .grabbing-effect-caousel {
     background-color: #000000;
@@ -322,6 +322,7 @@ p {
     border-radius: 2px;
 	cursor: pointer;
 }
+/*      (x vh / 198) * 100 = y vw     */
 @media only screen and (max-width: 198vh) {
     .Text-iframe {
         height: 22.75vw;

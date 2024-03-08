@@ -70,15 +70,11 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:4800px; height:950px">
-		<canvas id="canvas" width="4800" height="950" style="position: absolute; display: none; background-color:rgba(0, 0, 0, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:4800px; height:950px; position: absolute; left: 0px; top: 0px; display: none;">
+	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:5764px; height:100vh;">
+		<canvas id="canvas" width="5764" height="950" style="position: absolute; display: none; background-color:rgba(0, 0, 0, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:5764px; height:950px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:100vh; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
-	<script>
-			const { parentWidth } = top;
-	document.getElementById('_preload_div_').style.width = parentWidth+"px";
-	</script>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:950px; width: 5764px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
