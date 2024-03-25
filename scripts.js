@@ -144,7 +144,7 @@ $(document).ready(function () {
 			var iframeBlowTarget = iframes[i+1];
 			var iframe2BlowTarget = iframes[i+2];
 			var iframe3BlowTarget = iframes[i+3];
-			var iframe3BlowTarget = iframes[i+4];
+			var iframe4BlowTarget = iframes[i+4];
             var scrollContainers = $(".scroll-container");
             var mainScrollContainer = scrollContainers[0];
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
