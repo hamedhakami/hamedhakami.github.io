@@ -144,6 +144,7 @@ $(document).ready(function () {
 			var iframeBlowTarget = iframes[i+1];
 			var iframe2BlowTarget = iframes[i+2];
 			var iframe3BlowTarget = iframes[i+3];
+			var iframe3BlowTarget = iframes[i+4];
             var scrollContainers = $(".scroll-container");
             var mainScrollContainer = scrollContainers[0];
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
@@ -159,60 +160,57 @@ $(document).ready(function () {
                 },
                 function () {
                     iframeTarget.src = "iframes/Nowruz/Describtions/1.html";
+					iframe2BlowTarget.src = "iframes/Nowruz/Sliders/1.html";
+					iframe4BlowTarget.src = "iframes/Get Your Money Back/Visual/1 v6.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Nowruz/Visuals/1.html";
-					iframeBlowTarget.src = "iframes/Nowruz/Sliders/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Nowruz/Sliders/1.html";
-					iframe2BlowTarget.src = "iframes/Get Your Money Back/Visual/1 v6.html";
+					iframe4BlowTarget.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Get Your Money Back/Describtion/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Get Your Money Back/Visual/1 v6.html";
-					iframe2BlowTarget.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
+					iframe4BlowTarget.src = "iframes/As Vast As Iran/Visual/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Mini-Campaigns/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
-					iframe2BlowTarget.src = "iframes/As Vast As Iran/Visual/1.html";
+					iframe4BlowTarget.src = "iframes/Web Sliders/Visual/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/As Vast As Iran/Describtion/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/As Vast As Iran/Visual/1.html";
-					iframe2BlowTarget.src = "iframes/Web Sliders/Visual/1.html";
+					iframe4BlowTarget.src = "iframes/Charity/Visuals/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Web Sliders/Describtion/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Web Sliders/Visual/1.html";
-					 iframe2BlowTarget.src = "iframes/Charity/Visuals/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Charity/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Charity/Visuals/1.html";
-					iframe2BlowTarget.src = "iframes/The Trace of Brightness/Visuals/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/The Trace of Brightness/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/The Trace of Brightness/Visuals/1.html";
-					iframeBlowTarget.src = "iframes/The Trace of Brightness/Visuals2/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/The Trace of Brightness/Visuals2/1.html";
-					iframe2BlowTarget.src = "iframes/Derby/Visuals/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Derby/Describtions/1.html";
