@@ -141,8 +141,8 @@ $(document).ready(function () {
 
             var iframeContainer = iframeContainers[i];
             var iframeTarget = iframes[i];
-			var GostIframe = iframes[iframes.length - 2];
-			var GostIframe2 = iframes[iframes.length - 1];
+			/*var GostIframe = iframes[iframes.length - 2];
+			var GostIframe2 = iframes[iframes.length - 1];*/
             var scrollContainers = $(".scroll-container");
             var mainScrollContainer = scrollContainers[0];
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
@@ -275,7 +275,7 @@ $(document).ready(function () {
             ]
 			
 			
-			
+			/*
 			  var arrayOfFunction2 = [
 
              
@@ -530,7 +530,7 @@ $(document).ready(function () {
             ]
 			  
 			  
-			  
+			 */ 
 
 
             function refreshIframe() {
@@ -540,8 +540,8 @@ $(document).ready(function () {
             function loadIframe() {
 
                 arrayOfFunction[i]();
-				arrayOfFunction2[i]();
-				arrayOfFunction3[i]();
+			/*	arrayOfFunction2[i]();
+				arrayOfFunction3[i]();  */
             }
 
             function clearIframe() {
