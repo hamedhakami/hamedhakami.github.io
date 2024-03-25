@@ -280,6 +280,7 @@ $(document).ready(function () {
             function loadIframe() {
 
                 arrayOfFunction[i]();
+				arrayOfFunction[i+1]();
             }
 
             function clearIframe() {
