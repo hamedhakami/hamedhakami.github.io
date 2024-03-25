@@ -142,7 +142,7 @@ $(document).ready(function () {
             var iframeContainer = iframeContainers[i];
             var iframeTarget = iframes[i];
 			
-			if (i < (iframes.length - 3)) {
+			/*if (i < (iframes.length - 3)) {
   var GostIframe = iframes[i+3];
 } else {
   var GostIframe = iframes[i];
@@ -154,7 +154,7 @@ $(document).ready(function () {
 } else {
   var GostIframe = iframes[i];
 };
-			
+		*/	
 			
 			
 			
@@ -290,7 +290,7 @@ $(document).ready(function () {
             ]
 			
 			
-			
+			/*
 			  var arrayOfFunction2 = [
 
              
@@ -557,7 +557,7 @@ $(document).ready(function () {
                 },
             ]
 			  
-			  
+			  */
 			 
 
 
@@ -568,8 +568,8 @@ $(document).ready(function () {
             function loadIframe() {
 
                 arrayOfFunction[i]();
-				arrayOfFunction2[i]();
-				arrayOfFunction3[i]();  
+			/*	arrayOfFunction2[i]();
+				arrayOfFunction3[i]();  */
             }
 
             function clearIframe() {
