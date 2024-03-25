@@ -141,8 +141,23 @@ $(document).ready(function () {
 
             var iframeContainer = iframeContainers[i];
             var iframeTarget = iframes[i];
-			/*var GostIframe = iframes[iframes.length - 2];
-			var GostIframe2 = iframes[iframes.length - 1];*/
+			
+			if (i < (iframes.length - 3)) {
+  var GostIframe = iframes[i+3];
+} else {
+  var GostIframe = iframes[i];
+};
+			
+			
+			if (i < (iframes.length - 4)) {
+  var GostIframe2 = iframes[i+4];
+} else {
+  var GostIframe = iframes[i];
+};
+			
+			
+			
+			
             var scrollContainers = $(".scroll-container");
             var mainScrollContainer = scrollContainers[0];
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
@@ -275,16 +290,12 @@ $(document).ready(function () {
             ]
 			
 			
-			/*
+			
 			  var arrayOfFunction2 = [
 
              
-                function () {
-                    GostIframe.src = "iframes/Nowruz/Describtions/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Nowruz/Visuals/1.html";
-                },
+           
+      
                 function () {
                     GostIframe.src = "iframes/Nowruz/Sliders/1.html";
                 },
@@ -399,6 +410,19 @@ $(document).ready(function () {
 				     function () {
                     GostIframe.src = "blank.html";
                 },
+				   function () {
+                    GostIframe2.src = "blank.html";
+                },
+				   function () {
+                    GostIframe2.src = "blank.html";
+                },
+				   function () {
+                    GostIframe2.src = "blank.html";
+                },
+				   function () {
+                    GostIframe2.src = "blank.html";
+                },
+				  
             ]
 			  
 			  
@@ -407,12 +431,7 @@ $(document).ready(function () {
 			  var arrayOfFunction3 = [
 
              
-                function () {
-                    GostIframe2.src = "iframes/Nowruz/Visuals/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Nowruz/Sliders/1.html";
-                },
+   
                 function () {
                     GostIframe2.src = "iframes/Get Your Money Back/Describtion/1.html";
                 },
@@ -527,10 +546,19 @@ $(document).ready(function () {
 				   function () {
                     GostIframe2.src = "blank.html";
                 },
+				   function () {
+                    GostIframe2.src = "blank.html";
+                },
+				   function () {
+                    GostIframe2.src = "blank.html";
+                },
+				   function () {
+                    GostIframe2.src = "blank.html";
+                },
             ]
 			  
 			  
-			 */ 
+			 
 
 
             function refreshIframe() {
@@ -540,8 +568,8 @@ $(document).ready(function () {
             function loadIframe() {
 
                 arrayOfFunction[i]();
-			/*	arrayOfFunction2[i]();
-				arrayOfFunction3[i]();  */
+				arrayOfFunction2[i]();
+				arrayOfFunction3[i]();  
             }
 
             function clearIframe() {
