@@ -130,6 +130,7 @@ $(document).ready(function () {
         var pageBottom = pageTop + $(window).height();
         var iframeContainers = $(".html-container");
         var iframes = $(".html-canvas");
+		var Gost = $(".Gost");
 
         //console.log("Page bottom:" + pageBottom)
         var windowHeight = $(window).height();
@@ -145,7 +146,7 @@ $(document).ready(function () {
 			var iframe2BlowTarget = iframes[i+2];
 			var iframe3BlowTarget = iframes[i+3];
 			var iframe4BlowTarget = iframes[i+4];
-			var GostIframe
+			var GostIframe = Gost[1];
             var scrollContainers = $(".scroll-container");
             var mainScrollContainer = scrollContainers[0];
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
