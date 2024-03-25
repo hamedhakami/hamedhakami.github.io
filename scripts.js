@@ -141,6 +141,7 @@ $(document).ready(function () {
 
             var iframeContainer = iframeContainers[i];
             var iframeTarget = iframes[i];
+			var iframeBlowTarget = iframes[i+2];
             var scrollContainers = $(".scroll-container");
             var mainScrollContainer = scrollContainers[0];
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
@@ -152,6 +153,7 @@ $(document).ready(function () {
 
                 function () {
                     iframeTarget.src = "iframes/Introduction Text/1.html";
+					iframeBlowTarget.src = "iframes/Nowruz/Visuals/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Nowruz/Describtions/1.html";
