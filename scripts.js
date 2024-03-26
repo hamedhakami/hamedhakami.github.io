@@ -290,274 +290,159 @@ $(document).ready(function () {
             ]
 			
 			
-			/*
-			  var arrayOfFunction2 = [
+			
+			
+			
+			var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+			
+			
+			 var arrayOfPreloadFunction = [
 
-             
-           
-      
                 function () {
-                    GostIframe.src = "iframes/Nowruz/Sliders/1.html";
+                   preload("iframes/Nowruz/Visuals/1.html",
+	"iframes/Nowruz/Visuals/1.js",
+    "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
+	"iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg",)
                 },
                 function () {
-                    GostIframe.src = "iframes/Get Your Money Back/Describtion/1.html";
+                    iframeTarget.src = "iframes/Nowruz/Describtions/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Get Your Money Back/Visual/1 v6.html";
+                    iframeTarget.src = "iframes/Nowruz/Visuals/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Mini-Campaigns/Describtions/1.html";
+                    iframeTarget.src = "iframes/Nowruz/Sliders/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
+                    iframeTarget.src = "iframes/Get Your Money Back/Describtion/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/As Vast As Iran/Describtion/1.html";
+                    iframeTarget.src = "iframes/Get Your Money Back/Visual/1 v6.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/As Vast As Iran/Visual/1.html";
+                    iframeTarget.src = "iframes/Mini-Campaigns/Describtions/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Web Sliders/Describtion/1.html";
+                    iframeTarget.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Web Sliders/Visual/1.html";
+                    iframeTarget.src = "iframes/As Vast As Iran/Describtion/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Charity/Describtions/1.html";
+                    iframeTarget.src = "iframes/As Vast As Iran/Visual/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Charity/Visuals/1.html";
+                    iframeTarget.src = "iframes/Web Sliders/Describtion/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/The Trace of Brightness/Describtions/1.html";
+                    iframeTarget.src = "iframes/Web Sliders/Visual/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/The Trace of Brightness/Visuals/1.html";
+                    iframeTarget.src = "iframes/Charity/Describtions/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/The Trace of Brightness/Visuals2/1.html";
+                    iframeTarget.src = "iframes/Charity/Visuals/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Derby/Describtions/1.html";
+                    iframeTarget.src = "iframes/The Trace of Brightness/Describtions/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Derby/Visuals/1.html";
+                    iframeTarget.src = "iframes/The Trace of Brightness/Visuals/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Chess/Visuals/1.html";
+                    iframeTarget.src = "iframes/The Trace of Brightness/Visuals2/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Marhaba/Describtions/1.html";
+                    iframeTarget.src = "iframes/Derby/Describtions/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Marhaba/Visuals/1.html";
-                },
-				function () {
-                    GostIframe.src = "iframes/Abank KV/Visuals/1.html";
+                    iframeTarget.src = "iframes/Derby/Visuals/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Taaghche/Describtions/1.html";
+                    iframeTarget.src = "iframes/Chess/Visuals/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Taaghche/Visuals/1.html";
+                    iframeTarget.src = "iframes/Marhaba/Describtions/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Live Wallpapers 4K/Describtion/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Live Wallpapers 4K/Visual/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Live Wallpapers 4K/Visual2/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Yalda99/Describtion/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Yalda99/Visual/slider.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Puzzle/Visuals/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Sibche Design System/Describtion/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Sibche Design System/Visuals/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Sibche Social Media Contents/Describtion/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Sibche Social Media Contents/Visual/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Sibche HTML Ads/Describtion/1.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Sibche HTML Ads/sibche1401/wheel.html";
-                },
-                function () {
-                    GostIframe.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
+                    iframeTarget.src = "iframes/Marhaba/Visuals/1.html";
                 },
 				function () {
-                    GostIframe.src = "iframes/Logos/Describtions/1.html";
+                    iframeTarget.src = "iframes/Abank KV/Visuals/1.html";
                 },
                 function () {
-                    GostIframe.src = "iframes/Logos/Visuals/1.html";
-                },
-				     function () {
-                    GostIframe.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
-                },
-				  
-            ]
-			  
-			  
-			  
-			  
-			  var arrayOfFunction3 = [
-
-             
-   
-                function () {
-                    GostIframe2.src = "iframes/Get Your Money Back/Describtion/1.html";
+                    iframeTarget.src = "iframes/Taaghche/Describtions/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Get Your Money Back/Visual/1 v6.html";
+                    iframeTarget.src = "iframes/Taaghche/Visuals/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Mini-Campaigns/Describtions/1.html";
+                    iframeTarget.src = "iframes/Live Wallpapers 4K/Describtion/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
+                    iframeTarget.src = "iframes/Live Wallpapers 4K/Visual/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/As Vast As Iran/Describtion/1.html";
+                    iframeTarget.src = "iframes/Live Wallpapers 4K/Visual2/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/As Vast As Iran/Visual/1.html";
+                    iframeTarget.src = "iframes/Yalda99/Describtion/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Web Sliders/Describtion/1.html";
+                    iframeTarget.src = "iframes/Yalda99/Visual/slider.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Web Sliders/Visual/1.html";
+                    iframeTarget.src = "iframes/Puzzle/Visuals/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Charity/Describtions/1.html";
+                    iframeTarget.src = "iframes/Sibche Design System/Describtion/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Charity/Visuals/1.html";
+                    iframeTarget.src = "iframes/Sibche Design System/Visuals/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/The Trace of Brightness/Describtions/1.html";
+                    iframeTarget.src = "iframes/Sibche Social Media Contents/Describtion/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/The Trace of Brightness/Visuals/1.html";
+                    iframeTarget.src = "iframes/Sibche Social Media Contents/Visual/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/The Trace of Brightness/Visuals2/1.html";
+                    iframeTarget.src = "iframes/Sibche HTML Ads/Describtion/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Derby/Describtions/1.html";
+                    iframeTarget.src = "iframes/Sibche HTML Ads/sibche1401/wheel.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Derby/Visuals/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Chess/Visuals/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Marhaba/Describtions/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Marhaba/Visuals/1.html";
+                    iframeTarget.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
                 },
 				function () {
-                    GostIframe2.src = "iframes/Abank KV/Visuals/1.html";
+                    iframeTarget.src = "iframes/Logos/Describtions/1.html";
                 },
                 function () {
-                    GostIframe2.src = "iframes/Taaghche/Describtions/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Taaghche/Visuals/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Live Wallpapers 4K/Describtion/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Live Wallpapers 4K/Visual/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Live Wallpapers 4K/Visual2/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Yalda99/Describtion/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Yalda99/Visual/slider.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Puzzle/Visuals/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Sibche Design System/Describtion/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Sibche Design System/Visuals/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Sibche Social Media Contents/Describtion/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Sibche Social Media Contents/Visual/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Sibche HTML Ads/Describtion/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Sibche HTML Ads/sibche1401/wheel.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
-                },
-				function () {
-                    GostIframe2.src = "iframes/Logos/Describtions/1.html";
-                },
-                function () {
-                    GostIframe2.src = "iframes/Logos/Visuals/1.html";
-                },
-				     function () {
-                    GostIframe2.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
-                },
-				   function () {
-                    GostIframe2.src = "blank.html";
+                    iframeTarget.src = "iframes/Logos/Visuals/1.html";
                 },
             ]
-			  
-			  */
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			 
 
 
@@ -568,8 +453,7 @@ $(document).ready(function () {
             function loadIframe() {
 
                 arrayOfFunction[i]();
-			/*	arrayOfFunction2[i]();
-				arrayOfFunction3[i]();  */
+			    arrayOfPreloadFunction[i]();
             }
 
             function clearIframe() {
