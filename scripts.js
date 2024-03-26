@@ -301,7 +301,7 @@ function preload() {
     }
 }
 			
-			
+			/*
 			 var arrayOfPreloadFunction = [
 
                 function () {
@@ -435,7 +435,7 @@ function preload() {
 			
 			
 			
-			
+			*/
 			
 			
 			
@@ -453,7 +453,7 @@ function preload() {
             function loadIframe() {
 
                 arrayOfFunction[i]();
-			    arrayOfPreloadFunction[i]();
+			/*    arrayOfPreloadFunction[i](); */
             }
 
             function clearIframe() {
