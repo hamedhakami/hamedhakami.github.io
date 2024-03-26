@@ -639,6 +639,35 @@ $(document).ready(function () {
 
     Scroll.addListener(throttle(runOnScroll, 100));
 
+	
+	
+	
+	var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
+	  "iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
+    "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg"
+)
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 });
 
