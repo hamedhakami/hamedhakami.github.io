@@ -141,8 +141,8 @@ $(document).ready(function () {
 
             var iframeContainer = iframeContainers[i];
             var iframeTarget = iframes[i];
-			
-			/*if (i < (iframes.length - 3)) {
+
+            /*if (i < (iframes.length - 3)) {
   var GostIframe = iframes[i+3];
 } else {
   var GostIframe = iframes[i];
@@ -154,10 +154,9 @@ $(document).ready(function () {
 } else {
   var GostIframe = iframes[i];
 };
-		*/	
-			
-			
-			
+		*/
+
+
             var scrollContainers = $(".scroll-container");
             var mainScrollContainer = scrollContainers[0];
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
@@ -233,7 +232,7 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Marhaba/Visuals/1.html";
                 },
-				function () {
+                function () {
                     iframeTarget.src = "iframes/Abank KV/Visuals/1.html";
                 },
                 function () {
@@ -281,193 +280,198 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
                 },
-				function () {
+                function () {
                     iframeTarget.src = "iframes/Logos/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Logos/Visuals/1.html";
                 },
             ]
-			
-			
-			
-			
-			
 
-			
-			
-			 var arrayOfPreloadFunction = [
+
+            var arrayOfPreloadFunction = [
 
                 function () {
-								var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Nowruz/Visuals/1.html",
-	"iframes/Nowruz/Visuals/1.js",
-    "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
-	"iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg",)
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Nowruz/Visuals/1.html",
+                        "iframes/Nowruz/Visuals/1.js",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg", )
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Nowruz/Sliders/1.html",
-	"iframes/Nowruz/Sliders/1.js",
-	"iframes/Nowruz/Sliders/images/Sliders1080v207.jpg",
-	"iframes/Nowruz/Sliders/images/Sliders1080v208.jpg",
-	"iframes/Nowruz/Sliders/images/Sliders1080v209.jpg",
-	"iframes/Nowruz/Sliders/images/Sliders1080v210.jpg",
-	"iframes/Nowruz/Sliders/images/Sliders1080v211.jpg",
-	"iframes/Nowruz/Sliders/images/Sliders1080v37201min.jpg",)
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Nowruz/Sliders/1.html",
+                        "iframes/Nowruz/Sliders/1.js",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v207.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v208.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v209.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v210.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v211.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v37201min.jpg", )
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Get Your Money Back/Visual/1 v6.html",
-	"iframes/Get Your Money Back/Visual/1 v6.js",
-	"iframes/Get Your Money Back/Visual/images/k1.jpg",
-	"iframes/Get Your Money Back/Visual/images/k2.jpg",
-	"iframes/Get Your Money Back/Visual/images/k3.jpg",
-	"iframes/Get Your Money Back/Visual/images/k4.jpg",
-	"iframes/Get Your Money Back/Visual/images/k5.jpg",
-	"iframes/Get Your Money Back/Visual/images/k6.jpg",)
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Get Your Money Back/Visual/1 v6.html",
+                        "iframes/Get Your Money Back/Visual/1 v6.js",
+                        "iframes/Get Your Money Back/Visual/images/k1.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k2.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k3.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k4.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k5.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k6.jpg", )
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Mini-Campaigns/Visual/1 v6.html",
-	"iframes/Mini-Campaigns/Visual/1 v6.js",
-	"iframes/Mini-Campaigns/Visual/images/a2000copymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/FathersDaycopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/Fetrcopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/Flightscopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/Hotelcopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/Merchantscopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/MothersDaycopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/ScalingUpcopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/Scorescopymin.jpg",
-	"iframes/Mini-Campaigns/Visual/images/Treecopymin.jpg",)
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Mini-Campaigns/Visual/1 v6.html",
+                        "iframes/Mini-Campaigns/Visual/1 v6.js",
+                        "iframes/Mini-Campaigns/Visual/images/a2000copymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/FathersDaycopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Fetrcopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Flightscopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Hotelcopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Merchantscopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/MothersDaycopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/ScalingUpcopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Scorescopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Treecopymin.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Get Your Money Back/Describtion/1.html";
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/As Vast As Iran/Visual/1.js",
-	"iframes/As Vast As Iran/Visual/1.html",
-	"iframes/As Vast As Iran/Visual/images/Alborzcopymin.jpg",
-	"iframes/As Vast As Iran/Visual/images/Ardebilcopymin.jpg",
-	"iframes/As Vast As Iran/Visual/images/Boushehrcopymin.jpg",
-	"iframes/As Vast As Iran/Visual/images/Kermancopymin.jpg",
-	"iframes/As Vast As Iran/Visual/images/Semnancopymin.jpg",
-	"iframes/As Vast As Iran/Visual/images/Yasoujcopymin.jpg",)
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/As Vast As Iran/Visual/1.js",
+                        "iframes/As Vast As Iran/Visual/1.html",
+                        "iframes/As Vast As Iran/Visual/images/Alborzcopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Ardebilcopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Boushehrcopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Kermancopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Semnancopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Yasoujcopymin.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Mini-Campaigns/Describtions/1.html";
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Web Sliders/Visual/1.js",
-	"iframes/Web Sliders/Visual/1.html",
-	"iframes/Web Sliders/Visual/images/AboutIranCardv3presentationcopymin.jpg",
-	"iframes/Web Sliders/Visual/images/slider1mockupcopy.jpg",
-	"iframes/Web Sliders/Visual/images/slider2mockupcopy.jpg",
-	"iframes/Web Sliders/Visual/images/slider3mockupcopy.jpg",)
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Web Sliders/Visual/1.js",
+                        "iframes/Web Sliders/Visual/1.html",
+                        "iframes/Web Sliders/Visual/images/AboutIranCardv3presentationcopymin.jpg",
+                        "iframes/Web Sliders/Visual/images/slider1mockupcopy.jpg",
+                        "iframes/Web Sliders/Visual/images/slider2mockupcopy.jpg",
+                        "iframes/Web Sliders/Visual/images/slider3mockupcopy.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/As Vast As Iran/Describtion/1.html";
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload(	"iframes/Charity/Visuals/1.js",
-	"iframes/Charity/Visuals/1.html",
-	"iframes/Charity/Visuals/images/PresentationMockupcopy.jpg",)
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Charity/Visuals/1.js",
+                        "iframes/Charity/Visuals/1.html",
+                        "iframes/Charity/Visuals/images/PresentationMockupcopy.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Web Sliders/Describtion/1.html";
                 },
                 function () {
-var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/The Trace of Brightness/Visuals/1.js",
-	"iframes/The Trace of Brightness/Visuals/1.html",
-	"iframes/The Trace of Brightness/Visuals2/1.js",
-	"iframes/The Trace of Brightness/Visuals2/1.html",
-	"iframes/The Trace of Brightness/Visuals/images/leyoutforpresentationcopy2min.jpg",
-	"iframes/The Trace of Brightness/Visuals2/images/Mockupcopy1080wmin.jpg",
-	"iframes/The Trace of Brightness/Visuals2/images/ShoppingBagMockup2copy1080min.jpg",)                },
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/The Trace of Brightness/Visuals/1.js",
+                        "iframes/The Trace of Brightness/Visuals/1.html",
+                        "iframes/The Trace of Brightness/Visuals2/1.js",
+                        "iframes/The Trace of Brightness/Visuals2/1.html",
+                        "iframes/The Trace of Brightness/Visuals/images/leyoutforpresentationcopy2min.jpg",
+                        "iframes/The Trace of Brightness/Visuals2/images/Mockupcopy1080wmin.jpg",
+                        "iframes/The Trace of Brightness/Visuals2/images/ShoppingBagMockup2copy1080min.jpg", )
+                },
                 function () {
                     iframeTarget.src = "iframes/Charity/Describtions/1.html";
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Derby/Visuals/1.js",
-	"iframes/Derby/Visuals/1.html",
-	"iframes/Derby/Visuals/images/Derbi01min.jpg",
-	"iframes/Derby/Visuals/images/KV2copymin.jpg",) 
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Derby/Visuals/1.js",
+                        "iframes/Derby/Visuals/1.html",
+                        "iframes/Derby/Visuals/images/Derbi01min.jpg",
+                        "iframes/Derby/Visuals/images/KV2copymin.jpg", )
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Chess/Visuals/1.js",
-	"iframes/Chess/Visuals/1.html",
-	"iframes/Chess/Visuals/images/TemplateV2copymin.jpg",) 
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Chess/Visuals/1.js",
+                        "iframes/Chess/Visuals/1.html",
+                        "iframes/Chess/Visuals/images/TemplateV2copymin.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/The Trace of Brightness/Visuals/1.html";
@@ -479,121 +483,127 @@ function preload() {
                     iframeTarget.src = "iframes/Derby/Describtions/1.html";
                 },
                 function () {
-                                 var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Marhaba/Visuals/1.js",
-	"iframes/Marhaba/Visuals/1.html",
-	"iframes/Marhaba/Visuals/images/ezgif-2-3320958a1cv2 (2).gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_0-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_1-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_2-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_3-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_4-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_5-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_6-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_7-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_8-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_9-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_10-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_11-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_12-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_13-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_14-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_15-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_16-min.gif",
-	"iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_17-min.gif",
-	"iframes/Marhaba/Visuals/images/Layoutv401min.jpg",
-	"iframes/Marhaba/Visuals/images/Layoutv402min.jpg",
-	"iframes/Marhaba/Visuals/images/Layoutv403min.jpg",) 
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Marhaba/Visuals/1.js",
+                        "iframes/Marhaba/Visuals/1.html",
+                        "iframes/Marhaba/Visuals/images/ezgif-2-3320958a1cv2 (2).gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_0-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_1-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_2-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_3-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_4-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_5-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_6-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_7-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_8-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_9-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_10-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_11-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_12-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_13-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_14-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_15-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_16-min.gif",
+                        "iframes/Marhaba/Visuals/images/ezgif23320958a1cv22_17-min.gif",
+                        "iframes/Marhaba/Visuals/images/Layoutv401min.jpg",
+                        "iframes/Marhaba/Visuals/images/Layoutv402min.jpg",
+                        "iframes/Marhaba/Visuals/images/Layoutv403min.jpg", )
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Abank KV/Visuals/1.js",
-	"iframes/Abank KV/Visuals/1.html",
-	"iframes/Abank KV/Visuals/images/poster90x90v12forpresentationcopymin.jpg",) 
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Abank KV/Visuals/1.js",
+                        "iframes/Abank KV/Visuals/1.html",
+                        "iframes/Abank KV/Visuals/images/poster90x90v12forpresentationcopymin.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Marhaba/Describtions/1.html";
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Taaghche/Visuals/1.js",
-	"iframes/Taaghche/Visuals/1.html",
-	"iframes/Taaghche/Visuals/images/Bannersresizedforportfolio01.jpg",
-	"iframes/Taaghche/Visuals/images/BestSellersv201.jpg",
-	"iframes/Taaghche/Visuals/images/TaaghcheInfinity01v201.jpg",) 
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Taaghche/Visuals/1.js",
+                        "iframes/Taaghche/Visuals/1.html",
+                        "iframes/Taaghche/Visuals/images/Bannersresizedforportfolio01.jpg",
+                        "iframes/Taaghche/Visuals/images/BestSellersv201.jpg",
+                        "iframes/Taaghche/Visuals/images/TaaghcheInfinity01v201.jpg", )
                 },
-				function () {
+                function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Live Wallpapers 4K/Visual/1.js",
-	"iframes/Live Wallpapers 4K/Visual/1.html",
-	"iframes/Live Wallpapers 4K/Visual2/1.js",
-	"iframes/Live Wallpapers 4K/Visual2/1.html",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots01.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots02.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots03.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots04.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots05.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots06.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots07.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots08.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots11.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots12.jpg",
-	"iframes/Live Wallpapers 4K/Visual/images/Screenshots13.jpg",
-	"iframes/Live Wallpapers 4K/Visual2/images/Presentation1.jpg",) 
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Live Wallpapers 4K/Visual/1.js",
+                        "iframes/Live Wallpapers 4K/Visual/1.html",
+                        "iframes/Live Wallpapers 4K/Visual2/1.js",
+                        "iframes/Live Wallpapers 4K/Visual2/1.html",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots01.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots02.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots03.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots04.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots05.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots06.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots07.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots08.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots11.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots12.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots13.jpg",
+                        "iframes/Live Wallpapers 4K/Visual2/images/Presentation1.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Taaghche/Describtions/1.html";
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Yalda99/Visual/images/Yalda4_atlas_1.png",
-	"iframes/Yalda99/Visual/Yalda4.js",
-	"iframes/Yalda99/Visual/slider.html",) 
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Yalda99/Visual/images/Yalda4_atlas_1.png",
+                        "iframes/Yalda99/Visual/Yalda4.js",
+                        "iframes/Yalda99/Visual/slider.html", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Live Wallpapers 4K/Describtion/1.html";
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Puzzle/Visuals/images/SibcheLinkedin.jpg",
-	"iframes/Puzzle/Visuals/1.js",
-	"iframes/Puzzle/Visuals/1.html",) 
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Puzzle/Visuals/images/SibcheLinkedin.jpg",
+                        "iframes/Puzzle/Visuals/1.js",
+                        "iframes/Puzzle/Visuals/1.html", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Live Wallpapers 4K/Visual2/1.html";
@@ -603,69 +613,73 @@ function preload() {
                 },
                 function () {
                     var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Sibche Design System/Visuals/images/Presentationmin.jpg",
-	"iframes/Sibche Design System/Visuals/1.js",
-	"iframes/Sibche Design System/Visuals/1.html",) 
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Sibche Design System/Visuals/images/Presentationmin.jpg",
+                        "iframes/Sibche Design System/Visuals/1.js",
+                        "iframes/Sibche Design System/Visuals/1.html", )
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Sibche Social Media Contents/Visual/images/All01.jpg",
-	"iframes/Sibche Social Media Contents/Visual/images/All02.jpg",
-	"iframes/Sibche Social Media Contents/Visual/images/All03.jpg",
-	"iframes/Sibche Social Media Contents/Visual/images/Winners01.jpg",
-	"iframes/Sibche Social Media Contents/Visual/images/Winners05.jpg",
-	"iframes/Sibche Social Media Contents/Visual/images/Winners06.jpg",
-	"iframes/Sibche Social Media Contents/Visual/images/Winners07.jpg",) 
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Sibche Social Media Contents/Visual/images/All01.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/All02.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/All03.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners01.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners05.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners06.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners07.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Sibche Design System/Describtion/1.html";
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_1.png",
-	"iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_2.png",
-	"iframes/Sibche HTML Ads/sibche1401/300X300.js",
-	"iframes/Sibche HTML Ads/sibche1401/wheel.html",
-	"iframes/Sibche HTML Ads/sibchehtmlads/images/300X250_atlas_1.png",
-	"iframes/Sibche HTML Ads/sibchehtmlads/300X250.js",
-	"iframes/Sibche HTML Ads/sibchehtmlads/300X250.html",
-	"iframes/Sibche HTML Ads/Banner (for presentation)-01.jpg",) 
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_1.png",
+                        "iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_2.png",
+                        "iframes/Sibche HTML Ads/sibche1401/300X300.js",
+                        "iframes/Sibche HTML Ads/sibche1401/wheel.html",
+                        "iframes/Sibche HTML Ads/sibchehtmlads/images/300X250_atlas_1.png",
+                        "iframes/Sibche HTML Ads/sibchehtmlads/300X250.js",
+                        "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html",
+                        "iframes/Sibche HTML Ads/Banner (for presentation)-01.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Sibche Social Media Contents/Describtion/1.html";
                 },
                 function () {
-                   var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-                   preload("iframes/Logos/Visuals/images/Anabel02min.jpg",
-	"iframes/Logos/Visuals/images/FinalPresentation01min.jpg",
-	"iframes/Logos/Visuals/images/KioosK704min.jpg",
-	"iframes/Logos/Visuals/images/Logo108001min.jpg",
-	"iframes/Logos/Visuals/images/Pelle01.jpg",
-	"iframes/Logos/Visuals/images/ZootLogoFinal01min.jpg",) 
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload("iframes/Logos/Visuals/images/Anabel02min.jpg",
+                        "iframes/Logos/Visuals/images/FinalPresentation01min.jpg",
+                        "iframes/Logos/Visuals/images/KioosK704min.jpg",
+                        "iframes/Logos/Visuals/images/Logo108001min.jpg",
+                        "iframes/Logos/Visuals/images/Pelle01.jpg",
+                        "iframes/Logos/Visuals/images/ZootLogoFinal01min.jpg", )
                 },
                 function () {
                     iframeTarget.src = "iframes/Sibche HTML Ads/Describtion/1.html";
@@ -676,25 +690,13 @@ function preload() {
                 function () {
                     iframeTarget.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
                 },
-				function () {
+                function () {
                     iframeTarget.src = "iframes/Logos/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Logos/Visuals/1.html";
                 },
             ]
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			 
 
 
             function refreshIframe() {
@@ -704,7 +706,7 @@ function preload() {
             function loadIframe() {
 
                 arrayOfFunction[i]();
-			arrayOfPreloadFunction[i]();
+                arrayOfPreloadFunction[i]();
             }
 
             function clearIframe() {
@@ -774,9 +776,8 @@ function preload() {
 
     Scroll.addListener(throttle(runOnScroll, 100));
 
-	
-	
-	/*
+
+    /*
 	var images = [];
 function preload() {
     for (var i = 0; i < arguments.length; i++) {
@@ -946,30 +947,27 @@ preload(
 	
 )
 	
-*/	
-	
-	
-	
-	
-	var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
+*/
+
+
+    var images = [];
+
+    function preload() {
+        for (var i = 0; i < arguments.length; i++) {
+            images[i] = new Image();
+            images[i].src = preload.arguments[i];
+        }
     }
-}
-                   preload("iframes/Nowruz/Visuals/1.html",
-	"iframes/Nowruz/Visuals/1.js",
-    "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
-	"iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
-    "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg",)
-	
-	
-	
-	
+    preload("iframes/Nowruz/Visuals/1.html",
+        "iframes/Nowruz/Visuals/1.js",
+        "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
+        "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
+        "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
+        "iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
+        "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
+        "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg", )
+
+
 });
 
 
