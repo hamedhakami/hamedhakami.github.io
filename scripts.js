@@ -293,18 +293,19 @@ $(document).ready(function () {
 			
 			
 			
-			var images = [];
+
+			
+			
+			 var arrayOfPreloadFunction = [
+
+                function () {
+								var images = [];
 function preload() {
     for (var i = 0; i < arguments.length; i++) {
         images[i] = new Image();
         images[i].src = preload.arguments[i];
     }
 }
-			
-			/*
-			 var arrayOfPreloadFunction = [
-
-                function () {
                    preload("iframes/Nowruz/Visuals/1.html",
 	"iframes/Nowruz/Visuals/1.js",
     "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
@@ -315,25 +316,97 @@ function preload() {
     "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg",)
                 },
                 function () {
-                    iframeTarget.src = "iframes/Nowruz/Describtions/1.html";
+                    var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+                   preload("iframes/Nowruz/Sliders/1.html",
+	"iframes/Nowruz/Sliders/1.js",
+	"iframes/Nowruz/Sliders/images/Sliders1080v207.jpg",
+	"iframes/Nowruz/Sliders/images/Sliders1080v208.jpg",
+	"iframes/Nowruz/Sliders/images/Sliders1080v209.jpg",
+	"iframes/Nowruz/Sliders/images/Sliders1080v210.jpg",
+	"iframes/Nowruz/Sliders/images/Sliders1080v211.jpg",
+	"iframes/Nowruz/Sliders/images/Sliders1080v37201min.jpg",)
                 },
                 function () {
-                    iframeTarget.src = "iframes/Nowruz/Visuals/1.html";
+                    var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+                   preload("iframes/Get Your Money Back/Visual/1 v6.html",
+	"iframes/Get Your Money Back/Visual/1 v6.js",
+	"iframes/Get Your Money Back/Visual/images/k1.jpg",
+	"iframes/Get Your Money Back/Visual/images/k2.jpg",
+	"iframes/Get Your Money Back/Visual/images/k3.jpg",
+	"iframes/Get Your Money Back/Visual/images/k4.jpg",
+	"iframes/Get Your Money Back/Visual/images/k5.jpg",
+	"iframes/Get Your Money Back/Visual/images/k6.jpg",)
                 },
                 function () {
-                    iframeTarget.src = "iframes/Nowruz/Sliders/1.html";
+                   var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+                   preload("iframes/Mini-Campaigns/Visual/1 v6.html",
+	"iframes/Mini-Campaigns/Visual/1 v6.js",
+	"iframes/Mini-Campaigns/Visual/images/a2000copymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/FathersDaycopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/Fetrcopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/Flightscopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/Hotelcopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/Merchantscopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/MothersDaycopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/ScalingUpcopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/Scorescopymin.jpg",
+	"iframes/Mini-Campaigns/Visual/images/Treecopymin.jpg",)
                 },
                 function () {
                     iframeTarget.src = "iframes/Get Your Money Back/Describtion/1.html";
                 },
                 function () {
-                    iframeTarget.src = "iframes/Get Your Money Back/Visual/1 v6.html";
+                   var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+                   preload("iframes/As Vast As Iran/Visual/1.js",
+	"iframes/As Vast As Iran/Visual/1.html",
+	"iframes/As Vast As Iran/Visual/images/Alborzcopymin.jpg",
+	"iframes/As Vast As Iran/Visual/images/Ardebilcopymin.jpg",
+	"iframes/As Vast As Iran/Visual/images/Boushehrcopymin.jpg",
+	"iframes/As Vast As Iran/Visual/images/Kermancopymin.jpg",
+	"iframes/As Vast As Iran/Visual/images/Semnancopymin.jpg",
+	"iframes/As Vast As Iran/Visual/images/Yasoujcopymin.jpg",)
                 },
                 function () {
                     iframeTarget.src = "iframes/Mini-Campaigns/Describtions/1.html";
                 },
                 function () {
-                    iframeTarget.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
+                   var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+                   preload("iframes/Web Sliders/Visual/1.js",
+	"iframes/Web Sliders/Visual/1.html",
+	"iframes/Web Sliders/Visual/images/AboutIranCardv3presentationcopymin.jpg",
+	"iframes/Web Sliders/Visual/images/slider1mockupcopy.jpg",
+	"iframes/Web Sliders/Visual/images/slider2mockupcopy.jpg",
+	"iframes/Web Sliders/Visual/images/slider3mockupcopy.jpg",)
                 },
                 function () {
                     iframeTarget.src = "iframes/As Vast As Iran/Describtion/1.html";
@@ -435,7 +508,7 @@ function preload() {
 			
 			
 			
-			*/
+			
 			
 			
 			
@@ -453,7 +526,7 @@ function preload() {
             function loadIframe() {
 
                 arrayOfFunction[i]();
-			/*    arrayOfPreloadFunction[i](); */
+			arrayOfPreloadFunction[i]();
             }
 
             function clearIframe() {
