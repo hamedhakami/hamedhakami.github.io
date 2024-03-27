@@ -952,9 +952,9 @@ preload(
 	
 	
 	
-	
-	
-
+	arrayOfPreloadFunction[0]();
+	arrayOfPreloadFunction[1]();
+    arrayOfPreloadFunction[2]();
 });
 
 
