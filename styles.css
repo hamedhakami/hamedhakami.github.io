@@ -255,7 +255,7 @@ p {
     word-wrap: break-word;
     text-indent: 0;
     color: #f2f2f2;
-    text-align: justify;
+    text-align: left;
     text-justify: inherit;
 }
 .introduction-text-title {
