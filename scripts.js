@@ -305,7 +305,7 @@ $(document).ready(function () {
                     iframeTarget.src = "iframes/Ziverse Visual Identity/Visual/1.html";
                 },
                 function () {
-                    iframeTarget.src = "iframes/Ziverse Visual Identity/products/1.html";
+                    iframeTarget.src = "iframes/Ziverse Visual Identity/Products/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Ziverse Catalog/Describtion/1.html";
