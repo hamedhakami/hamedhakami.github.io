@@ -25,20 +25,20 @@ lib.ssMetadata = [];
 
 
 
-(lib._01copymin = function() {
-	this.initialize(img._01copymin);
+(lib.Card1 = function() {
+	this.initialize(img.Card1);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
 
 
-(lib._02min = function() {
-	this.initialize(img._02min);
+(lib.Card2 = function() {
+	this.initialize(img.Card2);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
 
 
-(lib._03 = function() {
-	this.initialize(img._03);
+(lib.Card3 = function() {
+	this.initialize(img.Card3);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
 
@@ -55,13 +55,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib._03();
+	this.instance = new lib.Card3();
 	this.instance.setTransform(3290,0,0.8532,0.8532);
 
-	this.instance_1 = new lib._02min();
+	this.instance_1 = new lib.Card2();
 	this.instance_1.setTransform(1645,0,0.8532,0.8532);
 
-	this.instance_2 = new lib._01copymin();
+	this.instance_2 = new lib.Card1();
 	this.instance_2.setTransform(0,0,0.8537,0.8537);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -567,9 +567,9 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_01copymin.jpg", id:"_01copymin"},
-		{src:"images/_02min.jpg", id:"_02min"},
-		{src:"images/_03.jpg", id:"_03"}
+		{src:"images/Card1.jpg", id:"Card1"},
+		{src:"images/Card2.jpg", id:"Card2"},
+		{src:"images/Card3.jpg", id:"Card3"}
 	],
 	preloads: []
 };
