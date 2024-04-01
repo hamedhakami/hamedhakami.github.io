@@ -286,6 +286,43 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Logos/Visuals/1.html";
                 },
+                function () {
+                    iframeTarget.src = "iframes/Tapsi Intercity Service/Describtion/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Tapsi Intercity Service/Visual/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Tapsi BNPL/Describtion/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Tapsi BNPL/Visual/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Visual Identity/Describtion/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Visual Identity/Visual/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Visual Identity/products/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Catalog/Describtion/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Catalog/Visual/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Animated Logo/Descriptions/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Debit Card/Describtion/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Ziverse Debit Card/Visual/1.html";
+                },
+
             ]
 
 
@@ -474,13 +511,13 @@ $(document).ready(function () {
                         "iframes/Chess/Visuals/images/TemplateV2copymin.jpg", )
                 },
                 function () {
-                    iframeTarget.src = "iframes/The Trace of Brightness/Visuals/1.html";
+
                 },
                 function () {
-                    iframeTarget.src = "iframes/The Trace of Brightness/Visuals2/1.html";
+
                 },
                 function () {
-                    iframeTarget.src = "iframes/Derby/Describtions/1.html";
+
                 },
                 function () {
                     var images = [];
@@ -682,19 +719,184 @@ $(document).ready(function () {
                         "iframes/Logos/Visuals/images/ZootLogoFinal01min.jpg", )
                 },
                 function () {
-                    iframeTarget.src = "iframes/Sibche HTML Ads/Describtion/1.html";
+
+                },
+                function () { //html descriptions
+
                 },
                 function () {
-                    iframeTarget.src = "iframes/Sibche HTML Ads/sibche1401/wheel.html";
+
+                    //1st htmlads
                 },
                 function () {
-                    iframeTarget.src = "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html";
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/Tapsi Intercity Service/Visual/images/TicketwithTypoV2copymin.jpg",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_0.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_1.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_2.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_3.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_4.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_5.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_6.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_7.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_8.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_9.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_10.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_11.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_12.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_13.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_14.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_15.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_16.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_17.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_18.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_19.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_20.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_21.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_22.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_23.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_24.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_25.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_26.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 27.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 28.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 29.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 30.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 31.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 32.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 33.gif",
+                        "iframes/Tapsi Intercity Service/Visual/images/2Stepsezgifcomspeed1_ 34.gif",
+                        "iframes/Tapsi Intercity Service/Visual/1.js",
+                        "iframes/Tapsi Intercity Service/Visual/1.html",
+                    )
                 },
                 function () {
-                    iframeTarget.src = "iframes/Logos/Describtions/1.html";
+
                 },
                 function () {
-                    iframeTarget.src = "iframes/Logos/Visuals/1.html";
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/Tapsi BNPL/Visual/images/Flattenwithtypocopymin.jpg",
+                        "iframes/Tapsi BNPL/Visual/images/frame_00_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_01_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_02_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_03_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_04_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_05_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_06_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_07_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_08_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_09_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_10_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_11_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_12_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_13_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_14_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_15_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_16_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL/Visual/images/frame_17_delay-0.52s.gif",
+                        "iframes/Tapsi BNPL\Visual/1.js",
+                        "iframes/Tapsi BNPL/Visual/1.html",
+                    )
+                },
+                function () {
+
+                },
+                function () {
+
+                },
+                function () {
+
+                },
+                function () {
+
+                },
+                function () {
+
+                },
+                function () {
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/Ziverse Visual Identity/Products/images/205min.jpg",
+                        "iframes/Ziverse Visual Identity/Products/1.js",
+                        "iframes/Ziverse Visual Identity/Products/1.html",
+
+                    )
+
+                },
+                function () {
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog01min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog04min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog05min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog06min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog07min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog08min.jpg",
+                        "iframes/Ziverse Catalog/Visual/1.js",
+                        "iframes/Ziverse Catalog/Visual/1.html",
+                    )
+
+                },
+                function () {
+
+                },
+                function () {
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/Ziverse Debit Card/Visual/images/_01copymin.jpg",
+                        "iframes/Ziverse Debit Card/Visual/images/_02min.jpg",
+                        "iframes/Ziverse Debit Card/Visual/images/_03.jpg",
+                        "iframes/Ziverse Debit Card\Visual/1.js",
+                        "iframes/Ziverse Debit Card/Visual/1.html",
+
+                    )
+
+                },
+                function () {
+
+                },
+                function () {
+
+                },
+                function () {
+
                 },
             ]
 
@@ -770,7 +972,7 @@ $(document).ready(function () {
         };
 
 
-        console.log('onscroll function fired.');
+        //console.log('onscroll function fired.');
     }
 
 
@@ -984,6 +1186,140 @@ function refreshIframe2() {
 function refreshIframe3() {
     var ifr = document.getElementsByName('sibche_html_ads2')[0];
     ifr.src = ifr.src;
+}
+
+function requestPassword() {
+
+
+    var password = "HakamiPortfolio2024";
+    (function passcodeprotect() {
+        var passcode = prompt("Enter password");
+        if (passcode !== password) {
+            alert("Incorrect Password");
+        } else {
+
+            let passwordsection =
+                document.getElementById("passwordsection");
+            passwordsection.remove();
+
+
+            document.getElementById("passwordprotectedsection").innerHTML = '<div class="html-container text-container"><iframe class="html-canvas extra-top-margin opacity-effect Text-iframe"src="iframes/Ziverse Visual Identity/Describtion/1.html"></iframe></div><div class=html-container><div class=grabbing-effect-caousel><iframe class="html-canvas opacity-effect Ziverse-Visual-Identity1"src="iframes/Ziverse Visual Identity/Visual/1.html"></iframe></div></div><div class=html-container><div class=grabbing-effect-caousel><iframe class="html-canvas opacity-effect Ziverse-Visual-Identity2"src=blank.html></iframe></div></div><div class="html-container text-container"><iframe class="html-canvas opacity-effect Text-iframe extra-top-margin"src=blank.html></iframe></div><div class=html-container><div class=grabbing-effect-caousel><iframe class="html-canvas opacity-effect Ziverse-Catalog"src=blank.html></iframe></div></div><div class="html-container animated-logo-container"><video autoplay class=animated-logo-video loop muted preload=none><source src="iframes/Ziverse Animated Logo/Video/Comp 2.mp4"type=video/mp4></video><iframe class="html-canvas opacity-effect Text-iframe animated-logo-descriptions"src=blank.html></iframe></div><div class="html-container text-container"><iframe class="html-canvas opacity-effect Text-iframe"src=blank.html></iframe></div><div class=html-container><div class=grabbing-effect-caousel><iframe class="html-canvas opacity-effect Ziverse-debit-card"src=blank.html></iframe></div></div>';
+
+
+            var images = [];
+
+            function preload() {
+                for (var i = 0; i < arguments.length; i++) {
+                    images[i] = new Image();
+                    images[i].src = preload.arguments[i];
+                }
+            }
+            preload(
+                "iframes/Ziverse Visual Identity/Visual/images/Moodboard02min.jpg",
+                "iframes/Ziverse Visual Identity/Visual/images/Moodboard03min.jpg",
+                "iframes/Ziverse Visual Identity/Visual/images/landscape_mockup_1copymin.jpg",
+                "iframes/Ziverse Visual Identity/Visual\images/iPhoneMockupmin.jpg",
+
+            )
+
+
+            var carousels = $(".grabbing-effect-caousel");
+            for (var x = 0; x < carousels.length; x++) {
+
+
+                const carousel = carousels[x];
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                carousel.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    carousel.classList.add('active');
+                    startX = e.pageX - carousel.offsetLeft;
+                    scrollLeft = carousel.scrollLeft;
+                    cancelMomentumTracking();
+                });
+
+
+                carousel.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    carousel.classList.remove('active');
+                });
+
+
+                carousel.addEventListener('mouseup', () => {
+                    isDown = false;
+                    carousel.classList.remove('active');
+                    beginMomentumTracking();
+                });
+
+
+                carousel.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - carousel.offsetLeft;
+                    const walk = (x - startX) * 1; //scroll-fast
+                    var prevScrollLeft = carousel.scrollLeft;
+                    carousel.scrollLeft = scrollLeft - walk;
+                    velX = carousel.scrollLeft - prevScrollLeft;
+                });
+
+                // Momentum 
+
+                var velX = 0;
+                var momentumID;
+
+                carousel.addEventListener('wheel', (e) => {
+                    cancelMomentumTracking();
+                });
+
+                function beginMomentumTracking() {
+                    cancelMomentumTracking();
+                    momentumID = requestAnimationFrame(momentumLoop);
+                }
+
+                function cancelMomentumTracking() {
+                    cancelAnimationFrame(momentumID);
+                }
+
+                function momentumLoop() {
+                    carousel.scrollLeft += velX;
+                    velX *= 0.95;
+                    if (Math.abs(velX) > 0.5) {
+                        momentumID = requestAnimationFrame(momentumLoop);
+                    }
+                }
+
+
+            }
+
+
+            var opacityEffectObjects = $(".opacity-effect");
+
+            for (var j = 0; j < opacityEffectObjects.length; j++) {
+
+                var OpacityEffectTarget = opacityEffectObjects[j];
+
+                //var scrollContainers = $(".scroll-container");
+                //var mainScrollContainer = scrollContainers[0];
+                //const mainScrollBar = Scrollbar.init(mainScrollContainer);
+                var scrollContainers = $(".scroll-container");
+                var mainScrollContainer = scrollContainers[0];
+                const mainScrollBar = Scrollbar.init(mainScrollContainer);
+                var isVisibleCheckerForOpacityEffect = mainScrollBar.isVisible(OpacityEffectTarget);
+                //console.log ("Object " + j + " visibility: " + isVisibleCheckerForOpacityEffect);
+
+
+                if (isVisibleCheckerForOpacityEffect == true) {
+                    $(OpacityEffectTarget).addClass("visible");
+                } else {
+                    $(OpacityEffectTarget).removeClass("visible");
+                }
+            };
+
+
+        }
+    }());
 }
 
 var parentWidth = window.innerWidth;

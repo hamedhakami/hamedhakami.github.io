@@ -66,6 +66,9 @@ body {
     margin: 0 auto 2vh;
     overflow: hidden;
 }
+.extra-top-margin {
+    margin-top: 20vh;
+}
 .Nowruz-iframe {
     pointer-events: none;
     height: 90vh;
@@ -188,7 +191,7 @@ body {
     position: relative;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    overflow-x:scroll;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     transition: all 0.2s;
@@ -270,8 +273,8 @@ p {
 }
 .social-media-icon {
     cursor: pointer;
-	 height: 30px;
-	margin-left: 1vw;
+    height: 30px;
+    margin-left: 1vw;
 }
 .resume-contents {
     margin-right: 15vw;
@@ -284,8 +287,8 @@ p {
 .social-media-icons {
     position: absolute;
     left: 10px;
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .htmlads-section {
     display: flex;
@@ -320,7 +323,99 @@ p {
     margin-bottom: 0;
     margin-top: 1vh;
     border-radius: 2px;
-	cursor: pointer;
+    cursor: pointer;
+}
+.Tapsi-intercity-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1640 / 892;
+}
+.Tapsi-BNPL-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1640 / 892;
+}
+.password-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30vh;
+    margin-bottom: 0;
+    width: 40vw;
+    height: 30vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+.password-buttons-container {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+.password-section-descibtions-container {
+    flex: 70%;
+}
+.password-section-descibtions-paragraph {
+    color: white;
+    text-align: justify;
+    text-justify: inherit;
+    margin-right: 2vw;
+    font-size: 1.9vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
+}
+.password-section-button {
+    width: 70%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    margin-top: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.Ziverse-Visual-Identity1 {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 5280 / 922;
+}
+.Ziverse-Visual-Identity2 {
+    pointer-events: none;
+    height: 60vh;
+    aspect-ratio: 7460 / 700;
+}
+.Ziverse-Catalog {
+    pointer-events: none;
+    height: 60vh;
+    aspect-ratio: 7496 / 700;
+}
+.animated-logo-container {
+    margin: auto;
+    margin-top: 20vh;
+    width: 100vw;
+    height: 50vh;
+}
+.animated-logo-video {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    left: 5vw;
+}
+.animated-logo-descriptions {
+    aspect-ratio: 651 / 400;
+    margin-left: 15vh;
+    margin-right: auto;
+    position: relative;
+    left: 5vw;
+}
+.Ziverse-debit-card {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 5280 / 922;
 }
 /*      (x vh / 198) * 100 = y vw     */
 @media only screen and (max-width: 198vh) {
@@ -367,7 +462,7 @@ p {
     .Marhaba-iframe {
         height: 35.4vw;
     }
-	.Abank-iframe {
+    .Abank-iframe {
         height: 42.98vw;
         margin-top: 10.11vw;
     }
@@ -431,7 +526,37 @@ p {
         height: 7%;
         margin-top: 0.5057vw;
     }
-	.Logos-iframe {
-    height: 35.4vw;
-}
+    .Logos-iframe {
+        height: 35.4vw;
+    }
+    .Tapsi-intercity-iframe {
+        height: 45.5vw;
+    }
+    .Tapsi-BNPL-iframe {
+        height: 45.5vw;
+    }
+    .Ziverse-Visual-Identity1 {
+        height: 42.92vw;
+    }
+    .Ziverse-Visual-Identity2 {
+        height: 30.3vw;
+    }
+    .Ziverse-Catalog {
+        height: 30.3vw;
+    }
+    .animated-logo-container {
+        height: 25.25vw;
+    }
+    .Ziverse-debit-card {
+        height: 42.92vw;
+    }
+    .animated-logo-descriptions {
+        margin-left: 7.5758vw;
+    }
+    .password-section {
+        margin-top: 15.15vw;
+    }
+    .extra-top-margin {
+        margin-top: 10.1vw;
+    }
 }
