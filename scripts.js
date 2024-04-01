@@ -880,9 +880,9 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/Ziverse Debit Card/Visual/images/_01copymin.jpg",
-                        "iframes/Ziverse Debit Card/Visual/images/_02min.jpg",
-                        "iframes/Ziverse Debit Card/Visual/images/_03.jpg",
+                        "iframes/Ziverse Debit Card/Visual/images/Card1.jpg",
+                        "iframes/Ziverse Debit Card/Visual/images/Card2.jpg",
+                        "iframes/Ziverse Debit Card/Visual/images/Card3.jpg",
                         "iframes/Ziverse Debit Card/Visual/1.js",
                         "iframes/Ziverse Debit Card/Visual/1.html",
 
