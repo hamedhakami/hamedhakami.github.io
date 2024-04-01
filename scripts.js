@@ -810,7 +810,7 @@ $(document).ready(function () {
                         "iframes/Tapsi BNPL/Visual/images/frame_15_delay-0.52s.gif",
                         "iframes/Tapsi BNPL/Visual/images/frame_16_delay-0.52s.gif",
                         "iframes/Tapsi BNPL/Visual/images/frame_17_delay-0.52s.gif",
-                        "iframes/Tapsi BNPL\Visual/1.js",
+                        "iframes/Tapsi BNPL/Visual/1.js",
                         "iframes/Tapsi BNPL/Visual/1.html",
                     )
                 },
@@ -883,7 +883,7 @@ $(document).ready(function () {
                         "iframes/Ziverse Debit Card/Visual/images/_01copymin.jpg",
                         "iframes/Ziverse Debit Card/Visual/images/_02min.jpg",
                         "iframes/Ziverse Debit Card/Visual/images/_03.jpg",
-                        "iframes/Ziverse Debit Card\Visual/1.js",
+                        "iframes/Ziverse Debit Card/Visual/1.js",
                         "iframes/Ziverse Debit Card/Visual/1.html",
 
                     )
@@ -1218,7 +1218,7 @@ function requestPassword() {
                 "iframes/Ziverse Visual Identity/Visual/images/Moodboard02min.jpg",
                 "iframes/Ziverse Visual Identity/Visual/images/Moodboard03min.jpg",
                 "iframes/Ziverse Visual Identity/Visual/images/landscape_mockup_1copymin.jpg",
-                "iframes/Ziverse Visual Identity/Visual\images/iPhoneMockupmin.jpg",
+                "iframes/Ziverse Visual Identity/Visual/images/iPhoneMockupmin.jpg",
 
             )
 
