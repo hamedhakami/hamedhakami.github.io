@@ -25,8 +25,8 @@ lib.ssMetadata = [];
 
 
 
-(lib._205min = function() {
-	this.initialize(img._205min);
+(lib.Allmin = function() {
+	this.initialize(img.Allmin);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,11520,1080);
 
@@ -43,7 +43,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib._205min();
+	this.instance = new lib.Allmin();
 	this.instance.setTransform(0,0,0.6485,0.6485);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -551,7 +551,7 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/205min.jpg", id:"_205min"}
+		{src:"images/Allmin.jpg", id:"Allmin"}
 	],
 	preloads: []
 };
