@@ -1,0 +1,562 @@
+@font-face {
+    font-family: Roobert-Regular;
+    src: url("fonts/Roobert-Regular.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Roobert;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body, html {
+    background-color: #000000;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+}
+.opacity-effect {
+    opacity: 0;
+    transition: all 2.5s;
+}
+.opacity-effect.visible {
+    opacity: 1;
+}
+.intro-text {
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.text-container {
+    display: block;
+    margin: 0 auto 0;
+}
+.iframe-intro {
+    background-color: #000000;
+    pointer-events: none;
+    height: 99vh;
+    width: 96%;
+    aspect-ratio: 1900 / 1026;
+    margin: 0 auto 0;
+}
+.Text-iframe {
+    height: 45vh;
+    aspect-ratio: 1920 / 455;
+    pointer-events: none;
+    margin: 0 auto 2vh;
+    overflow: hidden;
+}
+.extra-top-margin {
+    margin-top: 20vh;
+}
+.Nowruz-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1384 / 922;
+}
+.Nowruz-slider-iframe {
+    pointer-events: none;
+    height: 65vh;
+    aspect-ratio: 3275 / 656;
+    margin-top: 25vh;
+}
+.Get-your-money-back-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 4182 / 922;
+}
+.IranCard-minicampaigns-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 6980 / 922;
+}
+.As-vast-as-Iran-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 4182 / 922;
+}
+.IranCard-sliders-iframe {
+    pointer-events: none;
+    height: 70vh;
+    aspect-ratio: 5568 / 716;
+}
+.Charity-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1890 / 922;
+}
+.Yalda1401-iframe {
+    pointer-events: none;
+    height: 50vh;
+    aspect-ratio: 1655 / 540;
+}
+.Yalda-gifts-iframe {
+    pointer-events: none;
+    height: 80vh;
+    aspect-ratio: 1144 / 817;
+    margin-top: 20vh;
+}
+.Derby-iframe {
+    pointer-events: none;
+    height: 80vh;
+    aspect-ratio: 1464 / 817;
+}
+.Chess-iframe {
+    pointer-events: none;
+    height: 80vh;
+    aspect-ratio: 1405 / 817;
+    margin-top: 20vh;
+}
+.Marhaba-iframe {
+    pointer-events: none;
+    height: 70vh;
+    aspect-ratio: 3825 / 950;
+}
+.Abank-iframe {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 1405 / 817;
+    margin-top: 20vh;
+}
+.Taaghche-iframe {
+    pointer-events: none;
+    height: 80vh;
+    aspect-ratio: 1890 / 817;
+}
+.Live-wallpaper-iframe {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 4182 / 800;
+}
+.Live-wallpaper-iframe2 {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1920 / 922;
+    margin-top: 20vh;
+}
+.Yalda99-iframe {
+    pointer-events: none;
+    width: 100%;
+    height: 80vh;
+}
+.Puzzle-iframe {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 1405 / 817;
+    margin-top: 20vh;
+}
+.Sibche-design-system-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1640 / 892;
+}
+.Sibche-social-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 3175 / 800;
+}
+.html-container {
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #000000;
+}
+.Logos-iframe {
+    pointer-events: none;
+    height: 70vh;
+    aspect-ratio: 5764 / 950;
+}
+.grabbing-effect-caousel {
+    background-color: #000000;
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(1);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+}
+.grabbing-effect-caousel.active {
+    background-color: #000000;
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1.02);
+}
+.regular_flex_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 99vw;
+    height: 60vh;
+}
+p {
+    text-align: left;
+    text-indent: 20px;
+    font-weight: 100;
+}
+.arrow {
+    position: absolute;
+    bottom: 10vh;
+    left: 70vw;
+    z-index: 1;
+    height: 6vh;
+}
+/*
+* {
+  box-sizing: border-box;
+}*/
+.about-me-section {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 18vh;
+    margin-bottom: 30vh;
+}
+.column.left {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+.column.right {
+    position: relative;
+    margin-left: 5vw;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.introduction-text {
+    margin-left: 15vw;
+    margin-right: 5vw;
+    font-size: 4vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
+    color: #f2f2f2;
+    text-align: left;
+    text-justify: inherit;
+}
+.introduction-text-title {
+    margin-left: 15vw;
+    margin-right: 5vw;
+    font-size: 4.5vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
+    color: rgba(255, 255, 255, 0.60)
+}
+.social-media-icon {
+    cursor: pointer;
+    height: 30px;
+    margin-left: 1vw;
+}
+.resume-contents {
+    margin-right: 15vw;
+    font-size: 1.9vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
+}
+.social-media-icons {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.htmlads-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 130vh;
+    height: 30vh;
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+.htmlads-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+.html-ads-iframe {
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    height: 90%;
+    width: 100%;
+}
+.button {
+    width: 100%;
+    height: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 1vh;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.Tapsi-intercity-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1640 / 892;
+}
+.Tapsi-BNPL-iframe {
+    pointer-events: none;
+    height: 90vh;
+    aspect-ratio: 1640 / 892;
+}
+.password-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30vh;
+    margin-bottom: 0;
+    width: 40vw;
+    height: 30vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+.password-buttons-container {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+.password-section-descibtions-container {
+    flex: 70%;
+}
+.password-section-descibtions-paragraph {
+    color: white;
+    text-align: justify;
+    text-justify: inherit;
+    margin-right: 2vw;
+    font-size: 1.9vh;
+    font-family: Roobert-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-indent: 0;
+}
+.password-section-button {
+    width: 70%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    margin-top: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.Ziverse-Visual-Identity1 {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 5280 / 922;
+}
+.Ziverse-Visual-Identity2 {
+    pointer-events: none;
+    height: 60vh;
+    aspect-ratio: 7460 / 700;
+}
+.Ziverse-Catalog {
+    pointer-events: none;
+    height: 60vh;
+    aspect-ratio: 7496 / 700;
+}
+.animated-logo-container {
+    margin: auto;
+    margin-top: 20vh;
+    width: 100vw;
+    height: 50vh;
+}
+.animated-logo-video {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    left: 5vw;
+}
+.animated-logo-descriptions {
+    aspect-ratio: 651 / 400;
+    margin-left: 15vh;
+    margin-right: auto;
+    position: relative;
+    left: 5vw;
+}
+.Ziverse-debit-card {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 5280 / 922;
+}
+/*      (x vh / 198) * 100 = y vw     */
+@media only screen and (max-width: 198vh) {
+    .Text-iframe {
+        height: 22.75vw;
+        margin: 0 auto 1.01vw;
+    }
+    .Nowruz-iframe {
+        height: 45.51vw;
+    }
+    .Nowruz-slider-iframe {
+        height: 32.87vw;
+        margin-top: 12.64vw;
+    }
+    .Get-your-money-back-iframe {
+        height: 45.5vw;
+    }
+    .IranCard-minicampaigns-iframe {
+        height: 45.5vw;
+    }
+    .As-vast-as-Iran-iframe {
+        height: 45.5vw;
+    }
+    .IranCard-sliders-iframe {
+        height: 35.4vw;
+    }
+    .Charity-iframe {
+        height: 45.51vw;
+    }
+    .Yalda1401-iframe {
+        height: 25.28vw;
+    }
+    .Yalda-gifts-iframe {
+        height: 40.45vw;
+        margin-top: 10.11vw;
+    }
+    .Derby-iframe {
+        height: 40.45vw;
+    }
+    .Chess-iframe {
+        height: 40.45vw;
+        margin-top: 10.11vw;
+    }
+    .Marhaba-iframe {
+        height: 35.4vw;
+    }
+    .Abank-iframe {
+        height: 42.98vw;
+        margin-top: 10.11vw;
+    }
+    .Taaghche-iframe {
+        height: 40.45vw;
+    }
+    .Live-wallpaper-iframe {
+        height: 42.98vw;
+    }
+    .Live-wallpaper-iframe2 {
+        height: 45.51vw;
+        margin-top: 10.11vw;
+    }
+    .Yalda99-iframe {
+        height: 40.45vw;
+    }
+    .Puzzle-iframe {
+        height: 42.98vw;
+        margin-top: 10.11vw;
+    }
+    .Sibche-design-system-iframe {
+        height: 45.51vw;
+    }
+    .Sibche-social-iframe {
+        height: 45.51vw;
+    }
+    .grabbing-effect-caousel {
+        margin-top: 1.01vw;
+        margin-bottom: 1.01vw;
+    }
+    .regular_flex_container {
+        height: 30.34vw;
+    }
+    .arrow {
+        bottom: 5.057vw;
+        height: 3.03;
+    }
+    .about-me-section {
+        margin-top: 9.1vw;
+        margin-bottom: 15.17vw;
+    }
+    .introduction-text {
+        font-size: 2.02vw;
+    }
+    .introduction-text-title {
+        font-size: 2.27vw;
+    }
+    .resume-contents {
+        font-size: 0.96vw;
+    }
+    .htmlads-section {
+        width: 65.74vw;
+        height: 15.17vw;
+    }
+    .html-ads-iframe {
+        height: 90%;
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        height: 7%;
+        margin-top: 0.5057vw;
+    }
+    .Logos-iframe {
+        height: 35.4vw;
+    }
+    .Tapsi-intercity-iframe {
+        height: 45.5vw;
+    }
+    .Tapsi-BNPL-iframe {
+        height: 45.5vw;
+    }
+    .Ziverse-Visual-Identity1 {
+        height: 42.92vw;
+    }
+    .Ziverse-Visual-Identity2 {
+        height: 30.3vw;
+    }
+    .Ziverse-Catalog {
+        height: 30.3vw;
+    }
+    .animated-logo-container {
+        height: 25.25vw;
+    }
+    .Ziverse-debit-card {
+        height: 42.92vw;
+    }
+    .animated-logo-descriptions {
+        margin-left: 7.5758vw;
+    }
+    .password-section {
+        margin-top: 15.15vw;
+    }
+    .extra-top-margin {
+        margin-top: 10.1vw;
+    }
+}

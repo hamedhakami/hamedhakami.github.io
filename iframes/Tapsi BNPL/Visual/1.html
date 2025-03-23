@@ -20,7 +20,8 @@
   -ms-overflow-style: none;  
   scrollbar-width: none;  
 }
-	</style><style>
+	</style>
+	<style>
   #animation_container, #_preload_div_ {
 	position:absolute;
 	margin:auto;
@@ -58,7 +59,7 @@ function handleComplete(evt,comp) {
 	}
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
-	canvas.style.display = 'block';
+	dom_overlay_container.style.display = canvas.style.display = 'block';
 	exportRoot = new lib._1();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.

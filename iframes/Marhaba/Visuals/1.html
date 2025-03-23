@@ -20,7 +20,8 @@
   -ms-overflow-style: none;  
   scrollbar-width: none;  
 }
-	</style><script src="../../../createjs.min.js"></script>
+	</style>
+	<script src="../../../createjs.min.js"></script>
 <script src="1.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -51,7 +52,7 @@ function handleComplete(evt,comp) {
 	}
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
-	canvas.style.display = 'block';
+	dom_overlay_container.style.display = canvas.style.display = 'block';
 	exportRoot = new lib._1();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
@@ -74,10 +75,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:3825px; height:950px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:100vh; text-align: center;'>	<span style='display: inline-block; height: 100%; width: 1920px; vertical-align: middle;'></span>	<img src=images/preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
-	<script>
-			const { parentWidth } = top;
-	document.getElementById('_preload_div_').style.width = parentWidth+"px";
-	</script>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:950px; width: 3825px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>

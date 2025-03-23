@@ -80,10 +80,27 @@ body {
     aspect-ratio: 3275 / 656;
     margin-top: 25vh;
 }
+.bJunior-Pocket-iframe {
+    pointer-events: none;
+    height: 65vh;
+    aspect-ratio: 3304 / 656;
+   
+}
+.blu-wishes-iframe {
+    pointer-events: none;
+    height: 65vh;
+    aspect-ratio: 3174 / 656;
+   
+}
 .Get-your-money-back-iframe {
     pointer-events: none;
     height: 90vh;
     aspect-ratio: 4182 / 922;
+}
+.blu-Lottery-iframe {
+    pointer-events: none;
+    height: 65vh;
+    aspect-ratio: 3779 / 922;
 }
 .IranCard-minicampaigns-iframe {
     pointer-events: none;
@@ -184,6 +201,11 @@ body {
 .Logos-iframe {
     pointer-events: none;
     height: 70vh;
+    aspect-ratio: 5764 / 950;
+}
+.bJunior-Logo-iframe {
+    pointer-events: none;
+    height: 50vh;
     aspect-ratio: 5764 / 950;
 }
 .grabbing-effect-caousel {
@@ -423,6 +445,25 @@ p {
         height: 22.75vw;
         margin: 0 auto 1.01vw;
     }
+	.bJunior-Pocket-iframe {
+    height: 32.828vw;
+
+	}
+	.blu-wishes-iframe {
+
+    height: 32.828vw;
+  
+   
+}
+		.blu-Lottery-iframe {
+
+    height: 32.828vw;
+  
+   
+}
+	.bJunior-Logo-iframe {
+    height: 25.252;
+}
     .Nowruz-iframe {
         height: 45.51vw;
     }
