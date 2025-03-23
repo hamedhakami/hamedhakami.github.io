@@ -238,15 +238,32 @@ $(document).ready(function () {
                 },
                 function () {
                     iframeTarget.src = "iframes/Ziverse Catalog/Visual/1.html";
+					
+					
+					
+					
+					
+               
+               
+					
+					
+					
+					
+					
+					
+		
+					
                 },
                 function () {
                     iframeTarget.src = "iframes/Ziverse Animated Logo/Descriptions/1.html";
+					
                 },
                 function () {
                     iframeTarget.src = "iframes/Ziverse Debit Card/Describtion/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Ziverse Debit Card/Visual/1.html";
+					
                 },
 
 
@@ -255,6 +272,8 @@ $(document).ready(function () {
                 },
                 function () {
                     iframeTarget.src = "iframes/Nowruz/Visuals/1.html";
+					
+					 
                 },
                 function () {
                     iframeTarget.src = "iframes/Nowruz/Sliders/1.html";
@@ -264,12 +283,15 @@ $(document).ready(function () {
                 },
                 function () {
                     iframeTarget.src = "iframes/Get Your Money Back/Visual/1 v6.html";
+					
                 },
                 function () {
                     iframeTarget.src = "iframes/Mini-Campaigns/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Mini-Campaigns/Visual/1 v6.html";
+					
+					
                 },
                 function () {
                     iframeTarget.src = "iframes/As Vast As Iran/Describtion/1.html";
@@ -666,7 +688,7 @@ $(document).ready(function () {
                         "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
                         "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg", )
                 },
-/*
+
                 function () {
                     var images = [];
 
@@ -727,9 +749,7 @@ $(document).ready(function () {
                         "iframes/Mini-Campaigns/Visual/images/Scorescopymin.jpg",
                         "iframes/Mini-Campaigns/Visual/images/Treecopymin.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Get Your Money Back/Describtion/1.html";
-                },
+               
                 function () {
                     var images = [];
 
@@ -748,9 +768,7 @@ $(document).ready(function () {
                         "iframes/As Vast As Iran/Visual/images/Semnancopymin.jpg",
                         "iframes/As Vast As Iran/Visual/images/Yasoujcopymin.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Mini-Campaigns/Describtions/1.html";
-                },
+               
                 function () {
                     var images = [];
 
@@ -767,9 +785,7 @@ $(document).ready(function () {
                         "iframes/Web Sliders/Visual/images/slider2mockupcopy.jpg",
                         "iframes/Web Sliders/Visual/images/slider3mockupcopy.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/As Vast As Iran/Describtion/1.html";
-                },
+               
                 function () {
                     var images = [];
 
@@ -783,9 +799,7 @@ $(document).ready(function () {
                         "iframes/Charity/Visuals/1.html",
                         "iframes/Charity/Visuals/images/PresentationMockupcopy.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Web Sliders/Describtion/1.html";
-                },
+                
                 function () {
                     var images = [];
 
@@ -803,9 +817,7 @@ $(document).ready(function () {
                         "iframes/The Trace of Brightness/Visuals2/images/Mockupcopy1080wmin.jpg",
                         "iframes/The Trace of Brightness/Visuals2/images/ShoppingBagMockup2copy1080min.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Charity/Describtions/1.html";
-                },
+               
                 function () {
                     var images = [];
 
@@ -836,12 +848,7 @@ $(document).ready(function () {
                 function () {
 
                 },
-                function () {
-
-                },
-                function () {
-
-                },
+      
                 function () {
                     var images = [];
 
@@ -873,9 +880,7 @@ $(document).ready(function () {
                         "iframes/Abank KV/Visuals/1.html",
                         "iframes/Abank KV/Visuals/images/poster90x90v12forpresentationcopymin.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Marhaba/Describtions/1.html";
-                },
+                
                 function () {
                     var images = [];
 
@@ -917,9 +922,7 @@ $(document).ready(function () {
                         "iframes/Live Wallpapers 4K/Visual/images/Screenshots13.jpg",
                         "iframes/Live Wallpapers 4K/Visual2/images/Presentation1.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Taaghche/Describtions/1.html";
-                },
+                
                 function () {
                     var images = [];
 
@@ -933,9 +936,7 @@ $(document).ready(function () {
                         "iframes/Yalda99/Visual/Yalda4.js",
                         "iframes/Yalda99/Visual/slider.html", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Live Wallpapers 4K/Describtion/1.html";
-                },
+                
                 function () {
                     var images = [];
 
@@ -949,12 +950,8 @@ $(document).ready(function () {
                         "iframes/Puzzle/Visuals/1.js",
                         "iframes/Puzzle/Visuals/1.html", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Live Wallpapers 4K/Visual2/1.html";
-                },
-                function () {
-                    iframeTarget.src = "iframes/Yalda99/Describtion/1.html";
-                },
+               
+               
                 function () {
                     var images = [];
 
@@ -985,9 +982,7 @@ $(document).ready(function () {
                         "iframes/Sibche Social Media Contents/Visual/images/Winners06.jpg",
                         "iframes/Sibche Social Media Contents/Visual/images/Winners07.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Sibche Design System/Describtion/1.html";
-                },
+                
                 function () {
                     var images = [];
 
@@ -1006,9 +1001,7 @@ $(document).ready(function () {
                         "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html",
                         "iframes/Sibche HTML Ads/Banner (for presentation)-01.jpg", )
                 },
-                function () {
-                    iframeTarget.src = "iframes/Sibche Social Media Contents/Describtion/1.html";
-                },
+               
                 function () {
                     var images = [];
 
@@ -1037,7 +1030,7 @@ $(document).ready(function () {
 
                     //1st htmlads
                 },
-				*/
+				
  function () {
 
                 },
@@ -1202,7 +1195,6 @@ $(document).ready(function () {
                 },	function () {
 
                 },
-				
 				
 				
 				
