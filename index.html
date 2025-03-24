@@ -10,32 +10,6 @@
 
   gtag('config', 'G-EDGKQ8R548');
 	
-	window.onload = function () {
-    // Clear localStorage & sessionStorage
-    localStorage.clear();
-    sessionStorage.clear();
-
-    // Clear cookies
-    document.cookie.split(";").forEach(function (cookie) {
-        document.cookie = cookie
-            .replace(/^ +/, "")
-            .replace(/=.*/, "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/");
-    });
-
-    // Unregister service workers
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function (registrations) {
-            for (let registration of registrations) {
-                registration.unregister();
-            }
-        });
-    }
-
-    // Clear Cache Storage
-    caches.keys().then(function (names) {
-        for (let name of names) caches.delete(name);
-    });
-};
 </script>
 <meta charset="utf-8">
 <meta http-equiv="Content-type" content="application/octet-stream" />
