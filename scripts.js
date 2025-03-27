@@ -1,3 +1,270 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const assets = [
+      "iframes/bJunior Pocket/Visuals/images/TeasingV201080X1350min.jpg",
+                        "iframes/bJunior Pocket/Visuals/images/Joystickmin.jpg",
+                        "iframes/bJunior Pocket/Visuals/images/Scootermin.jpg",
+                        "iframes/bJunior Pocket/Visuals/images/Telescopemin.jpg",
+                        "iframes/bJunior Pocket/Visuals/images/Thumbnailmin.jpg",
+                        "iframes/bJunior Pocket/Visuals/images/Gift_Thumbnailmin.jpg",
+                        "iframes/bJunior Pocket/Visuals/videos/768-h.webm",
+                        "iframes/bJunior Pocket/Visuals/videos/Steps.webm",
+		  "iframes/1404 Wishes/Visuals/images/Bluecopymin.jpg",
+                        "iframes/1404 Wishes/Visuals/images/Greencopymin.jpg",
+                        "iframes/1404 Wishes/Visuals/images/Purplecopymin.jpg",
+                        "iframes/1404 Wishes/Visuals/images/Redcopymin.jpg",
+                        "iframes/1404 Wishes/Visuals/images/RoseGoldcopymin.jpg",
+                        "iframes/1404 Wishes/Visuals/images/Yellowcopymin.jpg",
+                        "iframes/1404 Wishes/Visuals/1.js",
+		     "iframes/110 Billion/Visual/images/Bluemin.jpg",
+                        "iframes/110 Billion/Visual/images/p01copymin.jpg",
+                        "iframes/110 Billion/Visual/images/p03copymin.jpg",
+                        "iframes/110 Billion/Visual/images/p04copymin.jpg",
+                        "iframes/110 Billion/Visual/images/thefirstframemin.jpg",
+                        "iframes/110 Billion/Visual/videos/Colors.webm",
+                        "iframes/110 Billion/Visual/videos/Steps 10fps for video.webm",
+                        "iframes/110 Billion/Visual/1 v6.js",
+		           "iframes/blugraphy/Visual and Descriptions/images/blugraphymin.jpg",
+                        "iframes/blugraphy/Visual and Descriptions/1.js",
+		  "iframes/blu Landing Pages/Visuals/images/Mockup16X9copymin.jpg",
+                        "iframes/blu Landing Pages/Visuals/1.js",
+		 "iframes/blu-Chair/Visual and Descriptions/images/Chairmin.jpg",
+                        "iframes/blu-Chair/Visual and Descriptions/1.js",
+		                "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign01min.jpg",
+                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign02min.jpg",
+                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign03min.jpg",
+                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign04min.jpg",
+                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign05min.jpg",
+                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign06min.jpg",
+                        "iframes/bJunior Logotype/Visuals/1.js",
+		          "iframes/Tapsi Intercity Service/Visual/images/Thumbnailmin.jpg",
+                        "iframes/Tapsi Intercity Service/Visual/images/TicketwithTypoV2copymin.jpg",
+                        "iframes/Tapsi Intercity Service/Visual/1.js",
+                        "iframes/Tapsi Intercity Service/Visual/videos/2-Steps.webm",
+		          "iframes/Ziverse Visual Identity/Visual/images/iPhoneMockupmin.jpg",
+                        "iframes/Ziverse Visual Identity/Visual/images/landscape_mockup_1copymin.jpg",
+                        "iframes/Ziverse Visual Identity/Visual/images/Moodboard02min.jpg",
+                        "iframes/Ziverse Visual Identity/Visual/images/Moodboard03min.jpg",
+
+                        "iframes/Ziverse Visual Identity/Products/1.js",
+                        "iframes/Ziverse Visual Identity/Products/1.html",
+		      "iframes/Tapsi BNPL/Visual/images/Car_Thumbnailmin.jpg",
+                        "iframes/Tapsi BNPL/Visual/images/Flattenwithtypocopymin.jpg",
+                        "iframes/Tapsi BNPL/Visual/1.js",
+                        "iframes/Tapsi BNPL/Visual/videos/Steps (1).webm",
+		   "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog01min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog04min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog05min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog06min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog07min.jpg",
+                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog08min.jpg",
+                        "iframes/Ziverse Catalog/Visual/1.js",
+                        "iframes/Ziverse Catalog/Visual/1.html",
+		     "iframes/Ziverse Debit Card/Visual/images/Card1.jpg",
+                        "iframes/Ziverse Debit Card/Visual/images/Card2.jpg",
+                        "iframes/Ziverse Debit Card/Visual/images/Card3.jpg",
+                        "iframes/Ziverse Debit Card/Visual/1.js",
+                        "iframes/Ziverse Debit Card/Visual/1.html",
+		"iframes/Nowruz/Visuals/1.html",
+                        "iframes/Nowruz/Visuals/1.js",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
+                        "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg",
+		"iframes/Nowruz/Sliders/1.html",
+                        "iframes/Nowruz/Sliders/1.js",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v207.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v208.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v209.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v210.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v211.jpg",
+                        "iframes/Nowruz/Sliders/images/Sliders1080v37201min.jpg",
+		"iframes/Get Your Money Back/Visual/1 v6.html",
+                        "iframes/Get Your Money Back/Visual/1 v6.js",
+                        "iframes/Get Your Money Back/Visual/images/k1.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k2.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k3.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k4.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k5.jpg",
+                        "iframes/Get Your Money Back/Visual/images/k6.jpg", 
+		"iframes/Mini-Campaigns/Visual/1 v6.html",
+                        "iframes/Mini-Campaigns/Visual/1 v6.js",
+                        "iframes/Mini-Campaigns/Visual/images/a2000copymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/FathersDaycopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Fetrcopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Flightscopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Hotelcopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Merchantscopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/MothersDaycopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/ScalingUpcopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Scorescopymin.jpg",
+                        "iframes/Mini-Campaigns/Visual/images/Treecopymin.jpg",
+		"iframes/As Vast As Iran/Visual/1.js",
+                        "iframes/As Vast As Iran/Visual/1.html",
+                        "iframes/As Vast As Iran/Visual/images/Alborzcopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Ardebilcopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Boushehrcopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Kermancopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Semnancopymin.jpg",
+                        "iframes/As Vast As Iran/Visual/images/Yasoujcopymin.jpg",
+		"iframes/Web Sliders/Visual/1.js",
+                        "iframes/Web Sliders/Visual/1.html",
+                        "iframes/Web Sliders/Visual/images/AboutIranCardv3presentationcopymin.jpg",
+                        "iframes/Web Sliders/Visual/images/slider1mockupcopy.jpg",
+                        "iframes/Web Sliders/Visual/images/slider2mockupcopy.jpg",
+                        "iframes/Web Sliders/Visual/images/slider3mockupcopy.jpg",
+		"iframes/Charity/Visuals/1.js",
+                        "iframes/Charity/Visuals/1.html",
+                        "iframes/Charity/Visuals/images/PresentationMockupcopy.jpg",
+		"iframes/The Trace of Brightness/Visuals/1.js",
+                        "iframes/The Trace of Brightness/Visuals/1.html",
+                        "iframes/The Trace of Brightness/Visuals2/1.js",
+                        "iframes/The Trace of Brightness/Visuals2/1.html",
+                        "iframes/The Trace of Brightness/Visuals/images/leyoutforpresentationcopy2min.jpg",
+                        "iframes/The Trace of Brightness/Visuals2/images/Mockupcopy1080wmin.jpg",
+                        "iframes/The Trace of Brightness/Visuals2/images/ShoppingBagMockup2copy1080min.jpg",
+		"iframes/Abank KV/Visuals/1.js",
+                        "iframes/Abank KV/Visuals/1.html",
+                        "iframes/Abank KV/Visuals/images/poster90x90v12forpresentationcopymin.jpg",
+		"iframes/Derby/Visuals/1.js",
+                        "iframes/Derby/Visuals/1.html",
+                        "iframes/Derby/Visuals/images/Derbi01min.jpg",
+                        "iframes/Derby/Visuals/images/KV2copymin.jpg",
+		"iframes/Chess/Visuals/1.js",
+                        "iframes/Chess/Visuals/1.html",
+                        "iframes/Chess/Visuals/images/TemplateV2copymin.jpg",
+		"iframes/Taaghche/Visuals/1.js",
+                        "iframes/Taaghche/Visuals/1.html",
+                        "iframes/Taaghche/Visuals/images/Bannersresizedforportfolio01.jpg",
+                        "iframes/Taaghche/Visuals/images/BestSellersv201.jpg",
+                        "iframes/Taaghche/Visuals/images/TaaghcheInfinity01v201.jpg",
+		"iframes/Live Wallpapers 4K/Visual/1.js",
+                        "iframes/Live Wallpapers 4K/Visual/1.html",
+                        "iframes/Live Wallpapers 4K/Visual2/1.js",
+                        "iframes/Live Wallpapers 4K/Visual2/1.html",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots01.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots02.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots03.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots04.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots05.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots06.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots07.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots08.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots11.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots12.jpg",
+                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots13.jpg",
+                        "iframes/Live Wallpapers 4K/Visual2/images/Presentation1.jpg",
+		"iframes/Marhaba/Visuals/1.js",
+                        "iframes/Marhaba/Visuals/1.html",
+                        "iframes/Marhaba/Visuals/images/Layoutv401min.jpg",
+                        "iframes/Marhaba/Visuals/images/Layoutv402min.jpg",
+                        "iframes/Marhaba/Visuals/images/Layoutv403min.jpg",
+                        "iframes/Marhaba/Visuals/images/Thumbmin.jpg",
+                        "iframes/Marhaba/Visuals/videos/Steps.webm",
+		"iframes/Yalda99/Visual/images/Yalda4_atlas_1.png",
+                        "iframes/Yalda99/Visual/Yalda4.js",
+                        "iframes/Yalda99/Visual/slider.html",
+		"iframes/Puzzle/Visuals/images/SibcheLinkedin.jpg",
+                        "iframes/Puzzle/Visuals/1.js",
+                        "iframes/Puzzle/Visuals/1.html",
+		"iframes/Sibche Design System/Visuals/images/Presentationmin.jpg",
+                        "iframes/Sibche Design System/Visuals/1.js",
+                        "iframes/Sibche Design System/Visuals/1.html",
+		"iframes/Sibche Social Media Contents/Visual/images/All01.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/All02.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/All03.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners01.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners05.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners06.jpg",
+                        "iframes/Sibche Social Media Contents/Visual/images/Winners07.jpg",
+		"iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_1.png",
+                        "iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_2.png",
+                        "iframes/Sibche HTML Ads/sibche1401/300X300.js",
+                        "iframes/Sibche HTML Ads/sibche1401/wheel.html",
+                        "iframes/Sibche HTML Ads/sibchehtmlads/images/300X250_atlas_1.png",
+                        "iframes/Sibche HTML Ads/sibchehtmlads/300X250.js",
+                        "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html",
+                        "iframes/Sibche HTML Ads/Banner (for presentation)-01.jpg",
+		"iframes/Logos/Visuals/images/Anabel02min.jpg",
+                        "iframes/Logos/Visuals/images/FinalPresentation01min.jpg",
+                        "iframes/Logos/Visuals/images/KioosK704min.jpg",
+                        "iframes/Logos/Visuals/images/Logo108001min.jpg",
+                        "iframes/Logos/Visuals/images/Pelle01.jpg",
+                        "iframes/Logos/Visuals/images/ZootLogoFinal01min.jpg",
+    ];
+
+    const preloader = document.getElementById("preloader");
+    const progressText = document.getElementById("progress-text");
+    const content = document.getElementById("content");
+
+    let loaded = 0;
+
+    function updateProgress() {
+        const percent = Math.round((loaded / assets.length) * 100);
+        progressText.textContent = `Loading ${percent}%`;
+
+        if (loaded === assets.length) {
+            // All assets are loaded, fade out preloader
+            setTimeout(() => {
+                preloader.style.opacity = "0";
+                setTimeout(() => {
+                    preloader.style.display = "none";
+                    content.style.display = "block"; // Show the content
+                }, 500);
+            }, 300);
+        }
+    }
+
+    function loadAsset(url) {
+        return new Promise((resolve, reject) => {
+            if (url.match(/\.(jpg|png|gif|webp)$/)) {
+                const img = new Image();
+                img.src = url;
+                img.onload = resolve;
+                img.onerror = reject;
+            } else if (url.match(/\.(css)$/)) {
+                const link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href = url;
+                link.onload = resolve;
+                link.onerror = reject;
+                document.head.appendChild(link);
+            } else if (url.match(/\.(js)$/)) {
+                const script = document.createElement("script");
+                script.src = url;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.body.appendChild(script);
+            } else {
+                resolve(); // Ignore unknown types
+            }
+        }).then(() => {
+            loaded++;
+            updateProgress();
+        });
+    }
+
+    // Start loading all assets
+    Promise.all(assets.map(loadAsset)).catch(() => {
+        progressText.textContent = "Failed to load some assets!";
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
 
 
@@ -407,14 +674,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/bJunior Pocket/Visuals/images/TeasingV201080X1350min.jpg",
-                        "iframes/bJunior Pocket/Visuals/images/Joystickmin.jpg",
-                        "iframes/bJunior Pocket/Visuals/images/Scootermin.jpg",
-                        "iframes/bJunior Pocket/Visuals/images/Telescopemin.jpg",
-                        "iframes/bJunior Pocket/Visuals/images/Thumbnailmin.jpg",
-                        "iframes/bJunior Pocket/Visuals/images/Gift_Thumbnailmin.jpg",
-                        "iframes/bJunior Pocket/Visuals/videos/768-h.webm",
-                        "iframes/bJunior Pocket/Visuals/videos/Steps.webm",
+                  
                     )
                 },
 
@@ -429,13 +689,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/1404 Wishes/Visuals/images/Bluecopymin.jpg",
-                        "iframes/1404 Wishes/Visuals/images/Greencopymin.jpg",
-                        "iframes/1404 Wishes/Visuals/images/Purplecopymin.jpg",
-                        "iframes/1404 Wishes/Visuals/images/Redcopymin.jpg",
-                        "iframes/1404 Wishes/Visuals/images/RoseGoldcopymin.jpg",
-                        "iframes/1404 Wishes/Visuals/images/Yellowcopymin.jpg",
-                        "iframes/1404 Wishes/Visuals/1.js",
+                      
                     )
                 },
 
@@ -450,14 +704,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/110 Billion/Visual/images/Bluemin.jpg",
-                        "iframes/110 Billion/Visual/images/p01copymin.jpg",
-                        "iframes/110 Billion/Visual/images/p03copymin.jpg",
-                        "iframes/110 Billion/Visual/images/p04copymin.jpg",
-                        "iframes/110 Billion/Visual/images/thefirstframemin.jpg",
-                        "iframes/110 Billion/Visual/videos/Colors.webm",
-                        "iframes/110 Billion/Visual/videos/Steps 10fps for video.webm",
-                        "iframes/110 Billion/Visual/1 v6.js",
+                   
                     )
                 },
 
@@ -475,8 +722,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/blugraphy/Visual and Descriptions/images/blugraphymin.jpg",
-                        "iframes/blugraphy/Visual and Descriptions/1.js"
+             
 
                     )
                 },
@@ -495,8 +741,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/blu Landing Pages/Visuals/images/Mockup16X9copymin.jpg",
-                        "iframes/blu Landing Pages/Visuals/1.js",
+                      
 
                     )
                 },
@@ -512,52 +757,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/blu-Chair/Visual and Descriptions/images/Chairmin.jpg",
-                        "iframes/blu-Chair/Visual and Descriptions/1.js"
-
-                    )
-                },
-
-
-                function () {},
-
-
-                function () {
-                    var images = [];
-
-                    function preload() {
-                        for (var i = 0; i < arguments.length; i++) {
-                            images[i] = new Image();
-                            images[i].src = preload.arguments[i];
-                        }
-                    }
-                    preload(
-                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign01min.jpg",
-                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign02min.jpg",
-                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign03min.jpg",
-                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign04min.jpg",
-                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign05min.jpg",
-                        "iframes/bJunior Logotype/Visuals/images/LogotypeRedesign06min.jpg",
-                        "iframes/bJunior Logotype/Visuals/1.js",
-
-                    )
-                },
-
-
-                function () {
-                    var images = [];
-
-                    function preload() {
-                        for (var i = 0; i < arguments.length; i++) {
-                            images[i] = new Image();
-                            images[i].src = preload.arguments[i];
-                        }
-                    }
-                    preload(
-                        "iframes/Tapsi Intercity Service/Visual/images/Thumbnailmin.jpg",
-                        "iframes/Tapsi Intercity Service/Visual/images/TicketwithTypoV2copymin.jpg",
-                        "iframes/Tapsi Intercity Service/Visual/1.js",
-                        "iframes/Tapsi Intercity Service/Visual/videos/2-Steps.webm",
+                       
 
                     )
                 },
@@ -576,10 +776,42 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/Tapsi BNPL/Visual/images/Car_Thumbnailmin.jpg",
-                        "iframes/Tapsi BNPL/Visual/images/Flattenwithtypocopymin.jpg",
-                        "iframes/Tapsi BNPL/Visual/1.js",
-                        "iframes/Tapsi BNPL/Visual/videos/Steps (1).webm",
+        
+
+                    )
+                },
+
+
+                function () {
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+              
+
+                    )
+                },
+
+
+                function () {},
+
+
+                function () {
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                  
 
 
                     )
@@ -599,13 +831,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/Ziverse Visual Identity/Visual/images/iPhoneMockupmin.jpg",
-                        "iframes/Ziverse Visual Identity/Visual/images/landscape_mockup_1copymin.jpg",
-                        "iframes/Ziverse Visual Identity/Visual/images/Moodboard02min.jpg",
-                        "iframes/Ziverse Visual Identity/Visual/images/Moodboard03min.jpg",
-
-                        "iframes/Ziverse Visual Identity/Products/1.js",
-                        "iframes/Ziverse Visual Identity/Products/1.html",
+              
 
                     )
 
@@ -625,14 +851,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog01min.jpg",
-                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog04min.jpg",
-                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog05min.jpg",
-                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog06min.jpg",
-                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog07min.jpg",
-                        "iframes/Ziverse Catalog/Visual/images/Ziverse_Catalog08min.jpg",
-                        "iframes/Ziverse Catalog/Visual/1.js",
-                        "iframes/Ziverse Catalog/Visual/1.html",
+                     
                     )
 
                 },
@@ -649,11 +868,7 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/Ziverse Debit Card/Visual/images/Card1.jpg",
-                        "iframes/Ziverse Debit Card/Visual/images/Card2.jpg",
-                        "iframes/Ziverse Debit Card/Visual/images/Card3.jpg",
-                        "iframes/Ziverse Debit Card/Visual/1.js",
-                        "iframes/Ziverse Debit Card/Visual/1.html",
+                   
 
                     )
 
@@ -679,14 +894,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Nowruz/Visuals/1.html",
-                        "iframes/Nowruz/Visuals/1.js",
-                        "iframes/Nowruz/Visuals/images/a1402promotion_01min.jpg",
-                        "iframes/Nowruz/Visuals/images/a1402promotion_03min.jpg",
-                        "iframes/Nowruz/Visuals/images/a1402promotion_05min.jpg",
-                        "iframes/Nowruz/Visuals/images/a1402promotion_11min.jpg",
-                        "iframes/Nowruz/Visuals/images/a1402promotion_13min.jpg",
-                        "iframes/Nowruz/Visuals/images/a1402promotion_15min.jpg", )
+                    preload( )
                 },
 
                 function () {
@@ -698,14 +906,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Nowruz/Sliders/1.html",
-                        "iframes/Nowruz/Sliders/1.js",
-                        "iframes/Nowruz/Sliders/images/Sliders1080v207.jpg",
-                        "iframes/Nowruz/Sliders/images/Sliders1080v208.jpg",
-                        "iframes/Nowruz/Sliders/images/Sliders1080v209.jpg",
-                        "iframes/Nowruz/Sliders/images/Sliders1080v210.jpg",
-                        "iframes/Nowruz/Sliders/images/Sliders1080v211.jpg",
-                        "iframes/Nowruz/Sliders/images/Sliders1080v37201min.jpg", )
+                    preload( )
                 },
 
 
@@ -718,14 +919,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Get Your Money Back/Visual/1 v6.html",
-                        "iframes/Get Your Money Back/Visual/1 v6.js",
-                        "iframes/Get Your Money Back/Visual/images/k1.jpg",
-                        "iframes/Get Your Money Back/Visual/images/k2.jpg",
-                        "iframes/Get Your Money Back/Visual/images/k3.jpg",
-                        "iframes/Get Your Money Back/Visual/images/k4.jpg",
-                        "iframes/Get Your Money Back/Visual/images/k5.jpg",
-                        "iframes/Get Your Money Back/Visual/images/k6.jpg", )
+                    preload()
                 },
                 function () {
                     var images = [];
@@ -736,18 +930,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Mini-Campaigns/Visual/1 v6.html",
-                        "iframes/Mini-Campaigns/Visual/1 v6.js",
-                        "iframes/Mini-Campaigns/Visual/images/a2000copymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/FathersDaycopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/Fetrcopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/Flightscopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/Hotelcopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/Merchantscopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/MothersDaycopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/ScalingUpcopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/Scorescopymin.jpg",
-                        "iframes/Mini-Campaigns/Visual/images/Treecopymin.jpg", )
+                    preload()
                 },
                
                 function () {
@@ -759,14 +942,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/As Vast As Iran/Visual/1.js",
-                        "iframes/As Vast As Iran/Visual/1.html",
-                        "iframes/As Vast As Iran/Visual/images/Alborzcopymin.jpg",
-                        "iframes/As Vast As Iran/Visual/images/Ardebilcopymin.jpg",
-                        "iframes/As Vast As Iran/Visual/images/Boushehrcopymin.jpg",
-                        "iframes/As Vast As Iran/Visual/images/Kermancopymin.jpg",
-                        "iframes/As Vast As Iran/Visual/images/Semnancopymin.jpg",
-                        "iframes/As Vast As Iran/Visual/images/Yasoujcopymin.jpg", )
+                    preload( )
                 },
                
                 function () {
@@ -778,12 +954,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Web Sliders/Visual/1.js",
-                        "iframes/Web Sliders/Visual/1.html",
-                        "iframes/Web Sliders/Visual/images/AboutIranCardv3presentationcopymin.jpg",
-                        "iframes/Web Sliders/Visual/images/slider1mockupcopy.jpg",
-                        "iframes/Web Sliders/Visual/images/slider2mockupcopy.jpg",
-                        "iframes/Web Sliders/Visual/images/slider3mockupcopy.jpg", )
+                    preload( )
                 },
                
                 function () {
@@ -795,9 +966,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Charity/Visuals/1.js",
-                        "iframes/Charity/Visuals/1.html",
-                        "iframes/Charity/Visuals/images/PresentationMockupcopy.jpg", )
+                    preload( )
                 },
                 
                 function () {
@@ -809,13 +978,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/The Trace of Brightness/Visuals/1.js",
-                        "iframes/The Trace of Brightness/Visuals/1.html",
-                        "iframes/The Trace of Brightness/Visuals2/1.js",
-                        "iframes/The Trace of Brightness/Visuals2/1.html",
-                        "iframes/The Trace of Brightness/Visuals/images/leyoutforpresentationcopy2min.jpg",
-                        "iframes/The Trace of Brightness/Visuals2/images/Mockupcopy1080wmin.jpg",
-                        "iframes/The Trace of Brightness/Visuals2/images/ShoppingBagMockup2copy1080min.jpg", )
+                    preload( )
                 },
                
                 function () {
@@ -827,10 +990,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Derby/Visuals/1.js",
-                        "iframes/Derby/Visuals/1.html",
-                        "iframes/Derby/Visuals/images/Derbi01min.jpg",
-                        "iframes/Derby/Visuals/images/KV2copymin.jpg", )
+                    preload( )
                 },
                 function () {
                     var images = [];
@@ -841,9 +1001,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Chess/Visuals/1.js",
-                        "iframes/Chess/Visuals/1.html",
-                        "iframes/Chess/Visuals/images/TemplateV2copymin.jpg", )
+                    preload( )
                 },
                 function () {
 
@@ -858,13 +1016,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Marhaba/Visuals/1.js",
-                        "iframes/Marhaba/Visuals/1.html",
-                        "iframes/Marhaba/Visuals/images/Layoutv401min.jpg",
-                        "iframes/Marhaba/Visuals/images/Layoutv402min.jpg",
-                        "iframes/Marhaba/Visuals/images/Layoutv403min.jpg",
-                        "iframes/Marhaba/Visuals/images/Thumbmin.jpg",
-                        "iframes/Marhaba/Visuals/videos/Steps.webm",
+                    preload(
                     )
                 },
                 function () {
@@ -876,9 +1028,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Abank KV/Visuals/1.js",
-                        "iframes/Abank KV/Visuals/1.html",
-                        "iframes/Abank KV/Visuals/images/poster90x90v12forpresentationcopymin.jpg", )
+                    preload( )
                 },
                 
                 function () {
@@ -890,11 +1040,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Taaghche/Visuals/1.js",
-                        "iframes/Taaghche/Visuals/1.html",
-                        "iframes/Taaghche/Visuals/images/Bannersresizedforportfolio01.jpg",
-                        "iframes/Taaghche/Visuals/images/BestSellersv201.jpg",
-                        "iframes/Taaghche/Visuals/images/TaaghcheInfinity01v201.jpg", )
+                    preload( )
                 },
                 function () {
                     var images = [];
@@ -905,22 +1051,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Live Wallpapers 4K/Visual/1.js",
-                        "iframes/Live Wallpapers 4K/Visual/1.html",
-                        "iframes/Live Wallpapers 4K/Visual2/1.js",
-                        "iframes/Live Wallpapers 4K/Visual2/1.html",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots01.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots02.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots03.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots04.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots05.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots06.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots07.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots08.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots11.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots12.jpg",
-                        "iframes/Live Wallpapers 4K/Visual/images/Screenshots13.jpg",
-                        "iframes/Live Wallpapers 4K/Visual2/images/Presentation1.jpg", )
+                    preload( )
                 },
                 
                 function () {
@@ -932,9 +1063,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Yalda99/Visual/images/Yalda4_atlas_1.png",
-                        "iframes/Yalda99/Visual/Yalda4.js",
-                        "iframes/Yalda99/Visual/slider.html", )
+                    preload( )
                 },
                 
                 function () {
@@ -946,9 +1075,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Puzzle/Visuals/images/SibcheLinkedin.jpg",
-                        "iframes/Puzzle/Visuals/1.js",
-                        "iframes/Puzzle/Visuals/1.html", )
+                    preload( )
                 },
                
                
@@ -961,9 +1088,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Sibche Design System/Visuals/images/Presentationmin.jpg",
-                        "iframes/Sibche Design System/Visuals/1.js",
-                        "iframes/Sibche Design System/Visuals/1.html", )
+                    preload( )
                 },
                 function () {
                     var images = [];
@@ -974,13 +1099,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Sibche Social Media Contents/Visual/images/All01.jpg",
-                        "iframes/Sibche Social Media Contents/Visual/images/All02.jpg",
-                        "iframes/Sibche Social Media Contents/Visual/images/All03.jpg",
-                        "iframes/Sibche Social Media Contents/Visual/images/Winners01.jpg",
-                        "iframes/Sibche Social Media Contents/Visual/images/Winners05.jpg",
-                        "iframes/Sibche Social Media Contents/Visual/images/Winners06.jpg",
-                        "iframes/Sibche Social Media Contents/Visual/images/Winners07.jpg", )
+                    preload( )
                 },
                 
                 function () {
@@ -992,14 +1111,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_1.png",
-                        "iframes/Sibche HTML Ads/sibche1401/images/300X300_atlas_2.png",
-                        "iframes/Sibche HTML Ads/sibche1401/300X300.js",
-                        "iframes/Sibche HTML Ads/sibche1401/wheel.html",
-                        "iframes/Sibche HTML Ads/sibchehtmlads/images/300X250_atlas_1.png",
-                        "iframes/Sibche HTML Ads/sibchehtmlads/300X250.js",
-                        "iframes/Sibche HTML Ads/sibchehtmlads/300X250.html",
-                        "iframes/Sibche HTML Ads/Banner (for presentation)-01.jpg", )
+                    preload( )
                 },
                
                 function () {
@@ -1011,12 +1123,7 @@ $(document).ready(function () {
                             images[i].src = preload.arguments[i];
                         }
                     }
-                    preload("iframes/Logos/Visuals/images/Anabel02min.jpg",
-                        "iframes/Logos/Visuals/images/FinalPresentation01min.jpg",
-                        "iframes/Logos/Visuals/images/KioosK704min.jpg",
-                        "iframes/Logos/Visuals/images/Logo108001min.jpg",
-                        "iframes/Logos/Visuals/images/Pelle01.jpg",
-                        "iframes/Logos/Visuals/images/ZootLogoFinal01min.jpg", )
+                    preload( )
                 },
 
 
