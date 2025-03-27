@@ -218,20 +218,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function loadAsset(url) {
         return new Promise((resolve, reject) => {
-            if (url.match(/\.(jpg|png|gif|webp|webm)$/)) {
+            if (url.match(/\.(jpg|png|gif|webp)$/)) {
+                // Preload images
                 const img = new Image();
                 img.src = url;
                 img.onload = resolve;
                 img.onerror = reject;
             } else if (url.match(/\.(css)$/)) {
+                // Preload CSS
                 const link = document.createElement("link");
                 link.rel = "stylesheet";
                 link.href = url;
                 link.onload = resolve;
                 link.onerror = reject;
                 document.head.appendChild(link);
-            }  else {
-                resolve(); // Ignore unknown types
+            } else if (url.match(/\.(js)$/)) {
+                // Preload JavaScript
+                const script = document.createElement("script");
+                script.src = url;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.body.appendChild(script);
+            } else if (url.match(/\.(webm)$/)) {
+                // Preload WebM videos
+                fetch(url, { cache: "no-store" }) // Prevent disk caching
+                    .then(response => response.blob())
+                    .then(blob => {
+                        const videoURL = URL.createObjectURL(blob);
+                        const video = document.createElement("video");
+                        video.src = videoURL;
+                        video.preload = "auto"; // Preload the video into memory
+                        resolve();
+                    })
+                    .catch(reject);
+            } else {
+                resolve(); // Ignore unknown file types
             }
         }).then(() => {
             loaded++;
