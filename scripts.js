@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function loadAsset(url) {
         return new Promise((resolve, reject) => {
-            if (url.match(/\.(jpg|png|gif|webp|webm)$/)) {
+            if (url.match(/\.(jpg|png|gif|webp|webm|js)$/)) {
                 const img = new Image();
                 img.src = url;
                 img.onload = resolve;
@@ -230,13 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 link.onload = resolve;
                 link.onerror = reject;
                 document.head.appendChild(link);
-            } else if (url.match(/\.(js)$/)) {
-                const script = document.createElement("script");
-                script.src = url;
-                script.onload = resolve;
-                script.onerror = reject;
-                document.body.appendChild(script);
-            } else {
+          else {
                 resolve(); // Ignore unknown types
             }
         }).then(() => {
