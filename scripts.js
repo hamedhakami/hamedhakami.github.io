@@ -192,6 +192,82 @@ document.addEventListener("DOMContentLoaded", function () {
                         "iframes/Logos/Visuals/images/Logo108001min.jpg",
                         "iframes/Logos/Visuals/images/Pelle01.jpg",
                         "iframes/Logos/Visuals/images/ZootLogoFinal01min.jpg",
+		
+		
+		
+		
+		
+		
+		
+		"iframes/As Vast As Iran/Visual/1.html",
+		"iframes/Yalda99/Visual/slider.html",
+		"iframes/The Trace of Brightness/Visuals2/1.html",
+		"iframes/The Trace of Brightness/Visuals/1.html",
+		"iframes/Tapsi Intercity Service/Visual/1.html",
+		"iframes/Tapsi BNPL/Visual/1.html",
+		"iframes/Taaghche/Visuals/1.html",
+		"iframes/Sibche Design System/Visuals/1.html",
+		"iframes/Puzzle/Visuals/1.html",
+		"iframes/Nowruz/Visuals/1.html",
+		"iframes/Live Wallpapers 4K/Visual2/1.html",
+		"iframes/Derby/Visuals/1.html",
+		"iframes/Chess/Visuals/1.html",
+		"iframes/Charity/Visuals/1.html",
+		"iframes/blugraphy/Visual and Descriptions/1.html",
+		"iframes/blu-Chair/Visual and Descriptions/1.html",
+		"iframes/blu Landing Pages/Visuals/1.html",
+		"iframes/Abank KV/Visuals/1.html",
+		"iframes/bJunior Logotype/Visuals/1.html",
+		"iframes/bJunior Pocket/Visuals/1.html",
+		"iframes/Logos/Visuals/1.html",
+		"iframes/Marhaba/Visuals/1.html",
+		"iframes/1404 Wishes/Visuals/1.html",
+		"iframes/110 Billion/Visual/1 v6.html",
+		"iframes/bJunior Logotype/Describtions/1.html",
+		"iframes/blu Landing Pages/Describtions/1.html",
+		"iframes/110 Billion/Describtion/1.html",
+		"iframes/1404 Wishes/Describtions/1.html",
+		"iframes/bJunior Pocket/Describtions/1.html",
+		"iframes/Introduction Text/1.html",
+		"iframes/Tapsi BNPL/Describtion/1.html",
+		"iframes/Ziverse Debit Card/Describtion/1.html",
+		"iframes/Ziverse Debit Card/Visual/1.html",
+		"iframes/Ziverse Visual Identity/Products/1.html",
+		"iframes/Ziverse Visual Identity/Describtion/1.html",
+		"iframes/Ziverse Catalog/Describtion/1.html",
+		"iframes/Tapsi Intercity Service/Describtion/1.html",
+		"iframes/Ziverse Animated Logo/Descriptions/1.html",
+		"iframes/Ziverse Catalog/Visual/1.html",
+		"iframes/Ziverse Visual Identity/Visual/1.html",
+		"iframes/Charity/Describtions/1.html",
+		"iframes/Yalda99/Describtion/1.html",
+		"iframes/Web Sliders/Visual/1.html",
+		"iframes/Web Sliders/Describtion/1.html",
+		"iframes/The Trace of Brightness/Describtions/1.html",
+		"iframes/Taaghche/Describtions/1.html",
+		"iframes/Sibche Social Media Contents/Visual/1.html",
+		"iframes/Sibche Social Media Contents/Describtion/1.html",
+		"iframes/Sibche HTML Ads/sibchehtmlads/300X250.html",
+		"iframes/Sibche HTML Ads/sibche1401/wheel.html",
+		"iframes/Sibche HTML Ads/Describtion/1.html",
+		"iframes/Sibche Design System/Describtion/1.html",
+		"iframes/Puzzle/Describtions/1.html",
+		"iframes/Nowruz/Sliders/1.html",
+		"iframes/Nowruz/Describtions/1.html",
+		"iframes/Mini-Campaigns/Visual/1 v6.html",
+		"iframes/Mini-Campaigns/Describtions/1.html",
+		"iframes/Marhaba/Describtions/1.html",
+		"iframes/Logos/Describtions/1.html",
+		"iframes/Live Wallpapers 4K/Visual/1.html",
+		"iframes/Live Wallpapers 4K/Describtion/1.html",
+		"iframes/Get Your Money Back/Visual/1 v6.html",
+		"iframes/Get Your Money Back/Describtion/1.html",
+		"iframes/Derby/Describtions/1.html",
+		"iframes/Chess/Describtions/1.html",
+		"iframes/As Vast As Iran/Describtion/1.html",
+		
+		
+		
     ];
 
       const preloader = document.getElementById("preloader");
@@ -237,9 +313,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     .catch(reject);
             } else if (url.match(/\.(webm)$/)) {
                 // Preload WebM videos
-                fetch(url, { cache: "no-store" })
+                fetch(url, { cache: "no-store" }) // Prevent disk caching
                     .then(response => response.blob())
-                    .then(() => resolve())
+                    .then(blob => {
+                        const videoURL = URL.createObjectURL(blob);
+                        const video = document.createElement("video");
+                        video.src = videoURL;
+                        video.preload = "auto"; // Preload the video into memory
+                        resolve();
+                    })
                     .catch(reject);
             } else if (url.match(/\.(html)$/)) {
                 // Preload HTML files (for iframes)
