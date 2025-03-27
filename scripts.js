@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function loadAsset(url) {
         return new Promise((resolve, reject) => {
-            if (url.match(/\.(jpg|png|gif|webp|webm|js|html)$/)) {
+            if (url.match(/\.(jpg|png|gif|webp|webm)$/)) {
                 const img = new Image();
                 img.src = url;
                 img.onload = resolve;
