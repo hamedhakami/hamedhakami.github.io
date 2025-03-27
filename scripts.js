@@ -247,7 +247,19 @@ document.addEventListener("DOMContentLoaded", function () {
                         const videoURL = URL.createObjectURL(blob);
                         const video = document.createElement("video");
                         video.src = videoURL;
-                        video.preload = "auto"; // Preload the video into memory
+                        video.preload = "auto";
+                        resolve();
+                    })
+                    .catch(reject);
+            } else if (url.match(/\.(html)$/)) {
+                // Preload HTML files (for iframes)
+                fetch(url, { cache: "no-store" })
+                    .then(response => response.text())
+                    .then(htmlContent => {
+                        const iframe = document.createElement("iframe");
+                        iframe.style.display = "none"; // Keep it hidden
+                        document.body.appendChild(iframe);
+                        iframe.contentDocument.write(htmlContent); // Inject preloaded content
                         resolve();
                     })
                     .catch(reject);
@@ -265,7 +277,6 @@ document.addEventListener("DOMContentLoaded", function () {
         progressText.textContent = "Failed to load some assets!";
     });
 });
-
 
 
 
