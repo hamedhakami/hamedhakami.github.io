@@ -247,19 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         const videoURL = URL.createObjectURL(blob);
                         const video = document.createElement("video");
                         video.src = videoURL;
-                        video.preload = "auto";
-                        resolve();
-                    })
-                    .catch(reject);
-            } else if (url.match(/\.(html)$/)) {
-                // Preload HTML files (for iframes)
-                fetch(url, { cache: "no-store" })
-                    .then(response => response.text())
-                    .then(htmlContent => {
-                        const iframe = document.createElement("iframe");
-                        iframe.style.display = "none"; // Keep it hidden
-                        document.body.appendChild(iframe);
-                        iframe.contentDocument.write(htmlContent); // Inject preloaded content
+                        video.preload = "auto"; // Preload the video into memory
                         resolve();
                     })
                     .catch(reject);
@@ -277,6 +265,87 @@ document.addEventListener("DOMContentLoaded", function () {
         progressText.textContent = "Failed to load some assets!";
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const htmlFiles = [
+        "iframes/Chess/Visuals/1.html",
+       
+    ];
+
+    let loaded = 0;
+
+    function updateProgress() {
+        const percent = Math.round((loaded / htmlFiles.length) * 100);
+        console.log(`Preloading HTML: ${percent}%`);
+
+        if (loaded === htmlFiles.length) {
+            console.log("All HTML files preloaded!");
+        }
+    }
+
+    function preloadHTML(url) {
+        return fetch(url, { cache: "no-store" }) // Force fresh load, no disk cache
+            .then(response => response.text()) // Load content into memory
+            .then(() => {
+                loaded++;
+                updateProgress();
+            })
+            .catch(error => console.error(`Failed to preload ${url}:`, error));
+    }
+
+    // Start preloading HTML files
+    Promise.all(htmlFiles.map(preloadHTML)).catch(() => {
+        console.log("Some HTML files failed to preload.");
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
