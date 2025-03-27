@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         "iframes/Logos/Visuals/images/ZootLogoFinal01min.jpg",
     ];
 
-    const preloader = document.getElementById("preloader");
+      const preloader = document.getElementById("preloader");
     const progressText = document.getElementById("progress-text");
     const content = document.getElementById("content");
 
@@ -205,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function () {
         progressText.textContent = `Loading ${percent}%`;
 
         if (loaded === assets.length) {
-            // All assets are loaded, fade out preloader
             setTimeout(() => {
                 preloader.style.opacity = "0";
                 setTimeout(() => {
@@ -216,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function loadAsset(url) {
+    function preloadAsset(url) {
         return new Promise((resolve, reject) => {
             if (url.match(/\.(jpg|png|gif|webp)$/)) {
                 // Preload images
@@ -226,30 +225,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 img.onerror = reject;
             } else if (url.match(/\.(css)$/)) {
                 // Preload CSS
-                const link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.href = url;
-                link.onload = resolve;
-                link.onerror = reject;
-                document.head.appendChild(link);
+                fetch(url, { cache: "no-store" })
+                    .then(response => response.text())
+                    .then(() => resolve())
+                    .catch(reject);
             } else if (url.match(/\.(js)$/)) {
                 // Preload JavaScript
-                const script = document.createElement("script");
-                script.src = url;
-                script.onload = resolve;
-                script.onerror = reject;
-                document.body.appendChild(script);
+                fetch(url, { cache: "no-store" })
+                    .then(response => response.text())
+                    .then(() => resolve())
+                    .catch(reject);
             } else if (url.match(/\.(webm)$/)) {
                 // Preload WebM videos
-                fetch(url, { cache: "no-store" }) // Prevent disk caching
+                fetch(url, { cache: "no-store" })
                     .then(response => response.blob())
-                    .then(blob => {
-                        const videoURL = URL.createObjectURL(blob);
-                        const video = document.createElement("video");
-                        video.src = videoURL;
-                        video.preload = "auto"; // Preload the video into memory
-                        resolve();
-                    })
+                    .then(() => resolve())
+                    .catch(reject);
+            } else if (url.match(/\.(html)$/)) {
+                // Preload HTML files (for iframes)
+                fetch(url, { cache: "no-store" })
+                    .then(response => response.text())
+                    .then(() => resolve())
                     .catch(reject);
             } else {
                 resolve(); // Ignore unknown file types
@@ -260,8 +256,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Start loading all assets
-    Promise.all(assets.map(loadAsset)).catch(() => {
+    // Start preloading all assets
+    Promise.all(assets.map(preloadAsset)).catch(() => {
         progressText.textContent = "Failed to load some assets!";
     });
 });
@@ -286,39 +282,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const htmlFiles = [
-        "iframes/Chess/Visuals/1.html",
-       
-    ];
-
-    let loaded = 0;
-
-    function updateProgress() {
-        const percent = Math.round((loaded / htmlFiles.length) * 100);
-        console.log(`Preloading HTML: ${percent}%`);
-
-        if (loaded === htmlFiles.length) {
-            console.log("All HTML files preloaded!");
-        }
-    }
-
-    function preloadHTML(url) {
-        return fetch(url, { cache: "no-store" }) // Force fresh load, no disk cache
-            .then(response => response.text()) // Load content into memory
-            .then(() => {
-                loaded++;
-                updateProgress();
-            })
-            .catch(error => console.error(`Failed to preload ${url}:`, error));
-    }
-
-    // Start preloading HTML files
-    Promise.all(htmlFiles.map(preloadHTML)).catch(() => {
-        console.log("Some HTML files failed to preload.");
-    });
-});
 
 
 
