@@ -439,6 +439,11 @@ p {
     height: 85vh;
     aspect-ratio: 5280 / 922;
 }
+.Filimo {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 4928 / 922;
+}
 /*      (x vh / 198) * 100 = y vw     */
 @media only screen and (max-width: 198vh) {
     .Text-iframe {
@@ -589,6 +594,9 @@ p {
         height: 25.25vw;
     }
     .Ziverse-debit-card {
+        height: 42.92vw;
+    }
+	    .Filimo {
         height: 42.92vw;
     }
     .animated-logo-descriptions {

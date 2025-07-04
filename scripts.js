@@ -170,8 +170,17 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Introduction Text/1.html";
                 },
+				
+				
 
-
+                function () {
+                    iframeTarget.src = "iframes/Filimo/Describtion/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Filimo/Visual/1.html";
+                },
+				
+				
                 function () {
                     iframeTarget.src = "iframes/bJunior Pocket/Describtions/1.html";
                 },
@@ -395,9 +404,35 @@ $(document).ready(function () {
 
 
             var arrayOfPreloadFunction = [
+				
+				
+				             function () {
+                    var images = [];
 
-
-                function () {
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+						"iframes/Filimo/Visual/images/Walletv42copymin.jpg",
+                        "iframes/Filimo/Visual/images/Clapperboardv2copymin.jpg",
+                       "iframes/Filimo/Visual/images/RemoteControlv6copymin.jpg",
+                 ) },
+				
+				
+				
+				function () {},
+				
+				
+				
+				
+				
+				
+				
+				
+				 function () {
                     var images = [];
 
                     function preload() {
@@ -417,6 +452,11 @@ $(document).ready(function () {
                         "iframes/bJunior Pocket/Visuals/videos/Steps.webm",
                     )
                 },
+
+				
+ 
+
+   
 
 
                 function () {
