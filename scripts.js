@@ -172,6 +172,16 @@ $(document).ready(function () {
                 },
 				
 				
+				   function () {
+                    iframeTarget.src = "iframes/Topol Loan/Describtion/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Topol Loan/Visual/1 v6.html";
+                },
+				
+				
+				
+				
 
                 function () {
                     iframeTarget.src = "iframes/Filimo/Describtion/1.html";
@@ -406,7 +416,8 @@ $(document).ready(function () {
             var arrayOfPreloadFunction = [
 				
 				
-				             function () {
+				
+					             function () {
                     var images = [];
 
                     function preload() {
@@ -416,14 +427,31 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-						"iframes/Filimo/Visual/images/Walletv42copymin.jpg",
-                        "iframes/Filimo/Visual/images/Clapperboardv2copymin.jpg",
-                       "iframes/Filimo/Visual/images/RemoteControlv6copymin.jpg",
+						"iframes/Topol Loan/Visual/videos/Comp 1.webm",
+                        "iframes/Topol Loan/Visual/videos/Compressed.webm",
+                       "iframes/Topol Loan/Visual/images/Bluecopymin.jpg",
+						"iframes/Topol Loan/Visual/images/p02min.jpg",
+						"iframes/Topol Loan/Visual/images/p03min.jpg",
+						"iframes/Topol Loan/Visual/images/photo_20250705_092701_upscayl_2x_highfidelity4xcopy.jpg",
+						"iframes/Topol Loan/Visual/images/R0001copymin.jpg",
                  ) },
 				
 				
 				
 				function () {},
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+	
 				
 				
 				

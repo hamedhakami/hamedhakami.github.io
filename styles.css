@@ -102,6 +102,11 @@ body {
     height: 65vh;
     aspect-ratio: 3779 / 922;
 }
+.blu-Topol-iframe {
+    pointer-events: none;
+    height: 75vh;
+    aspect-ratio: 3620 / 922;
+}
 .IranCard-minicampaigns-iframe {
     pointer-events: none;
     height: 90vh;
@@ -461,6 +466,12 @@ p {
    
 }
 		.blu-Lottery-iframe {
+
+    height: 32.828vw;
+  
+   
+}
+			.blu-Topol-iframe {
 
     height: 32.828vw;
   
