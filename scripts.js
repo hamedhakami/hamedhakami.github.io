@@ -427,13 +427,10 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-						"iframes/Topol Loan/Visual/videos/Comp 1.webm",
-                        "iframes/Topol Loan/Visual/videos/Compressed.webm",
-                       "iframes/Topol Loan/Visual/images/Bluecopymin.jpg",
-						"iframes/Topol Loan/Visual/images/p02min.jpg",
-						"iframes/Topol Loan/Visual/images/p03min.jpg",
-						"iframes/Topol Loan/Visual/images/photo_20250705_092701_upscayl_2x_highfidelity4xcopy.jpg",
-						"iframes/Topol Loan/Visual/images/R0001copymin.jpg",
+						"iframes/Filimo/Visual/images/Walletv42copymin.jpg",
+						"iframes/Filimo/Visual/images/Clapperboardv2copymin.jpg",
+						"iframes/Filimo/Visual/images/RemoteControlv6copymin.jpg",
+					
                  ) },
 				
 				
@@ -1357,14 +1354,13 @@ $(document).ready(function () {
             images[i].src = preload.arguments[i];
         }
     }
-    preload("iframes/bJunior Pocket/Visuals/images/TeasingV201080X1350min.jpg",
-        "iframes/bJunior Pocket/Visuals/images/Joystickmin.jpg",
-        "iframes/bJunior Pocket/Visuals/images/Scootermin.jpg",
-        "iframes/bJunior Pocket/Visuals/images/Telescopemin.jpg",
-        "iframes/bJunior Pocket/Visuals/images/Thumbnailmin.jpg",
-        "iframes/bJunior Pocket/Visuals/images/Gift_Thumbnailmin.jpg",
-        "iframes/bJunior Pocket/Visuals/videos/768-h.webm",
-        "iframes/bJunior Pocket/Visuals/videos/Steps.webm", )
+    preload("iframes/Topol Loan/Visual/videos/Comp 1.webm",
+                        "iframes/Topol Loan/Visual/videos/Compressed.webm",
+                       "iframes/Topol Loan/Visual/images/Bluecopymin.jpg",
+						"iframes/Topol Loan/Visual/images/p02min.jpg",
+						"iframes/Topol Loan/Visual/images/p03min.jpg",
+						"iframes/Topol Loan/Visual/images/photo_20250705_092701_upscayl_2x_highfidelity4xcopy.jpg",
+						"iframes/Topol Loan/Visual/images/R0001copymin.jpg", )
 
 
 });
