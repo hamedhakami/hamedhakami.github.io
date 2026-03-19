@@ -203,11 +203,26 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/1404 Wishes/Visuals/1.html";
                 },
+				   function () {
+                    iframeTarget.src = "iframes/blu Black Friday/Visuals/1.html";
+                },
+				 function () {
+                    iframeTarget.src = "iframes/blu Double Win Referral/Describtions/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/blu Double Win Referral/Visuals/1.html";
+                },
                 function () {
                     iframeTarget.src = "iframes/110 Billion/Describtion/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/110 Billion/Visual/1 v6.html";
+                },
+					 function () {
+                    iframeTarget.src = "iframes/Referral - 150/Describtions/1.html";
+                },
+                function () {
+                    iframeTarget.src = "iframes/Referral - 150/Visuals/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/blugraphy/Visual and Descriptions/1.html";
@@ -506,6 +521,45 @@ $(document).ready(function () {
                         "iframes/1404 Wishes/Visuals/1.js",
                     )
                 },
+				
+				   function () {
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/blu Black Friday/Visuals/images/ThumbBlackFriday.jpg",
+                        "iframes/blu Black Friday/Visuals/1.js",
+                        "iframes/blu Black Friday/Visuals/1.html",
+                        "iframes/blu Black Friday/Visuals/videos/Presentation Video.webm",
+                   
+                    )
+                },
+				
+				
+				   function () {
+                    var images = [];
+
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/blu Double Win Referral/Visuals/images/DoubleWinPresentation.jpg",
+                        "iframes/blu Double Win Referral/Visuals/1.js",
+                        "iframes/blu Double Win Referral/Visuals/1.html",
+                        "iframes/blu Double Win Referral/Visuals/videos/Presentation.webm",
+                   
+                    )
+                },
+				
+				 function () {},
 
 
                 function () {
@@ -529,7 +583,23 @@ $(document).ready(function () {
                     )
                 },
 
+   function () {
+                    var images = [];
 
+                    function preload() {
+                        for (var i = 0; i < arguments.length; i++) {
+                            images[i] = new Image();
+                            images[i].src = preload.arguments[i];
+                        }
+                    }
+                    preload(
+                        "iframes/Referral - 150/Visuals/images/Presentation0000000.jpg",
+                        "iframes/Referral - 150/Visuals/1.js",
+                        "iframes/Referral - 150/Visuals/1.html",
+                        "iframes/Referral - 150/Visuals/videos/Presentation-50000.webm",
+                   
+                    )
+                },
                 function () {},
 
 

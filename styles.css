@@ -127,6 +127,16 @@ body {
     height: 90vh;
     aspect-ratio: 1890 / 922;
 }
+.DoubleWin-iframe {
+    pointer-events: none;
+    height: 75vh;
+    aspect-ratio: 1890 / 922;
+}
+.Referral150-iframe {
+    pointer-events: none;
+    height: 75vh;
+    aspect-ratio: 1890 / 922;
+}
 .Yalda1401-iframe {
     pointer-events: none;
     height: 50vh;
@@ -155,6 +165,12 @@ body {
     aspect-ratio: 3825 / 950;
 }
 .Abank-iframe {
+    pointer-events: none;
+    height: 85vh;
+    aspect-ratio: 1405 / 817;
+    margin-top: 20vh;
+}
+.BlackFriday-iframe {
     pointer-events: none;
     height: 85vh;
     aspect-ratio: 1405 / 817;
@@ -499,8 +515,11 @@ p {
     .IranCard-sliders-iframe {
         height: 35.4vw;
     }
-    .Charity-iframe {
-        height: 45.51vw;
+    .DoubleWin-iframe {
+        height: 37.87vw;
+    }
+	 .Referral150-iframe {
+        height: 37.87vw;
     }
     .Yalda1401-iframe {
         height: 25.28vw;
@@ -520,6 +539,10 @@ p {
         height: 35.4vw;
     }
     .Abank-iframe {
+        height: 42.98vw;
+        margin-top: 10.11vw;
+    }
+	  .BlackFriday-iframe {
         height: 42.98vw;
         margin-top: 10.11vw;
     }
