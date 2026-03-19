@@ -219,10 +219,10 @@ $(document).ready(function () {
                     iframeTarget.src = "iframes/110 Billion/Visual/1 v6.html";
                 },
 					 function () {
-                    iframeTarget.src = "iframes/Referral - 150/Describtions/1.html";
+                    iframeTarget.src = "iframes/Referral - 50/Describtions/1.html";
                 },
                 function () {
-                    iframeTarget.src = "iframes/Referral - 150/Visuals/1.html";
+                    iframeTarget.src = "iframes/Referral - 50/Visuals/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/blugraphy/Visual and Descriptions/1.html";
@@ -593,10 +593,10 @@ $(document).ready(function () {
                         }
                     }
                     preload(
-                        "iframes/Referral - 150/Visuals/images/Presentation0000000.jpg",
-                        "iframes/Referral - 150/Visuals/1.js",
-                        "iframes/Referral - 150/Visuals/1.html",
-                        "iframes/Referral - 150/Visuals/videos/Presentation-50000.webm",
+                        "iframes/Referral - 50/Visuals/images/Presentation0000000.jpg",
+                        "iframes/Referral - 50/Visuals/1.js",
+                        "iframes/Referral - 50/Visuals/1.html",
+                        "iframes/Referral - 50/Visuals/videos/Presentation-50000.webm",
                    
                     )
                 },
