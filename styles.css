@@ -38,14 +38,14 @@ body {
 .intro-text {
     display: block;
     flex-wrap: wrap;
-    margin-left: 0;
-    margin-right: 0;
+    margin: auto;
     padding: 0;
     border: 0;
-    width: 100vw;
     height: 100vh;
-    overflow: hidden;
+	max-width: 178vh;
+    overflow: visible;
     position: relative;
+	background-color: #000000;
 }
 .text-container {
     display: block;
@@ -535,6 +535,9 @@ p {
         height: 40.45vw;
         margin-top: 10.11vw;
     }
+	.Charity-iframe {
+    height: 45.45vw;
+}
     .Marhaba-iframe {
         height: 35.4vw;
     }

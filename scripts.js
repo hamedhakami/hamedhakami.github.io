@@ -236,14 +236,12 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/blu-Chair/Visual and Descriptions/1.html";
                 },
-                function () {
+                /*function () {
                     iframeTarget.src = "iframes/bJunior Logotype/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/bJunior Logotype/Visuals/1.html";
-                },
-
-
+                },*/
                 function () {
                     iframeTarget.src = "iframes/Tapsi Intercity Service/Describtion/1.html";
                 },
@@ -372,12 +370,12 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Abank KV/Visuals/1.html";
                 },
-                function () {
+                /*function () {
                     iframeTarget.src = "iframes/Taaghche/Describtions/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Taaghche/Visuals/1.html";
-                },
+                },*/
                 function () {
                     iframeTarget.src = "iframes/Live Wallpapers 4K/Describtion/1.html";
                 },
@@ -396,12 +394,12 @@ $(document).ready(function () {
                 function () {
                     iframeTarget.src = "iframes/Puzzle/Visuals/1.html";
                 },
-                function () {
+                /*function () {
                     iframeTarget.src = "iframes/Sibche Design System/Describtion/1.html";
                 },
                 function () {
                     iframeTarget.src = "iframes/Sibche Design System/Visuals/1.html";
-                },
+                }, */
                 function () {
                     iframeTarget.src = "iframes/Sibche Social Media Contents/Describtion/1.html";
                 },
@@ -660,7 +658,7 @@ $(document).ready(function () {
                 function () {},
 
 
-                function () {
+                /*function () {
                     var images = [];
 
                     function preload() {
@@ -680,7 +678,7 @@ $(document).ready(function () {
 
                     )
                 },
-
+*/
 
                 function () {
                     var images = [];
@@ -1019,7 +1017,7 @@ $(document).ready(function () {
                         "iframes/Abank KV/Visuals/images/poster90x90v12forpresentationcopymin.jpg", )
                 },
                 
-                function () {
+               /* function () {
                     var images = [];
 
                     function preload() {
@@ -1033,7 +1031,7 @@ $(document).ready(function () {
                         "iframes/Taaghche/Visuals/images/Bannersresizedforportfolio01.jpg",
                         "iframes/Taaghche/Visuals/images/BestSellersv201.jpg",
                         "iframes/Taaghche/Visuals/images/TaaghcheInfinity01v201.jpg", )
-                },
+                },*/
                 function () {
                     var images = [];
 
@@ -1090,7 +1088,7 @@ $(document).ready(function () {
                 },
                
                
-                function () {
+              /*  function () {
                     var images = [];
 
                     function preload() {
@@ -1102,7 +1100,7 @@ $(document).ready(function () {
                     preload("iframes/Sibche Design System/Visuals/images/Presentationmin.jpg",
                         "iframes/Sibche Design System/Visuals/1.js",
                         "iframes/Sibche Design System/Visuals/1.html", )
-                },
+                },*/
                 function () {
                     var images = [];
 
