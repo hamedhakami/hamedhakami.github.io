@@ -66,6 +66,10 @@ body {
     margin: 0 auto 2vh;
     overflow: hidden;
 }
+.Text-iframe-long {
+	aspect-ratio: 1920 / 620;
+	height: 61vh;
+}
 .extra-top-margin {
     margin-top: 20vh;
 }
@@ -471,6 +475,10 @@ p {
         height: 22.75vw;
         margin: 0 auto 1.01vw;
     }
+		.Text-iframe-long {
+	aspect-ratio: 1920 / 620;
+	height: 30.8vw;
+}
 	.bJunior-Pocket-iframe {
     height: 32.828vw;
 
@@ -645,4 +653,5 @@ p {
     .extra-top-margin {
         margin-top: 10.1vw;
     }
+
 }
