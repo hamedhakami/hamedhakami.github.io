@@ -1,3 +1,4 @@
+let isLocked = false;
 $(document).ready(function () {
 
 
@@ -122,8 +123,122 @@ $(document).ready(function () {
             }
         }
     }
+	
+	
+	
+	
+	// New Lines
+
+	
+	
+	
+	 var ziverseVideos = $(".animated-logo-video");
+            const video = ziverseVideos[0];
+	
+	
+	const video1Src = "iframes/Ziverse Animated Logo/Video/Ziverse.webm";
+const video2Src = "iframes/Ziverse Animated Logo/Video/Ziverse2.webm";
+
+let isSwitched = false;
+let lastSwitchTime = 0;
+
+// فانکشن تعویض ویدیو
+function switchVideo() {
+  video.src = "iframes/Ziverse Animated Logo/Video/Ziverse2.webm";
+  video.currentTime = 0;
+  video.play();
+
+  isSwitched = true;
+  lastSwitchTime = Date.now();
+	//console.log ("Switch video to video2");
+}
+
+// برگشت به حالت اولیه
+function resetVideo() {
+  video.src = video1Src;
+  video.currentTime = 0;
+	//console.log ("Reset video to video1");
+
+  isSwitched = false;
+}
+
+	isFirstVideoPlayed = false;
+	// End of New Lines
+	
 
     function runOnScroll() {
+		
+		
+		
+		if (!isLocked){
+		
+		// New Lines
+		    var scrollContainers = $(".scroll-container");
+            var mainScrollContainer = scrollContainers[0];
+            const mainScrollBar = Scrollbar.init(mainScrollContainer);
+			var videos = $(".animated-logo-video");
+			var videoTarget = videos[0];
+			var isVisibleCheckerForVideos = mainScrollBar.isVisible(videoTarget);
+			//console.log ("Video visibility: " + isVisibleCheckerForVideos);
+       
+		if (isVisibleCheckerForVideos && !isFirstVideoPlayed) {
+      firstVideoAppearenceTime = Date.now();
+			isFirstVideoPlayed = true;
+      
+    }
+
+			
+			
+  const now = Date.now();
+
+  // اگر قبلا سوئیچ شده
+  if (isSwitched) {
+    
+    // اگر ویدیو توی viewport نیست → ریست کن
+    if (!isVisibleCheckerForVideos) {
+      resetVideo();
+      return;
+    }
+
+    // اگر 2 ثانیه گذشته → فقط پلی کن
+    if (now - lastSwitchTime > 2000) {
+      video.currentTime = 0;
+		
+		if (video.source == video2Src) {
+			video.play();
+			
+		} else {video.source = video2Src;
+				
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+      
+      lastSwitchTime = now; // آپدیت برای جلوگیری از اسپم پلی
+    }
+
+  } else {
+    // هنوز سوئیچ نشده
+    
+    if (isVisibleCheckerForVideos && now - firstVideoAppearenceTime > 2000) {
+      switchVideo();
+    }
+  }
+
+		
+		  // End of New Lines
+		
+		}
+		
+		
+		
 
 
         var pageTop = Scroll.offset.y;
@@ -162,8 +277,15 @@ $(document).ready(function () {
             const mainScrollBar = Scrollbar.init(mainScrollContainer);
             var isVisibleCheckerForIframes = mainScrollBar.isVisible(iframeTarget);
             //console.log ("Iframe " + i + " visibility: " + isVisibleCheckerForIframes);
-
-
+			
+			
+			
+		
+			
+			
+			
+			
+			
             var arrayOfFunction = [
 
 
@@ -1451,6 +1573,57 @@ function refreshIframe3() {
     var ifr = document.getElementsByName('sibche_html_ads2')[0];
     ifr.src = ifr.src;
 }
+
+window.resetVideobyClick = function() {
+	 var ziverseVideos = $(".animated-logo-video");
+            var video = ziverseVideos[0];
+	
+	isLocked = true;
+	
+	video.src = "iframes/Ziverse Animated Logo/Video/Ziverse.webm";
+	setTimeout(function() {
+		video.src = "iframes/Ziverse Animated Logo/Video/Ziverse2.webm";
+		
+		isLocked = false;
+		
+	}, 8000);
+	
+
+	isVisibleCheckerForVideos = false;
+	
+	
+}
+
+
+
+
+
+
+	 	
+		  // End of New Lines
+
+	
+	
+	
+	
+	
+	
+    
+/*var videos = $(".animated-logo-video");
+			var videoTarget = videos[0];
+	videoTarget.src = "iframes/Ziverse Animated Logo/Video/Ziverse.webm";
+	setTimeout(() => {
+		videoTarget.src = "iframes/Ziverse Animated Logo/Video/Ziverse2.webm";
+		videoTarget.stop();
+	}, 8000);
+			   
+	var lastSwitchTime = Date.now();
+	var firstVideoAppearenceTime = Date.now();*/
+	
+  
+
+
+
 
 
 var parentWidth = window.innerWidth;

@@ -442,22 +442,34 @@ p {
     margin: auto;
     margin-top: 20vh;
     width: 100vw;
-    height: 50vh;
+    height: 55vh;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px;
 }
+
 .animated-logo-video {
     height: 100%;
     aspect-ratio: 1 / 1;
     margin-left: auto;
-    margin-right: 0;
-    position: relative;
-    left: 5vw;
+    margin-right: 5vh;
+ 
+    
+	
+	grid-row: 1/3;
 }
 .animated-logo-descriptions {
-    aspect-ratio: 651 / 400;
-    margin-left: 15vh;
+    aspect-ratio: 651 / 340;
+    margin-left: 0px;
     margin-right: auto;
-    position: relative;
-    left: 5vw;
+   
+    
+	
+	margin-top: 3vh;
+	
+	height: 35vh;
 }
 .Ziverse-debit-card {
     pointer-events: none;
@@ -617,6 +629,14 @@ p {
         height: 7%;
         margin-top: 0.5057vw;
     }
+	 .ziverse-video-button {
+        width: 10vh;
+        height: 12vh;
+		 position: relative;
+		 margin-left: 0;
+		 margin-right: auto;
+		 overflow: visible;
+    }
     .Logos-iframe {
         height: 35.4vw;
     }
@@ -636,7 +656,14 @@ p {
         height: 30.3vw;
     }
     .animated-logo-container {
-        height: 25.25vw;
+        height: 27.77vw;
+		aspect-ratio: 100 / 55;
+		
+		
+		  margin: auto;
+    margin-top: 10.1vw;
+    
+    
     }
     .Ziverse-debit-card {
         height: 42.92vw;
@@ -645,7 +672,8 @@ p {
         height: 42.92vw;
     }
     .animated-logo-descriptions {
-        margin-left: 7.5758vw;
+         margin-left: 0px;
+    margin-right: auto;
     }
     .password-section {
         margin-top: 15.15vw;

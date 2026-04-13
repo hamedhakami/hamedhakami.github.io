@@ -298,11 +298,12 @@ My core competencies include creativity, collaboration, communication, and probl
         <iframe class="html-canvas opacity-effect Ziverse-Catalog" src="blank.html"></iframe>
       </div>
 </div>
-	<div class="html-container animated-logo-container">
-  <video autoplay class="animated-logo-video" loop muted preload="none">
-        <source src="iframes/Ziverse Animated Logo/Video/Ziverse.webm" type="video/webm">
+	<div class="html-container animated-logo-container" style="overflow: visible;">
+  <video autoplay class="animated-logo-video" muted preload="none" name="animated_logo_video" style="z-index: 10;">
+        <source src="iframes/Ziverse Animated Logo/Video/Ziverse2.webm" class="ziverse-video" type="video/webm">
       </video>
   <iframe class="html-canvas opacity-effect Text-iframe animated-logo-descriptions" src="blank.html"></iframe>
+		<div class="opacity-effect" style="height: 15vh; width: 10vh; overflow: visible;"> <button class="ziverse-video-button button" onclick="resetVideobyClick();" style="margin-top: auto; height: 12%;">Play Video</button> </div>
 </div>
 	<div class="html-container text-container">
   <iframe class="html-canvas opacity-effect Text-iframe" src="blank.html"></iframe>
