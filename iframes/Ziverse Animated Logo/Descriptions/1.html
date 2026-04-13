@@ -12,15 +12,23 @@
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>1</title>
-<!-- write your code here -->
 <style>
+	*::-webkit-scrollbar {
+    display: none;
+}
+* {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+	</style>
+	<style>
   #animation_container {
 	position:absolute;
 	margin:auto;
 	top:0;bottom:0;
   }
 </style>
-<script src="libs/1.0.0/createjs.min.js"></script>
+<script src="../../../createjs.min.js"></script>
 <script src="1.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
